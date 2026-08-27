@@ -1,0 +1,1 @@
+Review the full conversation. Extract anything new: decisions made, preferences expressed, new information about the business. Update the relevant files in my-business (context)/. Report what changed. If nothing is worth saving, say so.

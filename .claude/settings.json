@@ -1,0 +1,45 @@
+{
+  "permissions": {
+    "allow": [
+      "Glob",
+      "Grep",
+      "TodoWrite",
+      "WebFetch",
+      "WebSearch",
+      "Skill",
+      "Agent",
+      "Edit(my-*/**)",
+      "Write(my-*/**)",
+      "Edit(CLAUDE.md)",
+      "Write(CLAUDE.md)",
+      "Edit(.claude/commands/**)",
+      "Write(.claude/commands/**)",
+      "Edit(.claude/agents/**)",
+      "Write(.claude/agents/**)",
+      "Bash(mkdir:*)",
+      "Bash(ls:*)",
+      "Bash(pwd)"
+    ],
+    "deny": [
+      "Read(.env*)",
+      "Edit(.env*)",
+      "Write(.env*)",
+      "Edit(SAFETY.md)",
+      "Write(SAFETY.md)",
+      "Bash(rm:*)",
+      "Bash(sudo:*)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"systemMessage\": \"Heads up: run /wrap to save anything worth keeping from this session.\"}'"
+          }
+        ]
+      }
+    ]
+  }
+}
