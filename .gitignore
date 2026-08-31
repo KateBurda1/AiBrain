@@ -1,5 +1,8 @@
 .DS_Store
 
-# Raw source materials (pitch decks, old presentations). Not needed for
-# skills or the morning brief, already distilled into my-business (context)/.
-my-files (knowledge)/about-my-business/
+# Raw source materials (pitch decks, old presentations, spreadsheets). Large
+# binaries, already distilled into my-business (context)/. Markdown files in
+# this folder ARE tracked: those are distilled notes and transcripts written
+# by the assistant, not raw source, and some are cited by working docs.
+my-files (knowledge)/about-my-business/*
+!my-files (knowledge)/about-my-business/*.md
