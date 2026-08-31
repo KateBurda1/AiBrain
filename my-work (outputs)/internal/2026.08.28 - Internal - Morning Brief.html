@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morning Brief, August 28, 2026</title>
+<style>
+  :root {
+    --bg: #FCFCFB;
+    --wash: #F9F9F7;
+    --ink: #2E2C27;
+    --ink-soft: #6B6A63;
+    --ink-grey: #B4B3A8;
+    --hairline: #E4E3DC;
+    --clay: #C6613F;
+    --clay-hover: #AE5133;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .band {
+    width: 100%;
+  }
+  .band-top { background: var(--wash); border-bottom: 1px solid var(--hairline); }
+  .band-bottom { background: var(--bg); }
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 32px;
+  }
+  .date-line {
+    font-size: 13px;
+    color: var(--ink-soft);
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+  }
+  h1.headline {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.25;
+    margin: 0 0 34px 0;
+    color: var(--ink);
+  }
+  .top3 {
+    margin: 0 0 8px 0;
+  }
+  .top3 h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--ink-soft);
+    margin: 0 0 16px 0;
+    font-weight: 600;
+  }
+  .top3-item {
+    display: flex;
+    gap: 16px;
+    padding: 14px 0;
+    border-top: 1px solid var(--hairline);
+  }
+  .top3-item:first-of-type { border-top: none; }
+  .top3-num {
+    font-size: 20px;
+    color: var(--ink-grey);
+    font-weight: 600;
+    min-width: 22px;
+  }
+  .top3-body b { display: block; margin-bottom: 3px; }
+  .top3-body span { color: var(--ink-soft); font-size: 14.5px; }
+
+  .agenda { margin-top: 40px; }
+  .agenda h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--ink-soft);
+    margin: 0 0 16px 0;
+    font-weight: 600;
+  }
+  table.sched { width: 100%; border-collapse: collapse; }
+  table.sched td { padding: 9px 0; border-top: 1px solid var(--hairline); vertical-align: top; font-size: 14.5px; }
+  table.sched tr:first-child td { border-top: none; }
+  td.time { white-space: nowrap; color: var(--ink); font-weight: 600; width: 150px; }
+  td.evt { color: var(--ink-soft); }
+  td.evt b { color: var(--ink); font-weight: 500; }
+  .flag {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 11.5px;
+    color: var(--clay);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+  .note-block {
+    margin-top: 14px;
+    padding: 12px 16px;
+    background: var(--wash);
+    border: 1px solid var(--hairline);
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .tomorrow {
+    margin-top: 18px;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+  }
+
+  .lists { margin-top: 12px; }
+  .list-section { margin-bottom: 36px; }
+  .list-section h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--ink-soft);
+    margin: 0 0 16px 0;
+    font-weight: 600;
+  }
+  .item {
+    display: flex;
+    gap: 16px;
+    padding: 14px 0;
+    border-top: 1px solid var(--hairline);
+  }
+  .item:first-of-type { border-top: none; }
+  .item-num { font-size: 15px; color: var(--ink-grey); font-weight: 600; min-width: 18px; }
+  .item-body b { display: block; margin-bottom: 3px; font-weight: 600; }
+  .item-body span { color: var(--ink-soft); font-size: 14.5px; }
+  .noise-line { font-size: 14.5px; color: var(--ink-soft); }
+
+  .draft-box {
+    margin-top: 10px;
+    padding: 14px 16px;
+    background: var(--wash);
+    border: 1px solid var(--hairline);
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .draft-box .draft-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-grey);
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  .closing {
+    margin-top: 8px;
+    padding-top: 28px;
+    border-top: 1px solid var(--hairline);
+    font-size: 14.5px;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 32px 20px; }
+    h1.headline { font-size: 28px; }
+    td.time { width: 100px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="band band-top">
+  <div class="wrap">
+    <div class="date-line">Friday · August 28, 2026</div>
+    <h1 class="headline">A crowded early afternoon, Kate. Everything else is manageable.</h1>
+
+    <div class="top3">
+      <h2>Top 3</h2>
+      <div class="top3-item">
+        <div class="top3-num">1</div>
+        <div class="top3-body">
+          <b>12 – 3 PM is quadruple-booked</b>
+          <span>Hotel Evolution (client call) and the Ignite team meeting both sit inside a window that also has the Search Atlas Marketing Summit and its VIP After Hours session layered on top. Decide now which two you're actually on, so nothing gets missed live.</span>
+        </div>
+      </div>
+      <div class="top3-item">
+        <div class="top3-num">2</div>
+        <div class="top3-body">
+          <b>Hampton Inn Bremen-I-20 LOI is due today</b>
+          <span>The CFO Today notice says offers go to B.J. Patel today. Decide whether you're submitting before the day gets away from you.</span>
+        </div>
+      </div>
+      <div class="top3-item">
+        <div class="top3-num">3</div>
+        <div class="top3-body">
+          <b>4:30 PM has no subject</b>
+          <span>A calendar hold at 2800 E. Commerce Center Place, Tucson, AZ has no title. Worth a quick check before you're standing in front of it.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="band band-bottom">
+  <div class="wrap">
+
+    <div class="agenda">
+      <h2>Today's Calendar</h2>
+      <table class="sched">
+        <tr><td class="time">7:30 – 8:30 AM</td><td class="evt">Morning routine: Daily Laws, meditation, Headspace, Plan Day (back to back, no gaps)</td></tr>
+        <tr><td class="time">10 – 11 AM</td><td class="evt">Search Atlas pre-setup session (Zoom, drop-in)</td></tr>
+        <tr><td class="time">11 AM – 12 PM</td><td class="evt">Two overlapping personal appointments booked at the same hour<span class="flag">DOUBLE-BOOKED</span></td></tr>
+        <tr><td class="time">12 – 2 PM</td><td class="evt">Search Atlas Agentic Marketing Summit (virtual)</td></tr>
+        <tr><td class="time">1:30 – 2:30 PM</td><td class="evt"><b>Hotel Evolution</b>, client call, Zoom (Neel, Pauline, Jawaria)<span class="flag">OVERLAPS SUMMIT</span></td></tr>
+        <tr><td class="time">2 – 3 PM</td><td class="evt">Search Atlas VIP After Hours (tentative)</td></tr>
+        <tr><td class="time">2:30 – 3 PM</td><td class="evt"><b>Ignite</b>, team meeting, Zoom (Tristan, Recardo, Eddie)<span class="flag">OVERLAPS 2 EVENTS</span></td></tr>
+        <tr><td class="time">4:30 – 5:30 PM</td><td class="evt">Untitled hold (2800 E. Commerce Center Place, Tucson, AZ)<span class="flag">NO SUBJECT</span></td></tr>
+        <tr><td class="time">5 – 5:15 PM</td><td class="evt">Reflection<span class="flag">OVERLAPS 4:30 HOLD</span></td></tr>
+      </table>
+      <div class="note-block">Between 12 and 3 PM you're carrying four things at once. The Search Atlas Summit and its After Hours session are both virtual and optional; Hotel Evolution and the Ignite team meeting are the two with people expecting you. Worth deciding now which of the two Search Atlas sessions (if either) you actually watch live.</div>
+      <div class="tomorrow">Tomorrow (Saturday) is quiet, just the usual morning routine and an evening reflection. Nothing early to brace for.</div>
+    </div>
+
+    <div class="lists">
+
+      <div class="list-section">
+        <h2>Waiting on you (2)</h2>
+        <div class="item">
+          <div class="item-num">1</div>
+          <div class="item-body">
+            <b>Recardo Poole: app install request</b>
+            <span>Recardo asked to install the Cursor app in the Ignite Jira workspace. Needs your call: approve or hold. No draft, this one's yours to decide.</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-num">2</div>
+          <div class="item-body">
+            <b>Snowflake SDR pitch on data sharing</b>
+            <span>Moritz Waidelich at Snowflake pitched their Data Sharing product against the Ignite data-fragmentation problem and asked how you're handling it today. Draft below, ready to paste into Outlook.</span>
+          </div>
+          <div class="draft-box" style="margin-left: 34px; width: 100%;">
+            <div class="draft-label">Draft reply</div>
+            Moritz-<br><br>
+            Appreciate the note. Not the right time for us, but I'll keep Snowflake in mind as Ignite scales.<br><br>
+            Warm Regards,<br>
+            Kate
+          </div>
+        </div>
+      </div>
+
+      <div class="list-section">
+        <h2>Worth a look (4)</h2>
+        <div class="item">
+          <div class="item-num">1</div>
+          <div class="item-body">
+            <b>Homewood Suites Houston NW: new PIP &amp; CapEx docs</b>
+            <span>Updated PIP and CapEx documents are posted in the deal's virtual data room. No deadline stated.</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-num">2</div>
+          <div class="item-body">
+            <b>Your Google Business Profile audit scored 51/100</b>
+            <span>Search Atlas flagged 13 gaps across your 3 locations. Worth a skim when the Search Atlas onboarding starts today.</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-num">3</div>
+          <div class="item-body">
+            <b>UNT Donor Recognition Dinner: registration reminder</b>
+            <span>A nudge to register if you plan to attend. No date given in the reminder itself.</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-num">4</div>
+          <div class="item-body">
+            <b>Kelly messaged you on LinkedIn</b>
+            <span>A LinkedIn notification says Kelly sent you a message. It's on LinkedIn, not email, so check the app directly to read and reply.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-section">
+        <h2>Noise (6)</h2>
+        <div class="noise-line">Office Depot promo, AppSumo promo, HubSpot weekly marketing stats, a LinkedIn job alert, a calendar acceptance notice for Hotel Evolution, and a ZoomInfo saved-search digest. Skipped, want the list expanded just say so.</div>
+      </div>
+
+    </div>
+
+    <div class="closing">
+      Your inbox connection is Outlook, which is read-only, so the draft above is ready to paste into Outlook (or say the word and it can be typed straight in for you if Claude in Chrome is installed). Nothing was sent. What do you want to tackle first?
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
