@@ -39,7 +39,7 @@ Two lines of business:
 
 **2. Ignite — software platform (currently launching)**
 
-An "agentic SaaS" — positioned as generative-AI-powered "Strategy as a Service" — that bridges revenue strategy and execution. Origin: started as an Excel model Kate built by hand to quantify the dollar gap between a company's revenue roadmap/vision and what it was actually doing to close that gap — often finding millions of dollars of gap. Covered in a USA Today press release: "Ignite Agentic SaaS Targets Revenue Strategy Gaps." Legal entity: Ignite Sequence, LLC (Texas). Tagline: **"do less. make it mean more."**
+**Category, locked 2026.08.29: Ignite is the Revenue Growth System for multi-property portfolios.** Use this framing everywhere. The placing line that goes with it: *revenue management decides what to charge tonight, the Revenue Growth System decides where next year's growth comes from and who has to do what to get it.* Never lead with bare "revenue" alone, it reads as revenue management in hospitality. Full positioning, buyer map and messaging hierarchy: `my-work (outputs)/internal/2026.08.29 - Internal - Ignite Positioning Working Doc.md`. Earlier framing, kept for context: an "agentic SaaS," positioned as generative-AI-powered "Strategy as a Service," that bridges revenue strategy and execution. Origin: started as an Excel model Kate built by hand to quantify the dollar gap between a company's revenue roadmap/vision and what it was actually doing to close that gap — often finding millions of dollars of gap. Covered in a USA Today press release: "Ignite Agentic SaaS Targets Revenue Strategy Gaps." Legal entity: Ignite Sequence, LLC (Texas). Tagline: **"do less. make it mean more."**
 
 **Current product, straight from the live app** (igniteapp-rouge.vercel.app — this supersedes the descriptions below, which came from 2022–2025 marketing decks and are now dated):
 
@@ -57,9 +57,31 @@ The whole product is organized around **"The Ignite Equation"** and a core metri
   - *Strategies* — segments ranked by Ignition Score; "Straight Shot" strategies and owned actions laddering up to revenue.
   - *Ignite Talent* — a people-intelligence module: behavioral competency assessment (not "mystery scores"), dual-sided (manager + team member) gap analysis that drives coaching conversations, with level bands (Underperforming / Developing / Experienced / Mastery). Ties competency directly to revenue/GTM outcomes via Iggy.
 - **Report Builder** — custom reporting across the above
-- **Fuse** — the underlying configuration layer: role weightings, competency matrices, cadence, roster, and scoping/visibility rules that everything else respects ("Fuse-scoped")
+- **Fuse** — the underlying configuration layer: role weightings, competency matrices, cadence, roster, and scoping/visibility rules that everything else respects ("Fuse-scoped"). **Build status, confirmed 2026.08.29: the multi-property configuration layer is NOT built yet.** Kate confirmed with Eddie that multi-property is the committed product direction. In any client-facing material describe it as being built alongside beta partners' real portfolios. Never imply it is finished.
 
 **Target customer (confirmed by Kate, 2026.08.25):** B2B. Core focus is **hospitality and hospitality-adjacent** — going after owners and developers who often hold other assets beyond the one property (so one relationship can open multiple properties/deals). **Startups** are a second core focus, served through the lighter **Spark** tier. **Pharma** is a market Kate is actively exploring expanding into next.
+
+## What is proven about Ignite, and what is not (2026.08.29)
+
+Keep this distinction exactly. It is the spine of the pitch and it is what keeps the claims defensible.
+
+| | Status |
+|---|---|
+| Ignite finds revenue nobody else could see | **Proven.** Between $1.3M and $2M per asset surfaced. **This is a finding, not a result.** Confirmed by Kate as Ignite's own finding, not advisory work. |
+| The 16:1 ROAS case | **Real.** See below. |
+| Flying Horse Resort & Club | **Live now, data loading.** Nameable, and willing to be named. A single resort, so it proves the system runs and finds money; it cannot demonstrate the cross-portfolio pattern engine. |
+| Realized revenue lift | **Not proven.** No results yet. |
+| Winning patterns travelling between comparable properties | **Not proven.** This is precisely what the Strategy Beta Group funds. |
+
+**The 16:1 case, the strongest proof story available.** A hotel in a major leisure market reported a 16:1 return on ad spend and called it a win. The campaign targeted their least valuable customer segment, against which the threshold to make the economics work was 22:1. So 16:1 was a loss wearing a win's clothing. Move the same spend to a more valuable customer and 8:1 clears the bar. **A lower return was the better outcome.** Nothing in their stack was broken, every number was correct and measured against the wrong customer, so a good result and a bad decision looked identical. This is what the Ignition Score is for: it ranks by revenue and profitability together, so "our most valuable segment" stops being an opinion.
+
+**Client naming rule, settled 2026.08.29: a client who is winning gets named, a client who missed never does.** Flying Horse is named. The 16:1 hotel runs permanently unnamed, described as "a hotel in a major leisure market" and no more specifically, in writing or out loud, since market, segment or campaign detail would let a well-connected operator guess.
+
+**Do not use the "19 to 25% revenue increase" claim** from the 2023 brand video. It has no source anywhere in the files.
+
+**Kate can derive the 22:1 threshold and the basis for the $1.3M-$2M on the spot, because she did the work.** Neither derivation is written down. That answer currently lives only with her, so anyone else fronting this pitch could not answer it.
+
+**Buyer map:** the **commercial officer is the economic buyer**. President-level operators (Kerry Ranson at Raines) buy on efficiency AND effectiveness. **Asset managers influence but do not purchase** — they hear the same explanations from commercial teams on repeat with no way to test them, so their pitch is "a way to know whether what you are being told is true," not "a better tool." Property teams are the users.
 
 **Launch stage:** publicly announced via a USA Today press release ("Ignite Agentic SaaS Targets Revenue Strategy Gaps," XPR Media distribution, dated July 30, 2026) as launched. Kate separately confirmed (2026.08.25) the product is real and functional, not a mockup, but not yet ready for customers to use day-to-day. **Open tension to resolve: the public press release says "launched" in the past tense; internally it's pre-customer-ready. Reconcile before outreach to prospects who may have seen the press release.**
 
@@ -81,10 +103,19 @@ Historical reference only (some now below the floor above, kept for context on h
 - Ongoing fractional commercial leadership tiers: **"Pony Power"** (80 hrs / $15,000) and **"Workhorse"** (120 hrs / $25,000)
 - Flying Horse-style engagement: "The Reveal" $12,000 + "Insight to Execution" $8,000 = $20,000 (discounts can apply) — note the $12,000 Reveal phase alone is also now below the $15,000 floor
 
-**Ignite:**
-- Beta / Founding Beta Partner: $50,000 upfront for a 12-month beta, capped at 10 slots
-- Hospitality customization model: ~$3,500/month development cost (credited against future subscription), then $450/month/hotel subscription once the credit is used up
-- Investor terms (as of the Jul 2025 deck): raising $1M for 20% equity at a $5M valuation
+**Ignite — CURRENT, confirmed 2026.08.26 and 2026.08.29:**
+- **Strategy Beta Group buy-in: $15,000 to $25,000, for 3 to 5 strategic partners**, each committing several properties to the beta.
+- Call them **strategic partners, never investors.** Cash for access, not equity for access.
+- Multiple properties is a requirement, not an upsell: below a handful of assets the cross-portfolio pattern engine has nothing to compare.
+
+**RETIRED. Do not use any of these in client-facing material:**
+- ~~$50,000 upfront for a 12-month beta, capped at 10 slots~~ (superseded by the Strategy Beta Group above)
+- ~~Investor terms: raising $1M for 20% equity at a $5M valuation~~ (Kate confirmed 2026.08.26 this figure is incorrect and is dropped entirely)
+- ~~MakeReady-specific $336,000 credit guarantee / 5% equity alternative~~ (a one-off custom deal, not a repeatable offer)
+
+**Historical reference only, unreconciled:** hospitality customization model of ~$3,500/month development cost (credited against future subscription), then $450/month/hotel subscription once the credit is used up. A separate source shows $650/month. Not reconciled, and superseded in practice by the Strategy Beta Group for current prospects.
+
+**Post-beta terms are undecided.** Term length, what month twelve looks like, whether the buy-in credits against year one, wind-down if a partner does not convert, data ownership including patterns already learned, and remedy if Fuse slips are all open. These block a procurement sign-off at Crescent scale, so they need deciding before money moves.
 
 **Ignite rate card** (from the internal "Ignite Financial Architecture v2.xlsx" model — Kate notes this file hasn't been updated recently, so treat as directional, not final):
 - Per-site/user licensing by vertical: Hospitality $600, Real Estate $600, Pharma $800, Small Startups $150 — reseller rate is roughly half in each case (Hospitality/Real Estate reseller $300, Pharma reseller $250, Startup reseller $75)

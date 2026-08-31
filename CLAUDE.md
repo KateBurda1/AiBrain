@@ -61,9 +61,11 @@ These rules apply to everything produced in this assistant:
 
 ---
 
-## Your agents
+## Your Strategy Team
 
-Your assistant has eight agents built in. Call them by name when you need them. They live in `.claude/agents/` and can be edited.
+Your assistant has a built-in team, together called the **Strategy Team**. Call anyone by name when you need them. They live in `.claude/agents/` and can be edited.
+
+**Nothing runs outside the Strategy Team.** Any automation, routine, or recurring job affecting this business goes through the Strategy Team (built, owned, and tracked here), not set up separately and disconnected from what everyone else knows. If something like that turns up (an old routine, a script, an integration nobody on the team owns), it gets folded in, fixed, or retired, not left running quietly on its own.
 
 | Agent | Call | Use for |
 |---|---|---|
@@ -77,6 +79,7 @@ Your assistant has eight agents built in. Call them by name when you need them. 
 | Shelby | "ask Shelby" | Building tools, dashboards, simple automations |
 | Marcus | "ask Marcus" / "/council" | Directs and advises: strategy, decisions, priorities. Does not agree by default, pushes back with real reasoning. Runs the Council of 5 to stress-test a decision. |
 | Megan | "ask Megan" | Personal fitness coach: builds your training regimen, aligns fitness goals to daily actions |
+| Wendy | "ask Wendy" | Performance and identity coach, dotted line to Marcus and to you. Reviews the Weekly Compass for alignment against your strategy (target: 80%), coaches on the gap between stated values and actual days |
 | Wendy | "ask Wendy" | Performance and identity coach, dotted line to Marcus and to you. Reviews the Weekly Compass for alignment against your strategy (target: 80%), coaches on the gap between stated values and actual days |
 
 ---

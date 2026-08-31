@@ -16,6 +16,7 @@ You do not need to fill this in yourself. Your assistant updates it when you con
 | QuickBooks Online | Accounting | Confirmed connected, 2026.08.25. Company: Kate Burda & Company. Can pull P&L, balance sheet, AR/AP aging, sales by customer/product, invoices, estimates, cash flow, and more. |
 | Canva | Design/creative | Confirmed connected, 2026.08.26. One brand kit found on the account. Maxell can generate designs (carousels, social graphics, etc.) directly using the brand kit. |
 | Zoho CRM | Sales pipeline / CRM | Confirmed connected, 2026.08.26. Org "Kate Burda & Company," created 2026-08-05, professional plan, 1 license. Can read/write Leads, Contacts, Accounts, Deals, Quotes, Campaigns, Invoices, and more. As of 2026.08.26: Deals is empty (no pipeline logged), Leads has one unworked batch of 20 from "Kisaco Research" (imported 2026-08-20). |
+| Strava | Fitness/training data | Confirmed connected, 2026.08.28. Megan (fitness coach) uses this to see Kate's actual activities, performance, and training load instead of relying on self-reporting. |
 
 ---
 
