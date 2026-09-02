@@ -13,6 +13,7 @@ Tip: You can skip this and run /setup instead.
 | Business name | Flying Horse Resort & Club |
 | What they do | Golf/hospitality resort, Colorado Springs, CO |
 | Main contact | Wendy McHenry (Managing Director), Glenn Wallace |
+| Also at Flying Horse | Sarah Leach — runs their own separate ZoomInfo account (confirmed 2026.09.01). Not a Kate Burda & Co team member. If a ZoomInfo workflow or org shows her as the owner, you're in Flying Horse's account, not Kate's — switch accounts before doing any Kate Burda & Co intent/workflow work. |
 | What we do for them | Commercial Effectiveness/Efficiency Study — Revenue Strategy Commercial Enablement |
 | Started working together | Feb 2024 |
 | Notes | Engagement structured as "The Reveal" ($12,000) + "Insight to Execution" ($8,000) = $20,000, discounted to $18,000 net. **Confirmed current/active client (2026.08.25).** |
