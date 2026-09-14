@@ -51,6 +51,10 @@ Example line from the site: "Every brand is on a journey. We believe you don't h
 
 ---
 
+## Visual brand series
+
+There's an existing visual identity system in Canva called **"Commercial Excellence"** (seen in designs titled "Care" and "Aware!", among others): black background, bold hot-pink (#d53d72) display headlines, small pink "COMMERCIAL EXCELLENCE" eyebrow label, KB monogram logo, "kateburda.com" footer, vertical "@kateburda.com" side text. Used for LinkedIn-carousel-style content and one-pagers. When a design needs to match this look exactly, duplicate an existing page from one of these Canva designs and edit the text in place, rather than generating a new design from a text prompt — AI-generated designs pull generic stock templates and get the colors wrong even when a brand kit is attached. Confirmed 2026.09.01.
+
 ## Words and phrases we use
 
 - "Warm Regards," as a sign-off (both words capitalized), for anything beyond a one-line reply
