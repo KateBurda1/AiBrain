@@ -6,3 +6,14 @@
 # by the assistant, not raw source, and some are cited by working docs.
 my-files (knowledge)/about-my-business/*
 !my-files (knowledge)/about-my-business/*.md
+
+# Brand asset library (logos, fonts, PPT/Word templates, patterns, office
+# photos) and other large decks/exports. These are binary assets that belong
+# in OneDrive, not git history — a repo that tracks them grows forever since
+# git keeps every version of every binary. Keep working docs (.md, .docx
+# strategy/positioning writeups, the pro forma .xlsx) tracked as normal.
+my-files (knowledge)/Brand/
+my-files (knowledge)/articles/What Great Looks Like; Revenue Strategy Part 1.pptx
+my-files (knowledge)/articles/What Great Looks Like; Revenue Strategy Part 2.pptx
+my-files (knowledge)/articles/What Great Looks Like; Revenue Strategy Part 2.pdf
+my-clients (clients)/Flying Horse/FH Marketing Plan.pptx
