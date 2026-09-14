@@ -30,6 +30,10 @@ Scan for things that slipped:
 - Emails in "Waiting on you" older than 2 days.
 - Anything the owner said they would do in a recent sent email ("I'll send that over Friday") that has not gone out. Only flag clear, concrete commitments. Never invent a task.
 - If Stripe is connected: any payment that looks overdue.
+- Run the `wylie-rm-prep` skill (read `my-skills/wylie-rm-prep/instructions.md`
+  and follow it) to check whether tomorrow's calendar has the Wylie RM call.
+  It stays silent if there's no match; fold its reminder into loose ends if
+  there is one.
 
 ### Step 4: Deliver the brief
 

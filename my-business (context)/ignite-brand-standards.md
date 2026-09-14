@@ -38,7 +38,21 @@ Sampled directly from the current logo PNG exports on 2026.08.29. These are meas
 | **Pink on dark backgrounds** | `#FF8983` | A lighter, warmer salmon used for the mark on dark backgrounds. Noticeably different from the primary pink, this is deliberate. |
 | **Off-white** | `#F1F2F2` | Background tone in the horizontal lockup export. |
 
-Unverified: any secondary or accent palette. If a fuller palette exists it is in the style guide PDF, which could not be machine-read on this machine. Ask Kate rather than inventing one.
+Unverified against the current logo: any secondary or accent palette.
+
+**Update 2026.09.13: the style guide PDF's text was successfully extracted** (the earlier attempt only pulled embedded font/swatch metadata, not body text). It names a five-color palette, distinct from the hex values measured above from the current logo files:
+
+| Named color | CMYK | Hex |
+|---|---|---|
+| Warm Magenta | C0 M83 Y41 K0 | `#DB5E71` |
+| Glowing Magenta | C0 M60 Y37 K0 | `#FF9088` |
+| Deep Gray | C74 M66 Y64 K74 | `#1E2021` |
+| Cool Gray | C47 M39 Y40 K3 | `#8C8C8C` |
+| Light Stone | C13 M14 Y12 K0 | `#D8D2D2` |
+
+**Do not treat this as current without checking with Kate.** It comes from the same style guide whose logo section is confirmed superseded (Kate changed the logo, 2026.08.29). Note it doesn't match the hex measured from the current logo files either (`#ED536F` primary pink vs. this guide's `#DB5E71`/`#FF9088`), so the named palette may have changed along with the logo, or may still be the intended secondary/gradient palette used elsewhere in the product. Ask before using either "Warm Magenta" or "Glowing Magenta" in anything client-facing.
+
+**Fonts, confirmed from the same extraction, matching what was already inferred from embedded metadata:** primary wordmark is set in **GANTIC Regular**; secondary/content text uses **Galyon Book, Galyon Book Italic, Galyon Black, and Galyon Black Italic**. This resolves the earlier "needs confirmation" flag on typography, at least for what the guide specifies. Still worth checking whether the live product actually uses these, since the guide contains placeholder Lorem Ipsum body text in places, suggesting parts of it were never fully finished.
 
 ---
 

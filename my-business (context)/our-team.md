@@ -21,7 +21,9 @@ The website only shows Kate, but project files and the internal Ignite cap table
 | Joe Tavares (cap table spelling: "Joe Traverse") | — | Ignite | **Not currently active** | Was listed in investor deck/cap table (5% equity) but Kate confirms not active now |
 | David Garrard (cap table spelling: "David Gerrard") | — | Ignite | **Not currently active** | Was listed in investor deck/cap table (5% equity) but Kate confirms not active now |
 
-**Ignite cap table (internal financials file, as of Aug 2024 — not yet updated for the above changes):** Eddie Westerfield 10%, David Gerrard 5%, Recardo Poole 5%, Joe Traverse 5% — 25% total allocated, 60-month vesting. [Given Joe and David are no longer active, this cap table likely needs updating — flag for Kate.]
+**Ignite cap table — confirmed updated by Kate, 2026.09.13.** The stale Aug 2024 figures below (Eddie 10%, David Gerrard 5%, Recardo 5%, Joe Traverse 5%) are superseded. Kate did not give the new numbers in this session; she deferred the detail to when the Ignite pro forma gets worked through directly. **Do not quote the old percentages as current.** Pull the real numbers from the Ignite pro forma session output once that happens, and update this section with them.
+
+~~Old, superseded 2026.09.13: Eddie Westerfield 10%, David Gerrard 5%, Recardo Poole 5%, Joe Traverse 5% — 25% total allocated, 60-month vesting.~~
 
 ---
 
