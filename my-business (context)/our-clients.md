@@ -18,7 +18,9 @@ Tip: You can skip this and run /setup instead.
 | Started working together | Feb 2024 |
 | Notes | Engagement structured as "The Reveal" ($12,000) + "Insight to Execution" ($8,000) = $20,000, discounted to $18,000 net. **Confirmed current/active client (2026.08.25).** |
 
-**Update 2026.08.29: Flying Horse is the first asset live on the Ignite platform.** Their data is loading now. No results yet, and the pitch must not imply any. Kate confirmed they **can be named in client-facing material and are willing to be named**, which means a prospect may ask them for a reference call. Note the limitation when using them as proof: Flying Horse is a single resort, so it shows the system runs and finds money, but it cannot demonstrate the cross-portfolio pattern engine that Noble, Raines and Crescent are being pitched on.
+**Update 2026.08.29: Flying Horse is the first asset live on the Ignite platform.** Their data is loading now. Kate confirmed they **can be named in client-facing material and are willing to be named**, which means a prospect may ask them for a reference call. Note the limitation when using them as proof: Flying Horse is a single resort, so it shows the system runs and finds money, but it cannot demonstrate the cross-portfolio pattern engine that Noble, Raines and Crescent are being pitched on.
+
+**Update 2026.09.16: Flying Horse has delivered 11.79% revenue growth YoY to date.** This supersedes the earlier "no results yet" note — there is now a real, measured, nameable result tied to the GTM/customer-journey engagement and Ignite. The single-resort caveat above still applies: this proves the system drives revenue at one asset, not the cross-portfolio pattern engine.
 
 ---
 
