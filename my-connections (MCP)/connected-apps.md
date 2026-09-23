@@ -10,7 +10,7 @@ You do not need to fill this in yourself. Your assistant updates it when you con
 
 | App | What it does | What your assistant can see |
 |---|---|---|
-| Microsoft 365 (Outlook) | Business email — Kate@kateburda.com | Emails (confirmed working, 2026.08.25), drafts. Read-only: can't drop drafts straight into Outlook, will draft in chat or type into Outlook on the web via Claude in Chrome instead. |
+| Microsoft 365 (Outlook) | Business email — Kate@kateburda.com | Emails (confirmed working, 2026.08.25). **Draft creation confirmed working, 2026.09.23** — reply and reply-all drafts save straight into the Outlook Drafts folder via the connector's write access (earlier note that this was read-only is outdated). Drafts still never send on their own, per SAFETY.md. |
 | Microsoft 365 (Calendar) | Scheduling | **Read/write confirmed working, 2026.09.13** — created 15 events directly via the connector (weekly Strategy Session, Sun 6-7pm through end of 2026). Earlier note (2026.08.26) said write access was denied (`Calendars.ReadWrite` not consented); that's resolved now, no browser workaround needed. Mailbox time zone is **Mountain Standard Time**. |
 | OneDrive / SharePoint | Files | Confirmed working via the Microsoft 365 connector (not just local sync), 2026.08.25, full search access across Kate's OneDrive, including the `Ignite` folder tree |
 | QuickBooks Online | Accounting | Confirmed connected, 2026.08.25. Company: Kate Burda & Company. Can pull P&L, balance sheet, AR/AP aging, sales by customer/product, invoices, estimates, cash flow, and more. |
