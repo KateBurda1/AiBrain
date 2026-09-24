@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Morning Brief</title>
+<style>
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #FCFCFB;
+  color: #2E2C27;
+  font-family: -apple-system, "Segoe UI", sans-serif;
+}
+
+.band { width: 100%; }
+.band-top { background: #F9F9F7; }
+.band-bottom { background: #FCFCFB; border-top: 1px solid #E1E1DF; }
+
+.wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 56px 28px 64px 28px;
+}
+
+.day-date {
+  font-size: 14px;
+  color: #6B6A63;
+  margin: 0 0 10px 0;
+  letter-spacing: 0.01em;
+}
+
+.headline {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.28;
+  margin: 0 0 34px 0;
+  color: #2E2C27;
+  max-width: 760px;
+}
+
+.drawing {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.acts { display: flex; width: 100%; }
+
+.act {
+  flex: 1;
+  padding: 18px 24px;
+  border-left: 1px solid #E4E3DC;
+}
+.act:first-child { border-left: none; padding-left: 0; }
+.act:last-child { padding-right: 0; }
+
+.act-time {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: #2E2C27;
+  margin-bottom: 8px;
+}
+
+.act-sentence {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #6B6A63;
+  margin: 0;
+}
+
+.section-heading {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #2E2C27;
+  margin: 0 0 18px 0;
+}
+
+.list { list-style: none; margin: 0 0 46px 0; padding: 0; }
+.list:last-of-type { margin-bottom: 0; }
+
+.item {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid #E4E3DC;
+}
+.item:first-child { border-top: none; }
+
+.item-num {
+  font-size: 13px;
+  color: #B4B3A8;
+  min-width: 18px;
+  padding-top: 1px;
+}
+
+.item-body { flex: 1; }
+
+.item-title {
+  font-weight: 600;
+  font-size: 15.5px;
+  color: #2E2C27;
+  margin: 0 0 4px 0;
+}
+.item-title a { color: #2E2C27; text-decoration: none; }
+
+.item-sentence {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #6B6A63;
+  margin: 0;
+}
+.item-sentence a {
+  color: #6B6A63;
+  text-decoration: underline;
+  text-decoration-color: #B4B3A8;
+}
+
+.calm-line {
+  font-size: 14.5px;
+  color: #6B6A63;
+  padding: 4px 0 0 0;
+  line-height: 1.6;
+}
+.calm-line a {
+  color: #6B6A63;
+  text-decoration: underline;
+  text-decoration-color: #B4B3A8;
+}
+
+@media (max-width: 640px) {
+  .acts { flex-direction: column; }
+  .act { border-left: none; border-top: 1px solid #E4E3DC; padding: 18px 0; }
+  .act:first-child { border-top: none; padding-top: 0; }
+  .headline { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+
+<div class="band band-top">
+  <div class="wrap">
+    <p class="day-date">Thursday &middot; September 24 2026</p>
+    <h1 class="headline">The Wylie RM call opens your workday at 9, Kate, and tomorrow's Hotel Evolution call is booked dead center inside your flight to Vegas.</h1>
+
+    <svg class="drawing" viewBox="0 0 840 140" width="840" height="140" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,100 C60,98 100,94 150,88 C190,82 220,70 250,62 C280,54 310,52 340,56 C380,62 420,70 460,72 C500,74 540,68 580,60 C620,52 670,50 710,54 C750,58 800,64 840,68" fill="none" stroke="#2E2C27" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Daily Laws, Meditate, Headspace, Plan Day, calm start -->
+      <circle cx="30" cy="99" r="6" fill="#B4B3A8"/>
+      <!-- City Lifestyle intro call -->
+      <circle cx="120" cy="91" r="6" fill="#B4B3A8"/>
+      <!-- Wylie RM 9-10 -->
+      <circle cx="200" cy="78" r="8" fill="#2E2C27"/>
+      <!-- PMS/CRS Overview 11:30-12:30 -->
+      <circle cx="330" cy="57" r="8" fill="#2E2C27"/>
+      <!-- Ignite w/ Tristan 1-2 -->
+      <circle cx="470" cy="72" r="8" fill="#2E2C27"/>
+      <!-- Reflection, Strength, evening -->
+      <circle cx="700" cy="52" r="6" fill="#B4B3A8"/>
+      <circle cx="740" cy="55" r="6" fill="#B4B3A8"/>
+    </svg>
+
+    <div class="acts">
+      <div class="act">
+        <div class="act-time">6:30 &ndash; 7:30 AM</div>
+        <p class="act-sentence">The usual Daily Laws, Meditate, Headspace, Plan Day stack, then the City Lifestyle intro call with Luke at 7:30, a phone call so keep your line free.</p>
+      </div>
+      <div class="act">
+        <div class="act-time">9 AM &ndash; 2 PM</div>
+        <p class="act-sentence">Three back to back: the Wylie RM call at 9 (Zoom), the PMS &amp; CRS Overview for Wylie Inn and Conference Center at 11:30 (Teams), and Ignite with Tristan at 1 (Zoom). The real work block of the day.</p>
+      </div>
+      <div class="act">
+        <div class="act-time">4 PM onward</div>
+        <p class="act-sentence">Reflection at 4, then Strength &mdash; Legs A from 4:30 to close the day.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="band band-bottom">
+  <div class="wrap">
+    <h2 class="section-heading">Needs attention</h2>
+    <ul class="list">
+      <li class="item">
+        <span class="item-num">1</span>
+        <div class="item-body">
+          <p class="item-title"><a href="https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A03%2FX6e%2FQDkOsEAzBoB3%2B8gAKUAMimQAA&exvsurl=1&path=/calendar/item" target="_blank" rel="noopener">The Wylie RM call is this morning, not tomorrow</a></p>
+          <p class="item-sentence">It lands at 9, so if the four source files (STR weekly report, Lighthouse rates export, Booking.com sales stats PDF, Synxis inventory CSV) aren't already pulled, there's no runway left to wait on them. The usual reminder fires the night before when the call is tomorrow, this one snuck in same-day.</p>
+        </div>
+      </li>
+      <li class="item">
+        <span class="item-num">2</span>
+        <div class="item-body">
+          <p class="item-title"><a href="https://outlook.office365.com/owa/?itemid=AAkBOQAICN8al%2FFDQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNANN%2F1%2Bnv0A5DrBAMwaAd%2FvIACj1XTOEAABA%3D&exvsurl=1&path=/calendar/item" target="_blank" rel="noopener">Tomorrow's Hotel Evolution call sits inside your flight, not before it</a></p>
+          <p class="item-sentence">The <a href="https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A03%2FX6e%2FQDkOsEAzBoB3%2B8gAKTtTd%2BgAA&exvsurl=1&path=/calendar/item" target="_blank" rel="noopener">DFW to Vegas flight</a> runs 11:17 to 2:06 MST, and Hotel Evolution is booked 12:30 to 1:30, squarely in the middle of it. Worth moving one of the two before you're stuck testing whether American's wifi holds a Zoom call at 30,000 feet.</p>
+        </div>
+      </li>
+      <li class="item">
+        <span class="item-num">3</span>
+        <div class="item-body">
+          <p class="item-title"><a href="https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A03%2FX6e%2FQDkOsEAzBoB3%2B8gAKUANGiwAA&exvsurl=1&path=/calendar/item" target="_blank" rel="noopener">Your own reminder: check Eddie's sign-off before tomorrow's Ignite call</a></p>
+          <p class="item-sentence">You set a 9am check tomorrow to confirm Eddie has reviewed and signed the Operating Agreement Amendment No. 1 and Recardo's Additional Unit Grant Letter (both in Ignite/Team File/, Section 2.5 needs both managers). That's 30 minutes before the 9:30 Ignite call with Tristan, Recardo, and Eddie himself, so worth knowing the answer walking in.</p>
+        </div>
+      </li>
+    </ul>
+
+    <h2 class="section-heading" style="margin-top:46px;">Inbox</h2>
+    <p class="calm-line">2 new since yesterday. Nothing waiting on you. 1 worth a look: <a href="https://outlook.office365.com/owa/?ItemID=AAMkADY1ZTI2Zjg1LWFmNzktNDg0MC05YjlmLTllZTk4MzI2ZGE3ZgBGAAAAAACy4ujIsqpcQrerCsMq4iijBwDTf9fp79AOQ6wQDMGgHf7yAAAAAAEMAADTf9fp79AOQ6wQDMGgHf7yAApRRd89AAA%3D&exvsurl=1&viewmodel=ReadMessageItem" target="_blank" rel="noopener">a CHIMQ GRR Report</a> from Marriott Marquis Chicago's property accountant, you're not even a direct recipient on it (looks like a CC or a distribution you're on), no action needed unless you're tracking that account. The other is a USPS Informed Delivery digest, pure noise. I also checked the last two days of already-read mail for anything you'd flagged and not answered: the FEI Monthly Marketing thread and the O'Rourke invoice thread both already have your replies in them, nothing's sitting open.</p>
+
+    <h2 class="section-heading" style="margin-top:46px;">Loose ends</h2>
+    <p class="calm-line">Nothing's been waiting on you for more than two days, and I didn't find an overdue commitment in your sent mail. The Wylie RM prep is above under Needs Attention since it's today's problem, not tomorrow's.</p>
+  </div>
+</div>
+
+</body>
+</html>
