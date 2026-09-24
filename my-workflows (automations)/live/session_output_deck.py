@@ -5,8 +5,8 @@ used by the session-output skill (my-skills/session-output/instructions.md).
 Two brands: "kbco" (Kate Burda & Company, light) and "ignite" (dark). Values sourced from
 my-business (context)/brand-standards.md and ignite-brand-standards.md.
 
-Usage: import build_deck and call it once per session. See the bottom of this file for
-the backfill calls (S1, S2, S3B-i) run to produce the first three decks.
+Rebuilt 2026.09.23 after a second OneDrive account switch. Logo paths below point at this
+account's copies.
 """
 
 from pptx import Presentation
@@ -14,34 +14,32 @@ from pptx.util import Inches, Pt, Emu
 from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 from pptx.enum.shapes import MSO_SHAPE
-from pptx.oxml.ns import qn
-import copy
 
 BRANDS = {
     "kbco": {
         "bg": "FFFFFF",
-        "ink": "2E2925",       # warm near-black (brand-standards.md)
-        "accent": "D51067",    # PMS 214 pink
-        "accent2": "B52372",   # PMS 675 magenta
-        "muted": "55575A",     # PMS 425 grey
-        "card": "F7EEF2",      # very light pink tint for card backgrounds
+        "ink": "2E2925",
+        "accent": "D51067",
+        "accent2": "B52372",
+        "muted": "55575A",
+        "card": "F7EEF2",
         "on_accent": "FFFFFF",
         "font": "Calibri",
         "font_title": "Times New Roman",
-        "logo": "/Users/kate/Library/CloudStorage/OneDrive-turningpointglobal.net/My-AI-Brain/My AI Brain/my-files (knowledge)/Brand/Kate & Co- Administrative/1. Kate Burda & Co. - Logo Package/PNG/kb_Logo_2.FullColor_Horizontal.png",
+        "logo": "/Users/kate/Library/CloudStorage/OneDrive-KateBurda&Company 2/Kate & Co/Kate & Co- Administrative/1. Kate Burda & Co. - Logo Package/PNG/kb_Logo_2.FullColor_Horizontal.png",
         "logo_width": Inches(2.4),
     },
     "ignite": {
-        "bg": "1C1112",        # ink / near-black, measured from live logo files
-        "ink": "F1F2F2",       # off-white
-        "accent": "FF8983",    # pink on dark backgrounds (measured)
-        "accent2": "ED536F",   # brand pink (primary)
-        "muted": "C9A9AC",     # dimmed warm grey for secondary text on dark bg
-        "card": "2A1B1C",      # slightly lighter than bg, for card fills
+        "bg": "1C1112",
+        "ink": "F1F2F2",
+        "accent": "FF8983",
+        "accent2": "ED536F",
+        "muted": "C9A9AC",
+        "card": "2A1B1C",
         "on_accent": "1C1112",
         "font": "Calibri",
         "font_title": "Calibri",
-        "logo": "/Users/kate/Library/CloudStorage/OneDrive-turningpointglobal.net/Ignite/Brand-Marketing/logos and colors/IgniteLogo_Emblem-DarkBG.png",
+        "logo": "/Users/kate/Library/CloudStorage/OneDrive-KateBurda&Company 2/Ignite/Brand-Marketing/logos and colors/IgniteLogo_Emblem-DarkBG.png",
         "logo_width": Inches(0.9),
     },
 }
@@ -146,7 +144,7 @@ def _bullet_slide(prs, brand, kicker, title, items):
     _set_background(slide, b["bg"])
     _header(slide, brand, kicker, title)
 
-    card = _card(slide, Inches(0.7), Inches(1.6), Inches(11.9), Inches(5.3), brand)
+    _card(slide, Inches(0.7), Inches(1.6), Inches(11.9), Inches(5.3), brand)
     _, tf = _textbox(slide, Inches(1.1), Inches(1.95), Inches(11.1), Inches(4.7))
     for i, item in enumerate(items):
         _add_para(tf, item, 16, b["ink"], font=b["font"], bullet=True,

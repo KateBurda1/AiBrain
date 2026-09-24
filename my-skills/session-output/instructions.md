@@ -38,11 +38,11 @@ If it's genuinely unclear which bucket an item belongs in, ask Kate rather than 
 ### Step 3: Generate the PPT
 Use `my-workflows (automations)/live/session_output_deck.py`'s `build_deck()` function. Four slides: Title, Decisions, Outcomes, Next Steps (two columns: This Week / Later). Brand values and font substitutes are already defined in that script, sourced from `my-business (context)/brand-standards.md` and `ignite-brand-standards.md` — don't redefine them elsewhere or hand-roll a new template; extend that script if the template itself needs to change.
 
-Save into that session's own subfolder of `my-work (outputs)/internal/`, one folder per session (standing convention since 2026.09.20, Kate's instruction — all session outputs live under their session, not flat in `internal/`):
+Save into that session's own subfolder of `my-work (outputs)/internal/`, one folder per session (standing convention since 2026.09.20 — all session outputs live under their session, not flat in `internal/`):
 ```
 my-work (outputs)/internal/Session <N> - <Session Name>/yyyy.mm.dd - Internal - Session <N> <Session Name> - Outputs.pptx
 ```
-Create the folder if it doesn't exist yet (e.g. `Session 4 - Ignite Financial Model`). Use the session's real date in the filename. Any other artifact from that session (a spreadsheet, a working doc) goes in the same folder, not scattered elsewhere.
+Create the folder if it doesn't exist yet. Use the session's real date in the filename. Any other artifact from that session (a spreadsheet, a working doc) goes in the same folder, not scattered elsewhere.
 
 ### Step 4: File the next steps
 - Append this-week items to the Session Handoff file, following its existing table format, under a new dated section header for this session.
