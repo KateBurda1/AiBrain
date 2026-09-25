@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Morning Brief</title>
+<style>
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #FCFCFB;
+  color: #2E2C27;
+  font-family: -apple-system, "Segoe UI", sans-serif;
+}
+
+.band { width: 100%; }
+.band-top { background: #F9F9F7; }
+.band-bottom { background: #FCFCFB; border-top: 1px solid #E1E1DF; }
+
+.wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 56px 28px 64px 28px;
+}
+
+.day-date {
+  font-size: 14px;
+  color: #6B6A63;
+  margin: 0 0 10px 0;
+  letter-spacing: 0.01em;
+}
+
+.headline {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.28;
+  margin: 0 0 34px 0;
+  color: #2E2C27;
+  max-width: 760px;
+}
+
+.drawing {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.acts { display: flex; width: 100%; }
+
+.act {
+  flex: 1;
+  padding: 18px 24px;
+  border-left: 1px solid #E4E3DC;
+}
+.act:first-child { border-left: none; padding-left: 0; }
+.act:last-child { padding-right: 0; }
+
+.act-time {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: #2E2C27;
+  margin-bottom: 8px;
+}
+
+.act-sentence {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #6B6A63;
+  margin: 0;
+}
+
+.section-heading {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #2E2C27;
+  margin: 0 0 18px 0;
+}
+
+.list { list-style: none; margin: 0 0 46px 0; padding: 0; }
+.list:last-of-type { margin-bottom: 0; }
+
+.item {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid #E4E3DC;
+}
+.item:first-child { border-top: none; }
+
+.item-num {
+  font-size: 13px;
+  color: #B4B3A8;
+  min-width: 18px;
+  padding-top: 1px;
+}
+
+.item-body { flex: 1; }
+
+.item-title {
+  font-weight: 600;
+  font-size: 15.5px;
+  color: #2E2C27;
+  margin: 0 0 4px 0;
+}
+.item-title a { color: #2E2C27; text-decoration: none; }
+
+.item-sentence {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #6B6A63;
+  margin: 0;
+}
+.item-sentence a {
+  color: #6B6A63;
+  text-decoration: underline;
+  text-decoration-color: #B4B3A8;
+}
+
+.calm-line {
+  font-size: 14.5px;
+  color: #6B6A63;
+  padding: 4px 0 0 0;
+  line-height: 1.6;
+}
+.calm-line a {
+  color: #6B6A63;
+  text-decoration: underline;
+  text-decoration-color: #B4B3A8;
+}
+
+@media (max-width: 640px) {
+  .acts { flex-direction: column; }
+  .act { border-left: none; border-top: 1px solid #E4E3DC; padding: 18px 0; }
+  .act:first-child { border-top: none; padding-top: 0; }
+  .headline { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+
+<div class="band band-top">
+  <div class="wrap">
+    <p class="day-date">Friday &middot; September 25 2026</p>
+    <h1 class="headline">You land in Vegas at 8:53, Kate, and Ignite starts at 9:30. That's 37 minutes to find wifi and pretend the red-eye feeling isn't real.</h1>
+
+    <svg class="drawing" viewBox="0 0 840 140" width="840" height="140" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,110 C40,108 70,102 100,90 C130,78 150,66 180,60 C220,52 260,50 300,54 C340,58 380,60 420,64 C460,68 500,72 530,74 C560,76 590,70 620,66 C660,60 700,58 730,62 C770,66 810,70 840,72" fill="none" stroke="#2E2C27" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Flight AA1969, Daily Laws/Meditate/Headspace overlap, Plan Day -->
+      <circle cx="20" cy="110" r="6" fill="#B4B3A8"/>
+      <!-- Landing, then Ignite at 9:30 -->
+      <circle cx="196" cy="59" r="8" fill="#2E2C27"/>
+      <!-- Hotel Evolution at 12:30 -->
+      <circle cx="364" cy="56" r="8" fill="#2E2C27"/>
+      <!-- Cardio/Strength double-book -->
+      <circle cx="448" cy="66" r="6" fill="#B4B3A8"/>
+      <circle cx="532" cy="72" r="6" fill="#B4B3A8"/>
+      <!-- Reflection, Dinner -->
+      <circle cx="560" cy="74" r="6" fill="#B4B3A8"/>
+      <circle cx="728" cy="63" r="6" fill="#B4B3A8"/>
+    </svg>
+
+    <div class="acts">
+      <div class="act">
+        <div class="act-time">6:00 &ndash; 9:00 AM</div>
+        <p class="act-sentence">Flight AA 1969, DFW to Vegas, lands 8:53. The usual Daily Laws, Meditate, Plan Day stack rides along, though Meditate and Get Some Headspace are both parked at 6:45, so pick one, you don't need both mid-flight.</p>
+      </div>
+      <div class="act">
+        <div class="act-time">9:30 AM &ndash; 1:30 PM</div>
+        <p class="act-sentence">Ignite at 9:30 with Tristan, Recardo, and Eddie (Zoom), then Hotel Evolution at 12:30 with Pauline, Neel, Jawaria, and the Columbia and Newberry GMs (same Zoom link). Both calls happen in Vegas, not in transit.</p>
+      </div>
+      <div class="act">
+        <div class="act-time">2 PM onward</div>
+        <p class="act-sentence">Cardio at 2 and Strength &#8212; Upper Body at 2:45 overlap by 45 minutes. Reflection at 4, dinner at 7, and Foo Fighters tomorrow night to look forward to.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="band band-bottom">
+  <div class="wrap">
+    <h2 class="section-heading">Needs attention</h2>
+    <ul class="list">
+      <li class="item">
+        <span class="item-num">1</span>
+        <div class="item-body">
+          <p class="item-title"><a href="https://outlook.office365.com/owa/?itemid=AAkBOQAICN8al%2FFDQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNANN%2F1%2Bnv0A5DrBAMwaAd%2FvIACix0RmEAABA%3D&exvsurl=1&path=/calendar/item" target="_blank" rel="noopener">Ignite starts 37 minutes after you land</a></p>
+          <p class="item-sentence">The <a href="https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A03%2FX6e%2FQDkOsEAzBoB3%2B8gAKTtTd%2BgAA&exvsurl=1&path=/calendar/item" target="_blank" rel="noopener">flight</a> lands at 8:53 and Ignite is booked for 9:30 (Zoom), same as the Hotel Evolution call at 12:30. That's rideshare, bags, and hotel wifi, all inside half an hour. Worth having the call ready to join from your phone as a backup.</p>
+        </div>
+      </li>
+      <li class="item">
+        <span class="item-num">2</span>
+        <div class="item-body">
+          <p class="item-title"><a href="https://outlook.office365.com/owa/?ItemID=AAMkADY1ZTI2Zjg1LWFmNzktNDg0MC05YjlmLTllZTk4MzI2ZGE3ZgBGAAAAAACy4ujIsqpcQrerCsMq4iijBwDTf9fp79AOQ6wQDMGgHf7yAAAAAAEMAADTf9fp79AOQ6wQDMGgHf7yAApRRd%2BSAAA%3D&exvsurl=1&viewmodel=ReadMessageItem" target="_blank" rel="noopener">Jawaria's Hotel Evolution deck is sitting unread</a></p>
+          <p class="item-sentence">She sent it last night for today's noon call and flagged she might still tweak it depending on open tickets. Worth a two-minute look before 12:30, in case the version in your inbox isn't the final one.</p>
+        </div>
+      </li>
+      <li class="item">
+        <span class="item-num">3</span>
+        <div class="item-body">
+          <p class="item-title"><a href="https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A03%2FX6e%2FQDkOsEAzBoB3%2B8gAKTtUVnQAA&exvsurl=1&path=/calendar/item" target="_blank" rel="noopener">Cardio</a> and <a href="https://outlook.office365.com/owa/?itemid=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0A03%2FX6e%2FQDkOsEAzBoB3%2B8gAKTtUVhgAA&exvsurl=1&path=/calendar/item" target="_blank" rel="noopener">Strength &#8212; Upper Body</a> overlap this afternoon</p>
+          <p class="item-sentence">2:00 to 2:50 and 2:45 to 3:30, both self-scheduled. Not a client conflict, just worth shifting one before it becomes a "which one do I actually do" moment at the gym.</p>
+        </div>
+      </li>
+    </ul>
+
+    <h2 class="section-heading" style="margin-top:46px;">Inbox</h2>
+    <p class="calm-line">27 new in the last two days. Nothing waiting on you. 4 unread and worth a look: <a href="https://outlook.office365.com/owa/?ItemID=AAMkADY1ZTI2Zjg1LWFmNzktNDg0MC05YjlmLTllZTk4MzI2ZGE3ZgBGAAAAAACy4ujIsqpcQrerCsMq4iijBwDTf9fp79AOQ6wQDMGgHf7yAAAAAAEMAADTf9fp79AOQ6wQDMGgHf7yAApRRd%2BSAAA%3D&exvsurl=1&viewmodel=ReadMessageItem" target="_blank" rel="noopener">Jawaria's meeting deck</a> (above), a <a href="https://outlook.office365.com/owa/?ItemID=AAMkADY1ZTI2Zjg1LWFmNzktNDg0MC05YjlmLTllZTk4MzI2ZGE3ZgBGAAAAAACy4ujIsqpcQrerCsMq4iijBwDTf9fp79AOQ6wQDMGgHf7yAAAAAAEMAADTf9fp79AOQ6wQDMGgHf7yAApRRd%2BzAAA%3D&exvsurl=1&viewmodel=ReadMessageItem" target="_blank" rel="noopener">CHIMQ GRR report</a> you're cc'd on from Marriott Marquis Chicago's accountant (no action, you're not a direct recipient), a <a href="https://outlook.office365.com/owa/?ItemID=AAMkADY1ZTI2Zjg1LWFmNzktNDg0MC05YjlmLTllZTk4MzI2ZGE3ZgBGAAAAAACy4ujIsqpcQrerCsMq4iijBwDTf9fp79AOQ6wQDMGgHf7yAAAAAAEMAADTf9fp79AOQ6wQDMGgHf7yAApRRd%2ByAAA%3D&exvsurl=1&viewmodel=ReadMessageItem" target="_blank" rel="noopener">new Expedia guest review</a> on the Wylie Inn listing (see Loose ends), and <a href="https://outlook.office365.com/owa/?ItemID=AAMkADY1ZTI2Zjg1LWFmNzktNDg0MC05YjlmLTllZTk4MzI2ZGE3ZgBGAAAAAACy4ujIsqpcQrerCsMq4iijBwDTf9fp79AOQ6wQDMGgHf7yAAAAAAEMAADTf9fp79AOQ6wQDMGgHf7yAApRRd%2BeAAA%3D&exvsurl=1&viewmodel=ReadMessageItem" target="_blank" rel="noopener">David's cc</a> on the final DBJ/FEI ad artwork to Jackie, FYI only. The rest of the 27 are either already-resolved threads (the <a href="https://outlook.office365.com/owa/?ItemID=AAMkADY1ZTI2Zjg1LWFmNzktNDg0MC05YjlmLTllZTk4MzI2ZGE3ZgBGAAAAAACy4ujIsqpcQrerCsMq4iijBwDTf9fp79AOQ6wQDMGgHf7yAAAAAAEMAADTf9fp79AOQ6wQDMGgHf7yAApQAeDLAAA%3D&exvsurl=1&viewmodel=ReadMessageItem" target="_blank" rel="noopener">Flying Horse digital marketing review</a> got approved and is going live, the FEI CRM user swap and the Wylie CRS/booking engine calls are both already actioned) or 8 pieces of pure noise (LinkedIn notifications, a Credit One Bank offer, a Deloitte newsletter, an expired Search Atlas login link, two ZoomInfo saved-search digests).</p>
+
+    <h2 class="section-heading" style="margin-top:46px;">Loose ends</h2>
+    <ul class="list">
+      <li class="item">
+        <span class="item-num">1</span>
+        <div class="item-body">
+          <p class="item-title"><a href="https://outlook.office365.com/owa/?ItemID=AAMkADY1ZTI2Zjg1LWFmNzktNDg0MC05YjlmLTllZTk4MzI2ZGE3ZgBGAAAAAACy4ujIsqpcQrerCsMq4iijBwDTf9fp79AOQ6wQDMGgHf7yAAAAAAEMAADTf9fp79AOQ6wQDMGgHf7yAApRRd%2ByAAA%3D&exvsurl=1&viewmodel=ReadMessageItem" target="_blank" rel="noopener">Wylie Inn has a new guest review and nobody's answered it yet</a></p>
+          <p class="item-sentence">Came in on Expedia this morning. That platform has no automatable export, so it's a log-in-and-reply job in Expedia Partner Central directly, next time you're at a keyboard.</p>
+        </div>
+      </li>
+      <li class="item">
+        <span class="item-num">2</span>
+        <div class="item-body">
+          <p class="item-title"><a href="https://outlook.office365.com/owa/?ItemID=AAMkADY1ZTI2Zjg1LWFmNzktNDg0MC05YjlmLTllZTk4MzI2ZGE3ZgBGAAAAAACy4ujIsqpcQrerCsMq4iijBwDTf9fp79AOQ6wQDMGgHf7yAAAAAAEMAADTf9fp79AOQ6wQDMGgHf7yAApRRd%2BNAAA%3D&exvsurl=1&viewmodel=ReadMessageItem" target="_blank" rel="noopener">Barbara added a new guest-facing alert to the Wylie booking engine</a> and wants your eyes on the wording</p>
+          <p class="item-sentence">Lives under Setup &gt; Messages &gt; Alerts in the booking engine admin. Not urgent, just sitting open since Wednesday.</p>
+        </div>
+      </li>
+      <li class="item">
+        <span class="item-num">3</span>
+        <div class="item-body">
+          <p class="item-title"><a href="https://outlook.office365.com/owa/?ItemID=AAMkADY1ZTI2Zjg1LWFmNzktNDg0MC05YjlmLTllZTk4MzI2ZGE3ZgBGAAAAAACy4ujIsqpcQrerCsMq4iijBwDTf9fp79AOQ6wQDMGgHf7yAAAAAAEMAADTf9fp79AOQ6wQDMGgHf7yAApQAeCTAAA%3D&exvsurl=1&viewmodel=ReadMessageItem" target="_blank" rel="noopener">Matthew Ronk messaged you on LinkedIn three days ago</a>, still unanswered</p>
+          <p class="item-sentence">Outside what I can read or draft from here, just flagging it so it doesn't keep sliding.</p>
+        </div>
+      </li>
+    </ul>
+    <p class="calm-line">No Wylie RM call on tomorrow's calendar, so no report-prep reminder today, that skill's staying quiet on purpose.</p>
+  </div>
+</div>
+
+</body>
+</html>
