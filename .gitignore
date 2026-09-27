@@ -1,5 +1,12 @@
 .DS_Store
 
+# Obsidian's own per-vault settings (not shared content, and it churns on every open)
+.obsidian/
+
+# Claude Code's local, per-machine settings — OneDrive duplicates this across devices
+# with a "-<device name>" suffix instead of merging it, so keep it out of git entirely
+.claude/settings.local*.json
+
 # Raw source materials (pitch decks, old presentations, spreadsheets). Large
 # binaries, already distilled into my-business (context)/. Markdown files in
 # this folder ARE tracked: those are distilled notes and transcripts written

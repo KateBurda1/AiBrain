@@ -65,6 +65,12 @@ Ignite (the software) came later, growing directly out of that same insight: it 
 
 ## Track record
 
-Kate's client/brand experience (28+ years) spans Marriott, Loews, IHG, Hyatt, Starwood, Ricoh, Gaylord, Boehringer Ingelheim, Bial, Medtronic, Johnson & Johnson, and Indeed — across pharma/life sciences, hospitality, and startups, nationally and internationally. She is also a professor at Fairleigh Dickinson University (Revenue Management/Distribution, Global & Digital Marketing), a board member of the Boutique & Lifestyle Lodging Association (BLLA), a member of the Strategic Account Management Association (SAMA), a Women's Business Enterprise (WBENC)-certified business, and an ISHC Marketing Committee member.
+Kate's client/brand experience (28+ years) spans Marriott, Loews, IHG, Hyatt, Starwood, Ricoh, Gaylord, Boehringer Ingelheim, Bial, Medtronic, Johnson & Johnson, Abbott, and Indeed — across pharma/life sciences, hospitality, and startups, nationally and internationally. She is also a professor at Fairleigh Dickinson University (Revenue Management/Distribution, Global & Digital Marketing), a board member of the Boutique & Lifestyle Lodging Association (BLLA), a member of the Strategic Account Management Association (SAMA), a Women's Business Enterprise (WBENC)-certified business, and an ISHC Marketing Committee member.
 
 Flying Horse Resort & Club is a current active Thoughtware client, and **as of 2026.08.29 the first asset live on the Ignite platform**, with data loading now. Keppel Land and Kalibri Labs were past proposals, not won engagements. See [our-clients.md](our-clients.md) for detail. **Resolved 2026.08.29:** there are no Flying Horse results yet to highlight, and the pitch deliberately says so. The case study that does exist is the 16:1 ROAS story from other client work, which runs permanently unnamed. See [what-we-sell.md](what-we-sell.md).
+
+## How Kate likes to work (added 2026.09.24)
+
+- **Questions one at a time, as a build.** When working something out together, ask a single question, wait for the answer, fold it in, then ask the next. Never a batch of questions in one message.
+- **Look up what the systems can answer before asking.** Example: the buyer for an intent track comes from the real titles in Zoho, not from asking Kate.
+- **Two computers, one AI Brain.** The laptop and the iMac share this folder through OneDrive (the Kate Burda & Company account is the real copy; a second copy in the turningpointglobal.net OneDrive should be left alone). Git runs on the laptop only. Don't edit the same file, or run Zoho browser builds, on both machines at the same time.

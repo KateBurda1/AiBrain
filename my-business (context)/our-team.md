@@ -21,11 +21,9 @@ The website only shows Kate, but project files and the internal Ignite cap table
 | Joe Tavares (cap table spelling: "Joe Traverse") | — | Ignite | **Not currently active** | Was listed in investor deck/cap table (5% equity) but Kate confirms not active now |
 | David Garrard (cap table spelling: "David Gerrard") | — | Ignite | **Not currently active** | Was listed in investor deck/cap table (5% equity) but Kate confirms not active now |
 
-**Ignite cap table — real numbers confirmed 2026.09.20 (Session 3A), pulled directly from the signed Operating Agreements and Unit Award Letters in `Ignite/Team File/`, not the old internal spreadsheet.** Total pool 1,000,000 units: Kate Burda 700,000 (70%, 100% vested) · Eddie Westerfield 150,000 (15%) · Recardo Poole 50,000 (5%) · Tristan Carty 20,000 (2%) · unissued/available pool 80,000 (8% — 30,000 originally unallocated plus 50,000 that was listed for Krzysztof Wurst in the Operating Agreement but never issued, since he never signed anything). Neither Joe Tavares/Traverse nor David Garrard/Gerrard appears in any signed agreement at all — the old internal spreadsheet's numbers never matched what was actually executed.
+**Ignite cap table — confirmed updated by Kate, 2026.09.13.** The stale Aug 2024 figures below (Eddie 10%, David Gerrard 5%, Recardo 5%, Joe Traverse 5%) are superseded. Kate did not give the new numbers in this session; she deferred the detail to when the Ignite pro forma gets worked through directly. **Do not quote the old percentages as current.** Pull the real numbers from the Ignite pro forma session output once that happens, and update this section with them.
 
-**Pending, not yet executed:** Recardo's ownership is being increased 5% → 10% (+50,000 units, sourced from Krzysztof's never-issued allocation, no dilution of anyone else needed). This needs a signed Amendment No. 1 to the Operating Agreement plus an Additional Unit Grant Letter for Recardo — both were drafted 2026.09.20 but were lost in an account/device switch (OneDrive moved from the `turningpointglobal.net` tenant to the current `KateBurda&Company` one) before Eddie signed. Redrafting as of 2026.09.23. **Until signed, Recardo is still at 5%, not 10%.**
-
-~~Old, superseded figures: Eddie 10%, David Gerrard 5%, Recardo 5%, Joe Traverse 5% (Aug 2024 cap table).~~
+~~Old, superseded 2026.09.13: Eddie Westerfield 10%, David Gerrard 5%, Recardo Poole 5%, Joe Traverse 5% — 25% total allocated, 60-month vesting.~~
 
 ---
 

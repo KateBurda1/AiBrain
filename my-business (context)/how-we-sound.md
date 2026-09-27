@@ -31,6 +31,8 @@ Example line from the site: "Every brand is on a journey. We believe you don't h
 - "Bank of Hours"
 - Ignite tagline: "do less. make it mean more."
 
+**Business Transformation intent series (confirmed by Kate, 2026.09.24):** for this series specifically, the "silent saboteur" / "War Room" framing above is retired in favor of a weather-to-climate metaphor (volatility isn't the weather anymore, it's the climate), built stage by stage in `my-work (outputs)/prospects/outreach/business-transformation/2026.09.24 - Outreach - Business Transformation - Buyer Journey Grid.md`. The terms "silent saboteur" and "War Room" are still valid general framework vocabulary elsewhere (e.g. "From Vision to Action"), just not for this series' cadence copy.
+
 **Example excerpts found** (from draft thought-leadership docs — flag if these don't sound like you):
 - "The divide acts as a silent saboteur. You may have crafted an inspiring roadmap, but without proper design and execution, it's just an artful document."
 - "We are in the 'War Room' for months to design, vet, and discuss revenue projections... Then why do most teams fail in this gap from strategy to execution?"
@@ -58,6 +60,10 @@ There's an existing visual identity system in Canva called **"Commercial Excelle
 ## Words and phrases we use
 
 - "Warm Regards," as a sign-off (both words capitalized), for anything beyond a one-line reply
+- "Be right, not just lucky" (Kate's own wording of the right-or-lucky hook, 2026.09.24)
+- "The science and strategy, then the customer engagement approach" (how Kate describes what drives top-line revenue: revenue goal, strategies, actions first, then how you engage customers)
+- "Bringing simplicity to your complexity" (Kate, 2026.09.27)
+- Talk to executives about the top line, not the discipline. Presidents think "revenue," not "sales and marketing."
 - Framework language: "Vision-to-Value Roadmap," "Foundation, Framework, Focus," "Outside-In Thinking," "the customer's customer," "silent saboteur," "War Room," "Straight-Shot," "Do Less, Make it Mean More"
 
 ---

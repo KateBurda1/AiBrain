@@ -1,0 +1,106 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=block" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; background: #fff; }
+.frame { position: absolute; inset: 0; opacity: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center; padding: 0 110px;
+  font-family: "Playfair Display", Georgia, serif; }
+.w { background: #fff; color: #111; }
+.b { background: #000; color: #fff; }
+.line { font-size: 62px; line-height: 1.3; font-weight: 400; opacity: 0; }
+.pink { color: #D51067; text-transform: uppercase; font-size: 66px; line-height: 1.25; letter-spacing: 1px; }
+.gap { height: 70px; }
+.foot { position: absolute; left: 0; right: 0; bottom: 110px; display: flex; flex-direction: column; align-items: center; gap: 38px; }
+.rule { width: 70px; height: 3px; }
+.w .rule { background: #111; } .b .rule { background: #fff; }
+.logo { width: 150px; }
+.vortex { position: relative; height: 520px; width: 100%; margin-top: 40px; }
+.vw { position: absolute; left: 50%; font-family: "Playfair Display", serif; text-transform: uppercase;
+  white-space: nowrap; color: #111; font-weight: 500; opacity: 0; }
+.photo { position: absolute; inset: 0; background: url(tornado.jpeg) center/cover; filter: grayscale(1) contrast(1.15) brightness(.75); }
+.shade { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,.72), rgba(0,0,0,.25) 65%), linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,0) 40%, rgba(0,0,0,.75)); }
+.over { position: relative; z-index: 2; }
+.foot.top { position: absolute; z-index: 3; }
+.climate { color:#fff; text-shadow: 0 2px 30px rgba(0,0,0,.8); }
+</style></head>
+<body>
+
+<section class="frame w" id="f1">
+  <div class="line">You've been watching<br>the forecast</div>
+  <div class="line">for a while now.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame w" id="f2">
+  <div class="line">The words keep coming up...</div>
+  <div class="vortex">
+    <div class="vw" data-i="0" style="top:0;font-size:96px">Volatile</div>
+    <div class="vw" data-i="1" style="top:140px;font-size:72px">Uncertain</div>
+    <div class="vw" data-i="2" style="top:250px;font-size:54px">Complex</div>
+    <div class="vw" data-i="3" style="top:335px;font-size:38px">Ambiguous</div>
+  </div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f3">
+  <div class="line">...and it hasn't cleared.</div>
+  <div class="gap"></div>
+  <div class="line pink">It's not a storm<br>anymore.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f4">
+  <div class="photo" id="photo"></div><div class="shade"></div>
+  <div class="line pink over climate" style="font-size:88px">It's the<br><span style="color:#D51067">climate.</span></div>
+  <div class="foot top"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame w" id="f5">
+  <div class="line">Most transformation plans<br>are built for the weather.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame w" id="f6">
+  <div class="line">Is your revenue plan</div>
+  <div class="line">built for the <span style="color:#D51067">climate?</span></div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<script>
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const ease = (x) => x * x * (3 - 2 * x);
+const fade = (t, a, b) => ease(clamp((t - a) / (b - a)));
+// frame windows [start, end], 0.5s crossfade in and out
+const F = { f1: [0, 4.2], f2: [4.2, 9.6], f3: [9.6, 14], f4: [14, 18.6], f5: [18.6, 22], f6: [22, 28] };
+window.TOTAL = 28;
+window.render = function (t) {
+  for (const [id, [a, b]] of Object.entries(F)) {
+    const el = document.getElementById(id);
+    const o = Math.min(fade(t, a - 0.01, a + 0.5), 1 - fade(t, b - 0.5, b));
+    el.style.opacity = (id === 'f1' && t < 0.5) ? 1 : (id === 'f6' && t > b - 0.5) ? 1 : o;
+    const lines = el.querySelectorAll('.line');
+    lines.forEach((ln, i) => {
+      const s = a + 0.4 + i * 1.1;
+      const p = fade(t, s, s + 0.8);
+      ln.style.opacity = p;
+      ln.style.transform = `translateY(${(1 - p) * 18}px)`;
+    });
+  }
+  // vortex: words spin in one by one and keep swaying like a funnel
+  const [va] = F.f2;
+  document.querySelectorAll('.vw').forEach((w) => {
+    const i = +w.dataset.i, s = va + 1.4 + i * 0.7;
+    const p = fade(t, s, s + 0.7);
+    const sway = Math.sin((t - va) * 2.4 + i * 0.9) * (18 + i * 10);
+    w.style.opacity = p;
+    w.style.transform = `translateX(calc(-50% + ${sway + (1 - p) * 260 * (i % 2 ? -1 : 1)}px)) rotate(${(1 - p) * (i % 2 ? -25 : 25)}deg) scaleX(${0.6 + 0.4 * p})`;
+  });
+  // slow push-in on the tornado
+  const [pa, pb] = F.f4;
+  document.getElementById('photo').style.transform = `scale(${1.05 + 0.12 * clamp((t - pa) / (pb - pa))})`;
+};
+render(0);
+</script>
+</body></html>

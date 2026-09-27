@@ -15,7 +15,7 @@ Drafts only. This skill never sends anything. Ever.
 - Optional: a limit ("just today's emails", "last 20").
 - If both Gmail and Outlook are connected, ask which inbox to go through, or offer to do both.
 
-**Gmail vs Outlook, one difference.** Gmail lets you save drafts straight into the mailbox. Outlook's connector is read-only, so it can read the inbox but cannot save drafts there. For Outlook, show each reply in chat to paste, or, if Claude in Chrome is installed, offer to type it straight into Outlook on the web. Reading and sorting work the same on both. Sending never happens on either.
+**Gmail and Outlook both save drafts.** Gmail saves drafts straight into the mailbox. Outlook does too (confirmed 2026.09.24): use `outlook_create_reply_draft` on the original message so the draft threads correctly. If draft saving fails on Outlook, fall back to showing the reply in chat to paste, and say the save failed. Sending never happens on either.
 
 ## Steps
 
@@ -39,14 +39,14 @@ For each one:
 2. Pull what you need to answer properly: `my-business (context)/my-voice.md` for how the owner writes (fall back to `how-we-sound.md` if the voice profile is not built yet), `what-we-sell.md` for pricing and services, `our-clients.md` if they are a known client, the calendar if they asked about availability.
    Then match the relationship: search the sent folder for 3-5 past emails the owner wrote to this same person and mirror that register. The owner writes to a long-time client differently than to a stranger, and their own history shows exactly how. No history: use the voice profile's examples.
 3. If you can do the legwork the email asks for, do it before drafting. Someone asks for a time: check the calendar and offer a real one. Someone asks for a price: put the real price in. The draft should read like the work is already done, not "I'll get back to you".
-4. Draft the reply in the owner's voice. Before saving or showing it, check it against the never-rules in my-voice.md and how-we-sound.md (sign-offs they never use, phrases they hate); if it breaks one, rewrite it once. Then: if the email connection can save drafts (Gmail), save it to their drafts folder. If it is read-only (Outlook), show the draft in chat to paste, or offer to type it into Outlook on the web via Claude in Chrome if that is installed.
+4. Draft the reply in the owner's voice. Before saving or showing it, check it against the never-rules in my-voice.md and how-we-sound.md (sign-offs they never use, phrases they hate); if it breaks one, rewrite it once. Then save it to their drafts folder (Gmail drafts, or Outlook via `outlook_create_reply_draft`). If the save fails, show the draft in chat to paste and say the save failed.
 5. If an email needs a decision only the owner can make (a discount, a complaint, a contract), do not guess. Put it in the summary as a question with the facts laid out.
 
 ### Step 4: Deliver one summary
 
 **Your inbox: X new emails**
 
-**Waiting on you (X)** - for each: who, what they want, and "draft ready in your drafts folder" (Gmail) or "draft below" (Outlook, paste it in) or "needs your call: [the question]".
+**Waiting on you (X)** - for each: who, what they want, and "draft ready in your drafts folder" (or "draft below, save failed" if it could not be saved) or "needs your call: [the question]".
 
 **Worth a look (X)** - one line each.
 
@@ -55,7 +55,7 @@ For each one:
 Every email read lands in exactly one of the three. None disappear.
 
 ## Output format
-One summary in chat. Drafts saved to Gmail drafts, or shown in chat to paste (Outlook).
+One summary in chat. Drafts saved to the Gmail or Outlook drafts folder.
 
 ## Quality check
 - Nothing was sent. Drafts only.

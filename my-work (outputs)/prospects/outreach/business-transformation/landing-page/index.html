@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Built for the Climate | Kate Burda &amp; Co.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root { --pink: #D51067; --ink: #111; --paper: #fff; --night: #000; --mute: #6b6b6b; --line: #e6e6e6; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--paper); color: var(--ink); font-family: "Source Sans 3", Helvetica, Arial, sans-serif; font-weight: 300; font-size: 18px; line-height: 1.6; }
+.serif { font-family: "Playfair Display", Georgia, serif; }
+a { color: inherit; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+.rule { width: 60px; height: 2px; background: currentColor; margin: 28px auto; }
+.caps { text-transform: uppercase; letter-spacing: 3px; font-size: 13px; font-weight: 600; }
+.pink { color: var(--pink); }
+
+/* hero */
+.hero { position: relative; color: #fff; background: #000; overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0; background: url(tornado.jpeg) center/cover; filter: grayscale(1) contrast(1.1) brightness(.55); }
+.hero::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 50%, rgba(0,0,0,.75), rgba(0,0,0,.2) 70%); }
+.hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; padding-top: 64px; padding-bottom: 88px; }
+.top { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; padding-top: 28px; }
+.top img { width: 120px; }
+.top a { font-size: 14px; text-decoration: none; opacity: .8; }
+.hero h1 { font-family: "Playfair Display", serif; font-weight: 400; font-size: 64px; line-height: 1.05; margin: 18px 0 20px; }
+.hero h1 em { color: var(--pink); font-style: normal; }
+.hero p.lede { font-size: 21px; max-width: 520px; opacity: .92; }
+
+/* form card */
+.card { background: #fff; color: var(--ink); padding: 34px 32px 30px; }
+.card h2 { font-family: "Playfair Display", serif; font-weight: 400; font-size: 26px; line-height: 1.2; margin-bottom: 6px; }
+.card .sub { color: var(--mute); font-size: 15px; margin-bottom: 20px; }
+.card label { display: block; font-size: 13px; font-weight: 600; letter-spacing: .5px; margin: 12px 0 6px; }
+.card input { width: 100%; padding: 12px 14px; border: 1px solid #cfcfcf; font: inherit; font-size: 16px; }
+.card input:focus { outline: 2px solid var(--pink); outline-offset: -1px; border-color: transparent; }
+.btn { display: inline-block; width: 100%; margin-top: 20px; padding: 15px 18px; background: var(--pink); color: #fff; border: 0; font: inherit; font-weight: 600; font-size: 16px; letter-spacing: .5px; cursor: pointer; text-align: center; text-decoration: none; }
+.btn:hover { background: #b10d56; }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+.fine { font-size: 12px; color: var(--mute); margin-top: 12px; }
+.thanks { display: none; }
+.card.done form { display: none; }
+.card.done .thanks { display: block; }
+
+/* findings */
+.section { padding: 96px 0; }
+.center { text-align: center; }
+.section h3 { font-family: "Playfair Display", serif; font-weight: 400; font-size: 40px; line-height: 1.15; }
+.intro { max-width: 680px; margin: 0 auto; font-size: 20px; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 56px; border-top: 1px solid var(--line); }
+.item { padding: 30px 26px 10px 0; }
+.item + .item { padding-left: 26px; border-left: 1px solid var(--line); }
+.item .n { font-family: "Playfair Display", serif; font-size: 44px; color: var(--pink); line-height: 1; }
+.item h4 { font-family: "Playfair Display", serif; font-weight: 500; font-size: 22px; line-height: 1.25; margin: 14px 0 10px; }
+.item p { font-size: 16px; color: #333; }
+
+/* quote band */
+.band { background: var(--night); color: #fff; }
+.band blockquote { font-family: "Playfair Display", serif; font-size: 44px; line-height: 1.2; max-width: 860px; margin: 0 auto; }
+.band cite { display: block; font-style: normal; margin-top: 22px; opacity: .7; font-size: 15px; }
+
+/* inside */
+.inside { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.inside ul { list-style: none; }
+.inside li { padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 18px; }
+.inside li b { font-weight: 600; }
+
+/* about */
+.about { background: #f6f6f6; }
+.about .wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; align-items: center; }
+.logos { font-family: "Playfair Display", serif; font-size: 22px; line-height: 1.8; color: #444; }
+
+footer { padding: 48px 0; text-align: center; font-size: 14px; color: var(--mute); }
+footer img { width: 110px; margin-bottom: 14px; }
+
+@media (max-width: 860px) {
+  .hero .wrap, .inside, .about .wrap { grid-template-columns: 1fr; gap: 36px; }
+  .hero h1 { font-size: 44px; }
+  .grid { grid-template-columns: 1fr 1fr; }
+  .item + .item { border-left: 0; padding-left: 0; }
+  .item:nth-child(even) { padding-left: 20px; border-left: 1px solid var(--line); }
+  .band blockquote { font-size: 30px; }
+  .section { padding: 64px 0; }
+}
+@media (max-width: 520px) { .grid { grid-template-columns: 1fr; } .item:nth-child(even) { padding-left: 0; border-left: 0; } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap top"><img src="logo.png" alt="Kate Burda &amp; Co."><a href="https://kateburda.com">kateburda.com</a></div>
+  <div class="wrap">
+    <div>
+      <div class="caps pink">Insights, hindsights and foresights</div>
+      <h1>Built for the <em>climate.</em></h1>
+      <p class="lede">Why transformations miss the top line, and what the leaders who hit it do differently. From more than 45 hours of conversations with over 30 senior leaders.</p>
+    </div>
+    <div class="card" id="card">
+      <form id="dl" onsubmit="event.preventDefault(); document.getElementById('card').classList.add('done');">
+        <h2>Get the report</h2>
+        <div class="sub">A 10-minute read. Free.</div>
+        <label for="fn">First name</label><input id="fn" required>
+        <label for="em">Work email</label><input id="em" type="email" required>
+        <label for="co">Company</label><input id="co" required>
+        <button class="btn" type="submit">Send me the report</button>
+        <div class="fine">Kate Burda &amp; Co. respects your inbox. Unsubscribe anytime.</div>
+      </form>
+      <div class="thanks">
+        <div class="caps pink">It's on its way</div>
+        <h2 style="margin-top:10px">Check your inbox.</h2>
+        <div class="sub">Or read it now.</div>
+        <a class="btn ghost" href="#">Download the PDF</a>
+        <div class="rule" style="margin:26px 0;width:40px"></div>
+        <h2>Want to talk through what it means for you?</h2>
+        <div class="sub">20 minutes with Kate. One question to start: your best quarter last year, do you know what drove it?</div>
+        <a class="btn" href="#">Book 20 minutes</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap center">
+    <h3>Nobody said strategy.<br>Nobody said data.</h3>
+    <div class="rule"></div>
+    <p class="intro">We asked leaders what stands between them and the next level of revenue. What they described was a gap between the plan and the top line. It's the same gap most transformations fall into.</p>
+  </div>
+  <div class="wrap">
+    <div class="grid">
+      <div class="item"><div class="n">01</div><h4>More data hasn't produced more revenue.</h4><p>Data is only worth what your teams can execute on it.</p></div>
+      <div class="item"><div class="n">02</div><h4>Leaders have no time left for strategy.</h4><p>It goes on reporting. Coaching gets the scraps.</p></div>
+      <div class="item"><div class="n">03</div><h4>Under pressure, teams go back to 2019.</h4><p>The old playbook feels safe. The weather changed.</p></div>
+      <div class="item"><div class="n">04</div><h4>You're measuring activity, not impact.</h4><p>So you get activity.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section band center">
+  <div class="wrap">
+    <div class="caps pink" style="margin-bottom:26px">What we heard, again and again</div>
+    <blockquote>"If we want 2019 results, we'll do what we did in 2019."</blockquote>
+    <cite>But volatility isn't the weather anymore. It's the climate.</cite>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap inside">
+    <div>
+      <div class="caps pink">Inside the report</div>
+      <h3 style="margin-top:14px">Four insights. One hindsight. Three foresights.</h3>
+      <p style="margin-top:20px">Plus five questions to ask before your next quarterly review. Start with this one: is revenue a line in your transformation plan, or a result you're hoping for?</p>
+      <a class="btn" href="#dl" style="width:auto;padding:15px 34px">Get the report</a>
+    </div>
+    <ul>
+      <li><b>The silent saboteur.</b> Where transformations lose the top line, and why it never makes the deck.</li>
+      <li><b>From the point of inspiration.</b> Why the advantage goes to whoever understands the buyer first.</li>
+      <li><b>Strategy execution, not action plans.</b> What replaces the to-do list.</li>
+      <li><b>Integration, not org charts.</b> One revenue model, around your most valuable customers.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section about">
+  <div class="wrap">
+    <div>
+      <div class="caps pink">About Kate Burda &amp; Co.</div>
+      <h3 style="margin-top:14px">28 years turning strategy into top-line revenue.</h3>
+      <p style="margin-top:18px">The 5-Step Rapid Revenue Return starts with a Revenue Reveal: what's driving your results today, what to leave behind, and what to build.</p>
+    </div>
+    <div class="logos">Marriott &nbsp;·&nbsp; IHG &nbsp;·&nbsp; Hyatt &nbsp;·&nbsp; Johnson &amp; Johnson &nbsp;·&nbsp; Medtronic &nbsp;·&nbsp; Abbott &nbsp;·&nbsp; Boehringer Ingelheim &nbsp;·&nbsp; Ricoh &nbsp;·&nbsp; Indeed</div>
+  </div>
+</section>
+
+<footer>
+  <img src="logo.png" alt="Kate Burda &amp; Co."><br>
+  <a href="https://kateburda.com/insights/">More insights</a> &nbsp;|&nbsp; <a href="https://kateburda.com/connection/">Connect</a> &nbsp;|&nbsp; Do less. Make it mean more. &nbsp;|&nbsp; <a href="https://kateburda.com">kateburda.com</a>
+</footer>
+
+</body></html>

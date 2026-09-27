@@ -47,15 +47,18 @@ Scan for things that slipped:
 
 **Loose ends** - anything from step 3, with a suggested next move for each.
 
-End with the right line for how their email is connected:
-- **Gmail:** "Drafts are in your Gmail drafts folder, ready to review and send. What do you want to tackle first?"
-- **Outlook (read-only connector):** "Your replies are drafted below for you to paste into Outlook (or I can type them straight in for you if you have Claude in Chrome). What do you want to tackle first?"
+In the Inbox section, include a one-line **Drafts status**: "X drafts saved to [Gmail/Outlook], Y shown in the brief because the save failed." Before sorting the inbox, confirm the draft-save tool is actually available (for Outlook, `outlook_create_reply_draft`; load it with ToolSearch if it is deferred). If it is missing, say so at the top of the brief and write every draft out in full.
+
+End with the line that is true for this run:
+- **All drafts saved, Gmail:** "Drafts are in your Gmail drafts folder, ready to review and send. What do you want to tackle first?"
+- **All drafts saved, Outlook:** "Drafts are in your Outlook Drafts folder, ready to review and send. What do you want to tackle first?"
+- **Any save failed:** "Draft saving failed for [which ones]. The full text is above to paste. What do you want to tackle first?"
 
 ### If something is broken
 If any app cannot be read, the brief says which section is missing and why: "Calendar section missing, the connection needs a re-authorise, type /connect." A broken tool is never reported as a quiet day.
 
 ## Output format
-One brief in chat. Replies handled by the sort-my-inbox skill: saved to the Gmail drafts folder, or shown in chat to paste (Outlook).
+One brief in chat. Replies handled by the sort-my-inbox skill: saved to the Gmail or Outlook drafts folder.
 
 ## Quality check
 - Reads in under five minutes.

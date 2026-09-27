@@ -1,0 +1,191 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Built for the Climate | Kate Burda &amp; Co.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=block" rel="stylesheet">
+<style>
+@page { size: 8.5in 11in; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --pink: #D51067; --ink: #151515; --mute: #666; --line: #e3e3e3; }
+body { font-family: "Source Sans 3", Helvetica, Arial, sans-serif; font-weight: 300; color: var(--ink); font-size: 11pt; line-height: 1.55; }
+.page { width: 8.5in; height: 11in; position: relative; overflow: hidden; page-break-after: always; padding: 0.9in 0.95in 0.9in; }
+.serif, h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; font-weight: 400; }
+.caps { text-transform: uppercase; letter-spacing: 2.5px; font-size: 8pt; font-weight: 600; }
+.pink { color: var(--pink); }
+.foot { position: absolute; left: 0.95in; right: 0.95in; bottom: 0.45in; display: flex; justify-content: space-between; font-size: 8pt; color: #999; border-top: 1px solid var(--line); padding-top: 8px; }
+p + p { margin-top: 10px; }
+b { font-weight: 600; }
+
+/* cover */
+.cover { background: #000; color: #fff; padding: 0; }
+.cover .img { position: absolute; inset: 0; background: url(https://kateburda.com/wp-content/uploads/2020/04/VUCA-scaled.jpeg) 62% center/cover; filter: grayscale(1) contrast(1.1) brightness(.5); }
+.cover .shade { position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,.85), rgba(0,0,0,.25) 75%); }
+.cover .in { position: relative; z-index: 1; height: 100%; padding: 0.9in 0.95in; display: flex; flex-direction: column; }
+.cover img.logo { width: 60px; }
+.cover h1 { font-size: 58pt; line-height: 1; margin: auto 0 22px; }
+.cover h1 em { color: var(--pink); font-style: normal; }
+.cover .sub { font-size: 15pt; max-width: 4.6in; line-height: 1.4; opacity: .92; }
+.cover .rule { width: 50px; height: 2px; background: #fff; margin: 34px 0 18px; }
+.cover .by { font-size: 9pt; opacity: .8; }
+
+/* body */
+h2 { font-size: 26pt; line-height: 1.12; margin: 8px 0 18px; }
+h3 { font-size: 15pt; line-height: 1.25; margin: 0 0 8px; }
+.lede { font-size: 13.5pt; line-height: 1.5; color: #333; }
+.short { margin-top: 26px; border-top: 2px solid var(--ink); }
+.short li { list-style: none; display: grid; grid-template-columns: 38px 1fr; padding: 13px 0; border-bottom: 1px solid var(--line); }
+.short .n { font-family: "Playfair Display", serif; color: var(--pink); font-size: 15pt; line-height: 1.2; }
+.finding { display: grid; grid-template-columns: 0.75in 1fr; gap: 0 18px; margin-bottom: 26px; }
+.finding .num { font-family: "Playfair Display", serif; font-size: 40pt; line-height: .9; color: var(--pink); }
+.take { margin-top: 10px; padding: 10px 14px; background: #f6f6f6; border-left: 3px solid var(--pink); font-size: 10.5pt; }
+.stat { display: flex; gap: 30px; margin: 14px 0 6px; }
+.stat div { flex: 1; border-top: 2px solid var(--ink); padding-top: 8px; }
+.stat .big { font-family: "Playfair Display", serif; font-size: 30pt; line-height: 1; }
+.stat .big.p { color: var(--pink); }
+.stat .lbl { font-size: 9pt; color: var(--mute); margin-top: 4px; }
+
+.dark { background: #000; color: #fff; }
+.dark .foot { border-color: #333; color: #777; }
+.quote { font-family: "Playfair Display", serif; font-size: 30pt; line-height: 1.2; margin: 0.9in 0 18px; }
+.connected { margin-top: 34px; font-size: 12.5pt; line-height: 1.55; color: #ddd; max-width: 5.6in; }
+.silent { margin-top: 38px; border-top: 1px solid #333; padding-top: 26px; }
+.silent h3 { color: #fff; font-size: 20pt; }
+.silent p { color: #ccc; font-size: 11.5pt; }
+
+.fore { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 18px; }
+.fore > div { border-top: 2px solid var(--pink); padding-top: 12px; }
+.fore .k { font-family: "Playfair Display", serif; color: var(--pink); font-size: 22pt; line-height: 1; }
+.fore h3 { font-size: 13pt; margin-top: 10px; }
+.fore p { font-size: 10pt; color: #333; }
+
+.qs li { list-style: none; display: grid; grid-template-columns: 42px 1fr; padding: 15px 0; border-bottom: 1px solid var(--line); font-family: "Playfair Display", serif; font-size: 15pt; line-height: 1.3; }
+.qs .n { color: var(--pink); }
+.cta { margin-top: 34px; padding: 22px 24px; background: #000; color: #fff; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.cta .t { font-family: "Playfair Display", serif; font-size: 15pt; line-height: 1.3; }
+.cta .b { background: var(--pink); padding: 10px 16px; font-weight: 600; font-size: 10pt; white-space: nowrap; }
+.about { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; font-size: 10pt; color: #333; }
+.about .names { font-family: "Playfair Display", serif; font-size: 11.5pt; line-height: 1.7; color: #444; }
+</style></head>
+<body>
+
+<!-- 1 COVER -->
+<section class="page cover">
+  <div class="img"></div><div class="shade"></div>
+  <div class="in">
+    <img class="logo" src="https://kateburda.com/wp-content/uploads/2019/01/logo.png" alt="Kate Burda &amp; Co.">
+    <h1>Built for the<br><em>climate.</em></h1>
+    <div class="sub">Why transformations miss the top line, and what the leaders who hit it do differently.</div>
+    <div class="rule"></div>
+    <div class="caps pink">Insights, hindsights and foresights</div>
+    <div class="by" style="margin-top:6px">Kate Burda &amp; Co. &nbsp;|&nbsp; kateburda.com</div>
+  </div>
+</section>
+
+<!-- 2 BEFORE YOU READ + SHORT VERSION -->
+<section class="page">
+  <div class="caps pink">Before you read</div>
+  <h2>Nobody said strategy.<br>Nobody said data.</h2>
+  <p class="lede">This paper started as a set of listening sessions: more than 45 hours of deep-dive conversations with over 30 senior leaders. Operators, sales and marketing heads, owners, investors and the teams on the front line.</p>
+  <p style="margin-top:12px">The sessions were run in hospitality. What they surfaced shows up in every industry we've worked in over 28 years, from pharma and medical devices to technology and enterprise services. We asked one question in many forms: <b>what stands between your organization and the next level of revenue performance?</b></p>
+  <p>What leaders described was a gap between the plan and the top line. It's the same gap most transformations fall into.</p>
+  <div style="margin-top:34px" class="caps">The short version</div>
+  <ul class="short">
+    <li><span class="n">01</span><span><b>More data has not produced more revenue.</b> Data is only worth what your teams can execute on it.</span></li>
+    <li><span class="n">02</span><span><b>Your leaders have no time left for strategy.</b> It goes on reporting.</span></li>
+    <li><span class="n">03</span><span><b>Under pressure, teams go back to 2019.</b> The playbook that worked before feels safe. It isn't.</span></li>
+    <li><span class="n">04</span><span><b>You're measuring activity, not impact.</b> So you get activity.</span></li>
+  </ul>
+  <p style="margin-top:16px;color:#555">And three foresights for leaders who want their transformation to show up in the top line.</p>
+  <div class="foot"><span>Built for the Climate</span><span>Kate Burda &amp; Co.</span></div>
+</section>
+
+<!-- 3 INSIGHTS 1-2 -->
+<section class="page">
+  <div class="caps pink">Insights: what leaders told us</div>
+  <h2 style="margin-bottom:28px">Four patterns, again and again.</h2>
+  <div class="finding"><div class="num">01</div><div>
+    <h3>More data has not produced more revenue.</h3>
+    <p>Leaders have more tools, systems, dashboards and reports than ever. One senior executive put it plainly: more access to data than at any point in their career, and still not the revenue lift they expected.</p>
+    <p>Where the path from data to action is short, data gets used. Operations reads a review score and fixes the problem. Pricing sees demand shift and adjusts the rate. In the commercial engine, sales and marketing, that path gets murky. Without clear sight lines from insight to action, teams go back to what they have always done.</p>
+    <div class="take"><b>The takeaway:</b> data is only as good as your ability to execute on it. If no one translates it into how you win customers, it gets left behind.</div>
+  </div></div>
+  <div class="finding"><div class="num">02</div><div>
+    <h3>Your leaders have no time left for strategy.</h3>
+    <p>Commercial leaders described their time going to financial reviews, owner and investor reporting and internal demands. Many had been stretched across more of the business with fewer people. The common refrain: <i>we're doing more, with less time.</i></p>
+    <div class="stat">
+      <div><div class="big">2 hours</div><div class="lbl">a month reporting, before prep time</div></div>
+      <div><div class="big p">15 minutes</div><div class="lbl">a month coaching strategy and skills</div></div>
+    </div>
+    <p style="font-size:9pt;color:#777">One team we studied.</p>
+    <div class="take"><b>The takeaway:</b> when strategy loses to reporting, leaders double down on activity instead of changing how the work gets done. Scaling your leaders' capacity to set strategy and enable their teams is what future-proofs your revenue.</div>
+  </div></div>
+  <div class="foot"><span>Built for the Climate</span><span>3</span></div>
+</section>
+
+<!-- 4 INSIGHTS 3-4 -->
+<section class="page">
+  <div class="finding"><div class="num">03</div><div>
+    <h3>Under pressure, teams go back to 2019.</h3>
+    <p>The line we heard again and again: <i>"If we want 2019 results, we'll do what we did in 2019."</i> It worked once, and it's familiar. But the weather has changed. Buyers changed, segments blurred, and the people charged with creating demand aren't sure how to shift. So they retreat to what worked four, or even ten, years ago.</p>
+    <p>Outside-In Thinking, starting from the customer's customer instead of your own product, feels uncomfortable because it's unfamiliar. It's also what keeps you relevant to customers, and keeps your best people. Talented people want to do the work differently.</p>
+    <div class="take"><b>The takeaway:</b> don't bring yesterday's commercial approach into today and expect it to hold. Build new skills at every level, and make sure your leaders understand the new way well enough to coach it and sustain it.</div>
+  </div></div>
+  <div class="finding"><div class="num">04</div><div>
+    <h3>You're measuring activity, not impact.</h3>
+    <p>When organizations measure activity, they get it. In some cases the focus on activity was so strong that teams inflated it. Activity is still widely treated as a measure of effectiveness, when often it only measures how busy the team looks on the report.</p>
+    <div class="take"><b>The takeaway:</b> reporting should follow the outcome and impact of the strategy. Move from activity to effectiveness, impact and speed to market.</div>
+  </div></div>
+  <div class="foot"><span>Built for the Climate</span><span>4</span></div>
+</section>
+
+<!-- 5 HINDSIGHT -->
+<section class="page dark">
+  <div class="caps pink">What we heard</div>
+  <div class="quote">"If we want 2019 results,<br>we'll do what we did in 2019."</div>
+  <div class="caps" style="color:#888">Hindsight: why this matters for transformation</div>
+  <div class="connected">These four patterns are connected. Reporting leaves no time for new strategy. Leaders without time, or without exposure to a different approach, fall back on what they know. Activity metrics reward it. The organization drifts into the status quo, even in the middle of a transformation.</div>
+  <div class="silent">
+    <h3>The silent saboteur.</h3>
+    <p>Most transformations are built in detail for systems, structure and the operating model. The top line is treated as the result that follows. It rarely follows on its own. The four patterns sit in the handoff between the plan and the customer, the part that never makes the deck.</p>
+    <p style="margin-top:12px;color:#fff;font-size:13pt"><b>Revenue has to be the plan, not the result you hope for.</b> The science and strategy come first: the revenue goal, the strategies that move it, the actions that prove it. Then the customer engagement approach.</p>
+  </div>
+  <div class="foot"><span>Built for the Climate</span><span>5</span></div>
+</section>
+
+<!-- 6 FORESIGHTS -->
+<section class="page">
+  <div class="caps pink">Foresights</div>
+  <h2>What the leaders who hit the top line do differently.</h2>
+  <p class="lede">Volatility isn't the weather anymore. It's the climate. These three shifts separate the plans built for it from the plans built for a passing storm.</p>
+  <div class="fore">
+    <div><div class="k">I.</div><h3>They start with the customer journey, from the point of inspiration.</h3>
+      <p>The old model runs marketing first, sales next, pricing last. It describes what we do <i>to</i> customers. The best map the journey from the moment a customer first becomes aware of a need, the point of inspiration, all the way to the sale. At each step: what's on the customer's mind, which team's play fits, and which message goes beyond the product. By the time most organizations show up, the buyer is comparing prices.</p></div>
+    <div><div class="k">II.</div><h3>They run strategy execution, not action plans.</h3>
+      <p>Action plans that are really to-do lists have passed their expiration date. So have activity goals born from an operational mindset. The best decide first which revenue model gets them to optimal revenue, prioritized by profitability. Then the go-to-market strategy sales, marketing and pricing will use to get there. Leaders are accountable for the strategy. The team owns the tactics.</p></div>
+    <div><div class="k">III.</div><h3>They integrate the commercial engine, not just the org chart.</h3>
+      <p>The commercial leader now belongs at the executive table. But a reporting line and a weekly meeting don't create integration. Sales, marketing and pricing working toward one revenue model, around your most valuable customers, does.</p></div>
+  </div>
+  <div class="foot"><span>Built for the Climate</span><span>6</span></div>
+</section>
+
+<!-- 7 QUESTIONS + ABOUT -->
+<section class="page">
+  <div class="caps pink">Before your next quarterly review</div>
+  <h2>Five questions worth asking.</h2>
+  <ul class="qs">
+    <li><span class="n">1</span><span>Is revenue a line in your transformation plan, or a result you're hoping for?</span></li>
+    <li><span class="n">2</span><span>Which part of the plan moves the top line this quarter, and can you say why?</span></li>
+    <li><span class="n">3</span><span>How much time did your commercial leaders spend coaching last month, compared with reporting?</span></li>
+    <li><span class="n">4</span><span>What in your commercial playbook is still from 2019?</span></li>
+    <li><span class="n">5</span><span>Your best quarter last year: do you know what drove it?</span></li>
+  </ul>
+  <div class="cta"><div class="t">Want to talk through what this means for your organization?</div><div class="b">20 minutes with Kate &nbsp;·&nbsp; kateburda.com</div></div>
+  <div class="about">
+    <div><div class="caps pink" style="margin-bottom:8px">About Kate Burda &amp; Co.</div>
+      <p>Kate Burda &amp; Co. helps leaders turn strategy into top-line revenue. The 5-Step Rapid Revenue Return starts with a Revenue Reveal: a clear look at what's driving your results today, what to leave behind, and what to build.</p></div>
+    <div><div class="caps" style="margin-bottom:8px;color:#999">28 years with</div>
+      <div class="names">Marriott · IHG · Hyatt · Johnson &amp; Johnson · Medtronic · Abbott · Boehringer Ingelheim · Ricoh · Indeed</div></div>
+  </div>
+  <div class="foot"><span>Built for the Climate</span><span>kateburda.com</span></div>
+</section>
+
+</body></html>
