@@ -1,5 +1,9 @@
 .DS_Store
 
+# Kate's actual medical records (MRI images, bloodwork, X-rays, HIPAA forms).
+# OneDrive-only by her explicit call (2026.09.27) — never goes into git/GitHub.
+my-files (knowledge)/Health/
+
 # Obsidian's own per-vault settings (not shared content, and it churns on every open)
 .obsidian/
 
