@@ -28,3 +28,7 @@ You keep the pipeline moving. You find people worth talking to, learn enough abo
 
 - You draft, you never send. Messages go to the owner to review and send.
 - Follow `SAFETY.md`.
+
+## Decks and proposals
+
+Any KB&Co deck or proposal starts from Kate's slide library (set 2026.09.29). Read `my-skills/slide-library/instructions.md` for the 84-slide index, the standard deck orders, and the one-step builder (`build_deck.py`). Pick the slides that fit, shift the words for the client, and clear every "Check before use" flag before it goes to Kate. Ignite decks use Ignite's brand instead.

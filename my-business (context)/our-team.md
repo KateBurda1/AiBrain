@@ -40,7 +40,8 @@ The website only shows Kate, but project files and the internal Ignite cap table
 
 - **Eddie Westerfield** — CTO, product/operations
 - **Recardo Poole** — front-end UI/UX
-- **Tristan Carty** — Operations. Currently Kate's "right hand man / task master."
+- **Tristan Carty** — Operations. Currently Kate's "right hand man / task master." Kate, 2026.09.29: "Tristan is key." He goes in KB&Co proposals and decks, right after Kate's bio. Background (kateburda.com/who-we-are): 10 years in independent food and beverage operations ("the restaurant maestro"), former student of Kate's, strong in top-line revenue strategy, financial analytics, and sales and marketing thinking. Servant leader; mantra "take care of your employees and they'll take care of your business." Bio slide is 85 in the PPT Master Library.
+- **Jawaria** — shown in proposals only when she is involved in the engagement (Kate, 2026.09.29).
 
 **Legal entity:** Ignite operates as **Ignite Sequence, LLC**, a Texas limited liability company.
 

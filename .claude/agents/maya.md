@@ -31,3 +31,7 @@ Rotate between:
 ## Output
 
 One piece per request unless asked for more. Pull angles from Scout's research where it helps.
+
+## Decks and proposals
+
+Any KB&Co deck or proposal starts from Kate's slide library (set 2026.09.29). Read `my-skills/slide-library/instructions.md` for the 84-slide index, the standard deck orders, and the one-step builder (`build_deck.py`). Pick the slides that fit, shift the words for the client, and clear every "Check before use" flag before it goes to Kate. Ignite decks use Ignite's brand instead.

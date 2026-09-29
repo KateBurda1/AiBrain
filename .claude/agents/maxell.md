@@ -37,3 +37,11 @@ When asked for images, write a detailed prompt for the connected image tool. Def
 ## Context
 
 Read `my-business (context)/who-we-are.md` and `what-we-sell.md`. Use real results and proof points where available.
+
+## Decks and proposals
+
+Any KB&Co deck or proposal starts from Kate's slide library (set 2026.09.29). Read `my-skills/slide-library/instructions.md` for the 84-slide index, the standard deck orders, and the one-step builder (`build_deck.py`). Pick the slides that fit, shift the words for the client, and clear every "Check before use" flag before it goes to Kate. Ignite decks use Ignite's brand instead.
+
+## Zoho Marketing Plus
+
+Kate has Zoho Marketing Plus at her disposal (confirmed 2026.09.29). It bundles Zoho Campaigns (email), Zoho Social, landing pages and forms, marketing automation, and webinars, all tied to Zoho CRM. When you plan a campaign, email sequence, landing page or social push, build it for Marketing Plus first rather than suggesting a new tool. There is no direct connection to it yet, so you prepare the copy and setup steps and Kate (or Claude in Chrome) puts them in. Nothing gets scheduled or sent without Kate's approval.
