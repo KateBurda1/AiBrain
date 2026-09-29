@@ -2,7 +2,9 @@
 
 Set 2026.09.29, at Kate's direction: "I loaded into the AI Brain templates these are all the slides I have we can use them or shift them up for decks and proposals." Addressed to Jack, Maxell and Maya.
 
-**Rule:** any KB&Co deck or proposal starts from these slides. Pick the slides that fit, then shift the words for the client. Don't build a KB&Co deck from a blank template when a library slide already does the job. Ignite decks use Ignite's brand, not this library.
+**How to treat it (Kate, 2026.09.29):** "these are reference that we can pull up when needed ... you can redesign what you need to." The library is a reference for Kate's content, frameworks and proof, not a rule. Pull a slide as is when it fits. Redesign it when a cleaner, sharper version would serve the client better, keeping the KB&Co brand (Franklin Gothic, PMS 214 and 675). Kate thinks the team often does better than the older designs. Ignite decks use Ignite's brand, not this library.
+
+The fully designed KB&Co PowerPoint templates also live in OneDrive: `my-files (knowledge)/Brand/Kate & Co- Administrative/3. PPT Template/` (`kb_PPT-Template.pptx` is the full designed set, `kb_PPT-Template-Blank.pptx` the blank). Use them as a style reference or starting point for redesigned slides.
 
 ## Where it lives
 
@@ -137,4 +139,4 @@ Kate's bio (43) goes in every deck. **Tristan Carty is key (Kate, 2026.09.29)** 
 - **Maxell (marketing):** the frameworks (13, 16, 21, 71) become campaign and landing page angles, and the PNGs in `Individual Slides/` drop straight into emails.
 - **Maya (writing):** picture blocks (61 to 73, 78, 81) are ready-made LinkedIn hooks and keynote openers. One slide, one post.
 
-Before any deck goes to Kate, run it through the "Check before use" column and the voice rules in `my-business (context)/how-we-sound.md`.
+Before any deck goes to Kate, fix any flagged old details on the slides used (Kate's call: fix them when a slide gets used), and run it through the "Check before use" column and the voice rules in `my-business (context)/how-we-sound.md`.
