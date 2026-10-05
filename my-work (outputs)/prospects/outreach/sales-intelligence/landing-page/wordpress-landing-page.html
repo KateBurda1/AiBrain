@@ -1,0 +1,275 @@
+<!-- wp:html -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+.kb-lp{--pink: #D51067; --berry: #B52372; --ink: #111; --paper: #fff; --night: #000; --grey: #55575A; --mute: #6b6b6b; --line: #e6e6e6;}
+.kb-lp *{box-sizing: border-box; margin: 0; padding: 0;}
+.kb-lp{background: var(--paper); color: var(--ink); font-family: "Source Sans 3", Helvetica, Arial, sans-serif; font-weight: 300; font-size: 18px; line-height: 1.6;}
+.kb-lp a{color: inherit;}
+.kb-lp .wrap{max-width: 1080px; margin: 0 auto; padding: 0 24px;}
+.kb-lp .rule{width: 60px; height: 2px; background: currentColor; margin: 28px auto;}
+.kb-lp .caps{text-transform: uppercase; letter-spacing: 3px; font-size: 13px; font-weight: 600;}
+.kb-lp .pink{color: var(--pink);}
+.kb-lp .hero{position: relative; color: #fff; background: #000; overflow: hidden;}
+.kb-lp .hero::before{content: ""; position: absolute; top: -8%; right: -12%; width: 70%; height: 116%; background: url(https://kateburda.com/wp-content/uploads/2026/09/right-or-just-lucky-coin.png) center/contain no-repeat; opacity: .5;}
+.kb-lp .hero::after{content: ""; position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,.92) 35%, rgba(0,0,0,.35) 100%);}
+.kb-lp .hero .wrap{position: relative; z-index: 1; display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; padding-top: 64px; padding-bottom: 88px;}
+.kb-lp .top{position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; padding-top: 28px;}
+.kb-lp .top img{width: 64px;}
+.kb-lp .hero h1{font-family: "Playfair Display", serif; font-weight: 400; font-size: 68px; line-height: 1.04; margin: 18px 0 20px; color: #fff;}
+.kb-lp .hero h1 em{color: var(--pink); font-style: italic;}
+.kb-lp .hero p.lede{font-size: 21px; max-width: 520px; opacity: .92; color: #fff;}
+.kb-lp .card{background: #fff; color: var(--ink); padding: 34px 32px 30px;}
+.kb-lp .card h2{font-family: "Playfair Display", serif; font-weight: 400; font-size: 26px; line-height: 1.2; margin-bottom: 6px;}
+.kb-lp .card .sub{color: var(--mute); font-size: 15px; margin-bottom: 20px;}
+.kb-lp .form-slot{border: 2px dashed #cfcfcf; padding: 40px 20px; text-align: center; color: var(--mute); font-size: 15px;}
+.kb-lp .btn{display: inline-block; width: 100%; margin-top: 20px; padding: 15px 18px; background: var(--pink); color: #fff; border: 0; font: inherit; font-weight: 600; font-size: 16px; letter-spacing: .5px; cursor: pointer; text-align: center; text-decoration: none;}
+.kb-lp .btn:hover{background: #b10d56;}
+.kb-lp .section{padding: 96px 0;}
+.kb-lp .center{text-align: center;}
+.kb-lp .section h3{font-family: "Playfair Display", serif; font-weight: 400; font-size: 40px; line-height: 1.15;}
+.kb-lp .section h3 em{font-style: italic; color: var(--grey);}
+.kb-lp .intro{max-width: 680px; margin: 0 auto; font-size: 20px;}
+.kb-lp .grid{display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 56px; border-top: 1px solid var(--line);}
+.kb-lp .item{padding: 30px 26px 10px 0;}
+.kb-lp .item + .item{padding-left: 26px; border-left: 1px solid var(--line);}
+.kb-lp .item .n{font-family: "Playfair Display", serif; font-size: 44px; color: var(--pink); line-height: 1;}
+.kb-lp .item h4{font-family: "Playfair Display", serif; font-weight: 500; font-size: 22px; line-height: 1.25; margin: 14px 0 10px;}
+.kb-lp .item p{font-size: 16px; color: #333;}
+.kb-lp .band{background: var(--night); color: #fff;}
+.kb-lp .band blockquote{font-family: "Playfair Display", serif; font-size: 44px; line-height: 1.2; max-width: 860px; margin: 0 auto; color: #fff; border: 0;}
+.kb-lp .band blockquote em{color: var(--pink); font-style: italic;}
+.kb-lp .band cite{display: block; font-style: normal; margin-top: 22px; opacity: .7; font-size: 15px;}
+.kb-lp .trio{display: flex; justify-content: center; gap: 48px; margin-top: 44px;}
+.kb-lp .trio > div{border-top: 2px solid #fff; padding-top: 10px; min-width: 150px;}
+.kb-lp .trio .big{font-family: "Playfair Display", serif; font-size: 40px; line-height: 1;}
+.kb-lp .trio .lbl{font-size: 14px; opacity: .7; margin-top: 6px;}
+.kb-lp .inside{display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;}
+.kb-lp .inside ul{list-style: none;}
+.kb-lp .inside li{padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 18px;}
+.kb-lp .inside li b{font-weight: 600;}
+.kb-lp .about{background: #f6f6f6;}
+.kb-lp .about .wrap{display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; align-items: center;}
+.kb-lp .logos{font-family: "Playfair Display", serif; font-size: 22px; line-height: 1.8; color: #444;}
+.kb-lp .kb-foot{padding: 48px 0; text-align: center; font-size: 14px; color: var(--mute);}
+.kb-lp .kb-foot img{width: 52px; margin-bottom: 14px;}
+@media (max-width: 860px) {.kb-lp .hero .wrap,.kb-lp .inside,.kb-lp .about .wrap{grid-template-columns: 1fr; gap: 36px;}
+.kb-lp .hero h1{font-size: 46px;}
+.kb-lp .hero::before{width: 100%; right: -40%; opacity: .3;}
+.kb-lp .grid{grid-template-columns: 1fr 1fr;}
+.kb-lp .item + .item{border-left: 0; padding-left: 0;}
+.kb-lp .item:nth-child(even){padding-left: 20px; border-left: 1px solid var(--line);}
+.kb-lp .band blockquote{font-size: 30px;}
+.kb-lp .trio{gap: 20px;}
+.kb-lp .trio > div{min-width: 0; flex: 1;}
+.kb-lp .section{padding: 64px 0;}}
+@media (max-width: 520px) {.kb-lp .grid{grid-template-columns: 1fr;}
+.kb-lp .item:nth-child(even){padding-left: 0; border-left: 0;}
+.kb-lp .trio .big{font-size: 30px;}}
+</style>
+<div class="kb-lp">
+<div class="hero">
+  <div class="wrap top"><img src="https://kateburda.com/wp-content/uploads/2019/01/logo.png" alt="Kate Burda &amp; Co."></div>
+  <div class="wrap">
+    <div>
+      <div class="caps pink">Insights, hindsights and foresights</div>
+      <h1>Right,<br>or <em>just lucky?</em></h1>
+      <p class="lede">10 questions to ask before you lock next year's budget, and what the leaders who hit the top line do differently at budget time.</p>
+    </div>
+    <div class="card" id="get-the-report">
+      <h2>Get the report</h2>
+      <div class="sub">An 8-page read. Free.</div>
+      <iframe aria-label="Right, or Just Lucky: Report Download" frameborder="0" style="height:500px;width:99%;border:none;" src="https://forms.zohopublic.com/kateburdaandcompany1/form/RIghtorJustLuckyReportDownload/formperma/_PO-knGOLJpCLdAyJK5huytJ3x7ST3Axk33wYT-1afU"></iframe>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="wrap center">
+    <h3>Last year's number. Plus a percentage.<br><em>Very scientific.</em></h3>
+    <div class="rule"></div>
+    <p class="intro">Most plans get approved without anyone being able to say where the growth really comes from. Here's what we find in budget reviews, every year.</p>
+  </div>
+  <div class="wrap">
+    <div class="grid">
+      <div class="item"><div class="n">01</div><h4>Last year plus a percentage isn't a plan.</h4><p>It's a guess with a spreadsheet.</p></div>
+      <div class="item"><div class="n">02</div><h4>A story isn't a strategy.</h4><p>Most plans explain last year. Few explain next year.</p></div>
+      <div class="item"><div class="n">03</div><h4>Activity isn't performance.</h4><p>If every tactic gets done and the number doesn't move, the tactics didn't work.</p></div>
+      <div class="item"><div class="n">04</div><h4>More data hasn't meant better decisions.</h4><p>Most tools tell you what happened. Few tell you what to do next.</p></div>
+    </div>
+  </div>
+</div>
+<div class="section band center">
+  <div class="wrap">
+    <div class="caps pink" style="margin-bottom:26px">Hindsight</div>
+    <blockquote>16:1 looked like a win.<br><em>It was a loss.</em></blockquote>
+    <div class="trio">
+      <div><div class="big">16:1</div><div class="lbl">reported, and called a win</div></div>
+      <div><div class="big" style="color:var(--berry)">22:1</div><div class="lbl">needed to break even</div></div>
+      <div><div class="big" style="color:var(--pink)">8:1</div><div class="lbl">with the right customer</div></div>
+    </div>
+    <cite style="margin-top:36px">Every number was right. It was measured against the wrong customer.</cite>
+  </div>
+</div>
+<div class="section">
+  <div class="wrap inside">
+    <div>
+      <div class="caps pink">Inside the report</div>
+      <h3 style="margin-top:14px">Four insights. One hindsight. Three foresights. Ten questions.</h3>
+      <p style="margin-top:20px">Start with this one: which of last year's results were right, and which were just lucky?</p>
+      <a class="btn" href="#get-the-report" style="width:auto;padding:15px 34px">Get the report</a>
+    </div>
+    <ul>
+      <li><b>$1.2 million, before the year started.</b> How one segment got budgeted on autopilot.</li>
+      <li><b>5% and 90%.</b> Our own data on where marketing and tactics really point.</li>
+      <li><b>A strategy that reads like a formula.</b> What to ask for instead of a story.</li>
+      <li><b>10 questions for the room.</b> The top line, sales, marketing and the whole plan.</li>
+    </ul>
+  </div>
+</div>
+<div class="section about">
+  <div class="wrap">
+    <div>
+      <div class="caps pink">About Kate Burda &amp; Co.</div>
+      <h3 style="margin-top:14px">28 years turning strategy into top-line revenue.</h3>
+      <p style="margin-top:18px">Every engagement starts with the Revenue Reveal: a senior-led look at what really drove last year, and where next year's growth comes from.</p>
+    </div>
+    <div class="logos">Hospitality &nbsp;&middot;&nbsp; Pharma and life sciences &nbsp;&middot;&nbsp; Technology &nbsp;&middot;&nbsp; Enterprise services</div>
+  </div>
+</div>
+<div class="kb-foot">
+  <img src="https://kateburda.com/wp-content/uploads/2019/01/logo.png" alt="Kate Burda &amp; Co."><br>
+  <a href="https://kateburda.com/insights/">More insights</a> &nbsp;|&nbsp; <a href="https://kateburda.com/connection/">Connect</a> &nbsp;|&nbsp; Bringing simplicity to your complexity. &nbsp;|&nbsp; <a href="https://kateburda.com">kateburda.com</a>
+</div>
+</div>
+<script type="text/javascript">
+function ZFLead(){
+}
+ZFLead.utmPValObj = ZFLead.utmPValObj || {};
+ZFLead.utmPNameArr = new Array('utm_source','utm_medium','utm_campaign','utm_term','utm_content');
+ZFLead.prototype.zfutm_getLeadVal = function(pName){
+	var qStr = '';
+	try{
+		qStr = window.top.location.search.substring(1);
+	} catch (e){
+		qStr = '';
+	}
+	var pNameTemp = pName + '=';
+	var pValue = '';
+	if ( typeof qStr !== "undefined" && qStr !== null && qStr.length > 0 ){
+		var begin = qStr.indexOf(pNameTemp);
+		if ( begin != -1 ){
+			begin = begin + pNameTemp.length;
+			end = qStr.indexOf( '&', begin );
+			if ( end == -1 ){
+				end = qStr.length;
+			}
+			pValue = decodeURIComponent(qStr.substring( begin, end ));
+		}
+	}
+	if (pValue == undefined || pValue == ''){
+		pValue = this.zfutm_gC(pName);
+	}
+	return pValue;
+};
+ZFLead.prototype.zfutm_sC = function( paramName,path,domain,secure ){
+	var value = ZFLead.utmPValObj[paramName];
+	if ( typeof value !== "undefined" && value !== null ){
+		var cookieStr = paramName + "=" + encodeURIComponent( value );
+		var exdate=new Date();
+		exdate.setDate(exdate.getDate()+7);
+		cookieStr += "; expires=" + exdate.toGMTString();
+		cookieStr += "; path=/";
+		if ( domain ) {
+			cookieStr += "; domain=" + encodeURIComponent( domain );
+		}
+		if ( secure ) {
+			cookieStr += "; secure";
+		}
+		document.cookie = cookieStr;
+	}
+};
+ZFLead.prototype.zfutm_ini = function (){
+	for (var i = 0; i < ZFLead.utmPNameArr.length ; i ++){
+		var zf_pN = ZFLead.utmPNameArr[i];
+		var zf_pV = this.zfutm_getLeadVal(zf_pN);
+		if ( typeof zf_pV !== "undefined" && zf_pV !== null ) {
+			ZFLead.utmPValObj[ zf_pN ] = zf_pV;
+		}
+	}
+	for (var pkey in ZFLead.utmPValObj) {
+		this.zfutm_sC(pkey);
+	}
+};
+ZFLead.prototype.zfutm_gC = function( cookieName ){
+	var cookieArr = document.cookie.split('; ');
+	for ( var i = 0 ; i < cookieArr.length ; i ++ ){
+		var cookieVals = cookieArr[i].split('=');
+		if ( cookieVals[0] === cookieName && cookieVals[1] ) {
+			return decodeURIComponent(cookieVals[1]);
+		}
+	}
+};
+ZFLead.prototype.zfutm_gC_enc = function( cookieName ){
+	var cookieArr = document.cookie.split('; ');
+	for ( var i = 0 ; i < cookieArr.length ; i ++ ){
+		var cookieVals = cookieArr[i].split('=');
+		if ( cookieVals[0] === cookieName && cookieVals[1] ) {
+			return cookieVals[1];
+		}
+	}
+};
+ZFLead.prototype.zfutm_iframeSprt = function () {
+	var zf_frame = document.getElementsByTagName("iframe");
+	for(var i = 0; i < zf_frame.length; ++i){
+		if((zf_frame[i].src).indexOf('formperma') > 0 ){
+			var zf_src = zf_frame[i].src;
+			for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+				var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+				var utmPmregex = new RegExp("[?&]" + utmPm + "=");
+				if ( ! utmPmregex.test(zf_src) ) {
+					var utmVal = this.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] );
+					if ( typeof utmVal !== "undefined" ) {
+						if(zf_src.indexOf('?') > 0){
+		                    zf_src = zf_src+'&'+utmPm+'='+utmVal;
+						}else{
+						    zf_src = zf_src+'?'+utmPm+'='+utmVal;
+						}
+					}
+				}
+			}
+			if ( zf_frame[i].src.length < zf_src.length ) {
+				zf_frame[i].src = zf_src;
+			}
+		}
+	}
+};
+ZFLead.prototype.zfutm_DHtmlSprt = function () {
+	var zf_formsArr = document.forms;
+	for ( var frmInd = 0 ; frmInd < zf_formsArr.length ; frmInd ++ ) {
+		var zf_form_act = zf_formsArr[frmInd].action;
+		if ( zf_form_act && zf_form_act.indexOf('formperma') > 0 ){
+			for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+				var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+				var utmVal = this.zfutm_gC( ZFLead.utmPNameArr[ prmIdx ] );
+				if ( typeof utmVal !== "undefined" ) {
+					var fieldObj = zf_formsArr[frmInd][utmPm];
+					if ( fieldObj ) {
+						fieldObj.value = utmVal;
+					}
+				}
+			}
+		}
+	}
+};
+var zfutm_zfLead = new ZFLead();
+zfutm_zfLead.zfutm_ini();
+if( document.readyState == "complete" ){
+    zfutm_zfLead.zfutm_iframeSprt();
+	zfutm_zfLead.zfutm_DHtmlSprt();
+} else {
+  	window.addEventListener('load', function (){
+        zfutm_zfLead.zfutm_iframeSprt();
+		zfutm_zfLead.zfutm_DHtmlSprt();
+  	}, false);
+}
+</script>
+<!-- /wp:html -->

@@ -14,6 +14,17 @@ Usually no greeting at all for a quick reply, straight into the point ("Thank yo
 
 **"Warm Regards,/ /Kate"** is the default sign-off for anything that isn't a one-line reply, both words capitalized. For quick back-and-forth replies, often no sign-off at all, just the name or nothing. Full signature block (name, title, phone, email, website) shows up on emails that open a new thread or go to someone less familiar.
 
+**The real signature block** (source: `Kate & Co/Kate & Co- Administrative/10. Business Cards & Signature/kb_Electronic-Signature.docx`, found 2026.10.05):
+
+Kate Burda
+PRINCIPAL
+Kate Burda & Co.
+M: 972.567.7792
+E: Kate@KateBurda.com
+KateBurda.com
+
+Styling: name bold black; PRINCIPAL small caps-style in gray #555759; "M:" and "E:" labels bold berry #D51067 with gray values; website small bold gray.
+
 ## My usual length
 
 Very short. Most real replies are one sentence, sometimes a sentence fragment. Even when explaining something, it's two or three short lines, not paragraphs.

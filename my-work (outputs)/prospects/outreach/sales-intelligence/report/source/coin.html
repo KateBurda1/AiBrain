@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=block" rel="stylesheet">
+<style>
+html, body { margin: 0; background: transparent; }
+.stage { width: 1100px; height: 1100px; perspective: 2200px; display: flex; align-items: center; justify-content: center; }
+.coin { position: relative; width: 900px; height: 900px; transform-style: preserve-3d; }
+.face, .rim { position: absolute; inset: 0; border-radius: 50%; }
+.face { backface-visibility: hidden;
+  background: radial-gradient(circle at 34% 28%, #fbfbfb 0%, #d9d9d9 28%, #a3a3a3 60%, #6a6a6a 86%, #4a4a4a 100%); }
+.face svg { width: 100%; height: 100%; display: block; }
+.rim { background: repeating-conic-gradient(#9a9a9a 0deg 1.2deg, #4c4c4c 1.2deg 2.4deg); }
+</style></head>
+<body>
+<div class="stage"><div class="coin" id="coin"></div></div>
+<script>
+const side = new URLSearchParams(location.search).get('side') || 'right';
+const [word, motto] = side === 'lucky' ? ['LUCKY', 'IN GUT WE TRUST'] : ['RIGHT', 'IN DATA WE TRUST'];
+const c = document.getElementById('coin'), th = 70;
+for (let z = -th / 2; z <= th / 2; z += 1) {
+  const r = document.createElement('div'); r.className = 'rim';
+  r.style.transform = `translateZ(${z}px) scale(.985)`; c.appendChild(r);
+}
+const f = document.createElement('div'); f.className = 'face';
+f.style.transform = `translateZ(${th / 2 + 0.5}px)`;
+f.innerHTML = `<svg viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="47.5" fill="none" stroke="#7c7c7c" stroke-width="3"/>
+  <circle cx="50" cy="50" r="45.6" fill="none" stroke="#efefef" stroke-width=".7"/>
+  <circle cx="50" cy="50" r="42.8" fill="none" stroke="#6f6f6f" stroke-width="1.7" stroke-linecap="round" stroke-dasharray="0.01 2.9"/>
+  <path id="arc" d="M 16,52 A 34,34 0 0 1 84,52" fill="none"/>
+  <text font-family="Playfair Display, serif" font-size="7.2" letter-spacing="1.1" fill="#555" text-anchor="middle"><textPath href="#arc" startOffset="50%">${motto}</textPath></text>
+  <text x="50" y="56.6" font-family="Playfair Display, serif" font-weight="600" font-size="15.5" letter-spacing="1.6" fill="#f4f4f4" text-anchor="middle">${word}</text>
+  <text x="50" y="56" font-family="Playfair Display, serif" font-weight="600" font-size="15.5" letter-spacing="1.6" fill="#454545" text-anchor="middle">${word}</text>
+  <line x1="36" y1="63" x2="64" y2="63" stroke="#6f6f6f" stroke-width=".6"/>
+  <text x="50" y="74" font-family="Playfair Display, serif" font-size="7" letter-spacing="1.2" fill="#555" text-anchor="middle">2026</text>
+</svg>`;
+c.appendChild(f);
+c.style.transform = 'rotateY(-30deg) rotateX(14deg) rotateZ(-8deg)';
+</script>
+</body></html>

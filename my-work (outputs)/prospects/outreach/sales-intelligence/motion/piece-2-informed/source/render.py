@@ -1,0 +1,48 @@
+import sys, os, subprocess
+from playwright.sync_api import sync_playwright
+from PIL import Image
+import imageio_ffmpeg
+
+# usage: render.py OUT_DIR            full render (MP4, GIF, stills)
+#        render.py OUT_DIR t1 t2 ...  preview stills at those seconds only
+D = os.path.dirname(os.path.abspath(__file__)); OUT = sys.argv[1]; FPS = 24
+PREVIEW = [float(x) for x in sys.argv[2:]]
+os.makedirs(OUT, exist_ok=True)
+import tempfile
+frames_dir = tempfile.mkdtemp(prefix="piece2-frames-")  # keeps ~750 frame PNGs out of OneDrive
+
+with sync_playwright() as p:
+    b = p.chromium.launch(channel="chrome")
+    pg = b.new_page(viewport={"width": 1080, "height": 1350})
+    pg.goto("file://" + os.path.join(D, "piece2.html")); pg.wait_for_load_state("networkidle")
+    pg.evaluate("document.fonts.ready")
+    if PREVIEW:
+        for t in PREVIEW:
+            pg.evaluate(f"render({t})")
+            pg.screenshot(path=os.path.join(OUT, f"preview-{t:05.1f}.png"))
+        b.close(); sys.exit()
+    total = pg.evaluate("TOTAL"); n = int(total * FPS)
+    for i in range(n):
+        pg.evaluate(f"render({i / FPS})")
+        pg.screenshot(path=os.path.join(frames_dir, f"{i:05d}.png"))
+    b.close()
+
+ff = imageio_ffmpeg.get_ffmpeg_exe()
+mp4 = os.path.join(OUT, "piece-2-informed.mp4")
+subprocess.run([ff, "-y", "-framerate", str(FPS), "-i", os.path.join(frames_dir, "%05d.png"), "-c:v", "libx264",
+                "-pix_fmt", "yuv420p", "-crf", "18", "-movflags", "+faststart", mp4], check=True, capture_output=True)
+
+# GIF: 12fps, 480 wide, merge identical frames, keep under 5 MB for email
+imgs, durs = [], []
+for i in range(0, n, 2):
+    im = Image.open(os.path.join(frames_dir, f"{i:05d}.png")).convert("RGB").resize((480, 600), Image.LANCZOS)
+    if imgs and list(im.getdata()) == list(imgs[-1].getdata()): durs[-1] += 83
+    else: imgs.append(im); durs.append(83)
+pal = [im.quantize(colors=64, method=Image.MEDIANCUT) for im in imgs]
+gif = os.path.join(OUT, "piece-2-informed.gif")
+pal[0].save(gif, save_all=True, append_images=pal[1:], duration=durs, loop=0, optimize=True)
+
+# stills: cover plus key frames
+for name, t in [("cover", 31.6), ("frame-3-feed", 10.0), ("frame-4-formula", 14.9), ("frame-6-sixteen", 23.0), ("frame-8-reveal", 32.9), ("frame-9-question", 38.9)]:
+    Image.open(os.path.join(frames_dir, f"{int(t * FPS):05d}.png")).save(os.path.join(OUT, f"piece-2-{name}.png"))
+for f in sorted(os.listdir(OUT)): print(f, os.path.getsize(os.path.join(OUT, f)) // 1024, "KB")

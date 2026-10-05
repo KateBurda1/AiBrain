@@ -11,7 +11,7 @@ The fully designed KB&Co PowerPoint templates also live in OneDrive: `my-files (
 `my-files (knowledge)/ppt Templates used in presentations/KB & Co PPT Library/`
 
 - `PPT Master LIbrary.pptx` is **the master: 85 slides, the current version.** Slide 85 (Tristan's bio) was added 2026.09.29; OneDrive version history holds the 84-slide original. Use this one.
-- `Individual Slides/PPT Master LIbrary.pptx` is an older 72-slide copy. Don't pull from it. Its only slide the master lacks is "Profitable Growth / Where you win" (old slide 68), which also sits on its own in `Individual Slides/Where you win 2.pptx`.
+- `Individual Slides/PPT Master LIbrary.pptx` is an older 72-slide copy. Don't pull from it. Its only slide the master lacks is "Profitable Growth / Where you win" (old slide 68), which also sits on its own in `Individual Slides/Where you win.pptx` (the single current version; "Where you win 2" was a near-duplicate, archived to `Individual Slides/_Archive/` on 2026.09.29). The web version on kateburda.com's Path page is exported from it.
 - `Individual Slides/` also holds single-slide files and PNG/JPG versions (Execs Unsatisfied, Emerging Demand, Results Mechanism, Where you win, Proactive Effects, CEB Road map). The PNGs work for emails, LinkedIn and landing pages. `testimonials.pptx` is empty.
 - `PPT Deck Reference Spreadsheet.xlsx` is Kate's older map of slide to offer. Its numbering doesn't match the current master. The index below replaces it.
 - A blank branded template for new slides: `my-files (knowledge)/Brand/Kate & Co- Administrative/3. PPT Template/kb_PPT-Template.pptx`

@@ -1,0 +1,246 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Right, or Just Lucky? | Kate Burda &amp; Co.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=block" rel="stylesheet">
+<style>
+@page { size: 8.5in 11in; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --pink: #D51067; --berry: #B52372; --ink: #151515; --mute: #666; --line: #e3e3e3; --grey: #55575A; }
+body { font-family: "Source Sans 3", Helvetica, Arial, sans-serif; font-weight: 300; color: var(--ink); font-size: 11pt; line-height: 1.55; }
+.page { width: 8.5in; height: 11in; position: relative; overflow: hidden; page-break-after: always; padding: 0.9in 0.95in 0.9in; }
+.serif, h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; font-weight: 400; }
+.caps { text-transform: uppercase; letter-spacing: 2.5px; font-size: 8pt; font-weight: 600; }
+.pink { color: var(--pink); }
+.foot { position: absolute; left: 0.95in; right: 0.95in; bottom: 0.45in; display: flex; justify-content: space-between; font-size: 8pt; color: #999; border-top: 1px solid var(--line); padding-top: 8px; }
+p + p { margin-top: 10px; }
+b { font-weight: 600; }
+
+/* cover */
+.cover { background: #000; color: #fff; padding: 0; }
+.cover .coin { position: absolute; right: -1.55in; top: 0.55in; width: 7.2in; filter: drop-shadow(0 30px 60px rgba(0,0,0,.6)); }
+.cover .shade { position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,.92) 30%, rgba(0,0,0,.2) 80%); }
+.cover .in { position: relative; z-index: 1; height: 100%; padding: 0.9in 0.95in; display: flex; flex-direction: column; }
+.cover img.logo { width: 150px; }
+.cover h1 { font-size: 62pt; line-height: 1.02; margin: auto 0 22px; }
+.cover h1 em { color: var(--pink); font-style: italic; }
+.cover .sub { font-size: 15pt; max-width: 5.2in; line-height: 1.4; opacity: .92; }
+.cover .rule { width: 50px; height: 2px; background: #fff; margin: 34px 0 18px; }
+.cover .by { font-size: 9pt; opacity: .8; }
+
+/* body */
+h2 { font-size: 26pt; line-height: 1.12; margin: 8px 0 18px; }
+h3 { font-size: 15pt; line-height: 1.25; margin: 0 0 8px; }
+.lede { font-size: 13.5pt; line-height: 1.5; color: #333; }
+.short { margin-top: 26px; border-top: 2px solid var(--ink); }
+.short li { list-style: none; display: grid; grid-template-columns: 38px 1fr; padding: 13px 0; border-bottom: 1px solid var(--line); }
+.short .n { font-family: "Playfair Display", serif; color: var(--pink); font-size: 15pt; line-height: 1.2; }
+.finding { display: grid; grid-template-columns: 0.75in 1fr; gap: 0 18px; margin-bottom: 24px; }
+.finding .num { font-family: "Playfair Display", serif; font-size: 40pt; line-height: .9; color: var(--pink); }
+.take { margin-top: 10px; padding: 10px 14px; background: #f5f5f5; border-left: 3px solid var(--pink); font-size: 10.5pt; }
+.stat { display: flex; gap: 30px; margin: 14px 0 6px; }
+.stat > div { flex: 1; border-top: 2px solid var(--ink); padding-top: 8px; }
+.stat .big { font-family: "Playfair Display", serif; font-size: 30pt; line-height: 1; }
+.stat .big.p { color: var(--pink); }
+.stat .big.b { color: var(--berry); }
+.stat .lbl { font-size: 9pt; color: var(--mute); margin-top: 4px; }
+.src { font-size: 8.5pt; color: #888; }
+.connected { margin-top: 18px; padding: 18px 20px; background: var(--grey); color: #fff; font-size: 11.5pt; }
+.connected b { color: #fff; }
+
+.dark { background: #000; color: #fff; }
+.dark .foot { border-color: #333; color: #777; }
+.quote { font-family: "Playfair Display", serif; font-size: 40pt; line-height: 1.12; margin: 0.35in 0 22px; }
+.quote em { color: var(--pink); font-style: italic; }
+.story { font-size: 12pt; line-height: 1.6; color: #ddd; max-width: 5.9in; }
+.story b { color: #fff; }
+.trio { display: flex; gap: 26px; margin: 30px 0 26px; }
+.trio > div { flex: 1; border-top: 2px solid #fff; padding-top: 10px; }
+.trio .big { font-family: "Playfair Display", serif; font-size: 40pt; line-height: 1; }
+.trio .lbl { font-size: 9.5pt; color: #aaa; margin-top: 6px; }
+.verdict { border-top: 1px solid #333; padding-top: 22px; font-family: "Playfair Display", serif; font-size: 19pt; line-height: 1.35; }
+.verdict em { color: var(--pink); font-style: normal; }
+.dark .coin-sm { position: absolute; right: 0.7in; top: 0.7in; width: 1.6in; opacity: .95; }
+
+.fore { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 18px; }
+.fore > div { border-top: 2px solid var(--pink); padding-top: 12px; }
+.fore .k { font-family: "Playfair Display", serif; color: var(--pink); font-size: 22pt; line-height: 1; }
+.fore h3 { font-size: 13pt; margin-top: 10px; }
+.fore p { font-size: 10pt; color: #333; }
+.formula { margin-top: 28px; padding: 20px 24px; border: 2px solid var(--ink); }
+.formula .caps { color: var(--mute); margin-bottom: 8px; }
+.formula .f { font-family: "Playfair Display", serif; font-size: 14.5pt; line-height: 1.45; }
+.formula .f b { color: var(--pink); font-weight: 500; }
+
+.grp { margin-top: 16px; }
+.grp .caps { color: var(--berry); margin-bottom: 2px; }
+.qs { border-top: 2px solid var(--ink); }
+.qs li { list-style: none; display: grid; grid-template-columns: 42px 1fr; padding: 10px 0; border-bottom: 1px solid var(--line); font-family: "Playfair Display", serif; font-size: 13.5pt; line-height: 1.3; }
+.qs .n { color: var(--pink); }
+.qs .sub { display: block; font-family: "Source Sans 3", sans-serif; font-size: 9.5pt; color: var(--mute); margin-top: 3px; }
+
+.clear { margin: 22px 0; padding-left: 18px; border-left: 3px solid var(--berry); font-family: "Playfair Display", serif; font-size: 15pt; line-height: 1.4; font-style: italic; }
+.clear span { display: block; font-family: "Source Sans 3", sans-serif; font-style: normal; font-size: 9pt; color: var(--mute); margin-top: 6px; }
+.simple { font-family: "Playfair Display", serif; font-size: 22pt; line-height: 1.25; margin-top: 8px; }
+.simple em { color: var(--pink); font-style: normal; }
+.cta { margin-top: 30px; padding: 22px 24px; background: #000; color: #fff; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.cta .t { font-family: "Playfair Display", serif; font-size: 15pt; line-height: 1.3; }
+.cta .b { background: var(--pink); padding: 10px 16px; font-weight: 600; font-size: 10pt; white-space: nowrap; }
+.about { margin-top: 24px; font-size: 10pt; color: #333; max-width: 5.6in; }
+</style></head>
+<body>
+
+<!-- 1 COVER -->
+<section class="page cover">
+  <img class="coin" src="coin-right.png" alt="">
+  <div class="shade"></div>
+  <div class="in">
+    <img class="logo" src="logo.png" alt="Kate Burda &amp; Co.">
+    <h1>Right,<br>or <em>just lucky?</em></h1>
+    <div class="sub">10 questions to ask before you lock next year's budget.</div>
+    <div class="rule"></div>
+    <div class="caps pink">Insights, hindsights and foresights</div>
+    <div class="by" style="margin-top:6px">Kate Burda &amp; Co. &nbsp;|&nbsp; kateburda.com</div>
+  </div>
+</section>
+
+<!-- 2 BEFORE YOU READ + SHORT VERSION -->
+<section class="page">
+  <div class="caps pink">Before you read</div>
+  <h2>Approved every year.<br>Rarely questioned.</h2>
+  <p class="lede">This paper comes from years of sitting in budget reviews. For 28 years, across industries, we've watched leadership teams approve the plan for the year ahead.</p>
+  <p style="margin-top:12px">The same thing keeps showing up, and it isn't a shortage of effort or a shortage of data. <b>Most plans are approved without anyone being able to say where the growth really comes from.</b></p>
+  <p>Budget plans like that get signed off every year. Here's how to make sure yours isn't one of them.</p>
+  <div style="margin-top:34px" class="caps">The short version</div>
+  <ul class="short">
+    <li><span class="n">01</span><span><b>Last year plus a percentage isn't a plan.</b> It's a guess with a spreadsheet.</span></li>
+    <li><span class="n">02</span><span><b>A story isn't a strategy.</b> Most plans explain last year. Few explain next year.</span></li>
+    <li><span class="n">03</span><span><b>Activity isn't performance.</b> If every tactic gets done and the number doesn't move, the tactics didn't work.</span></li>
+    <li><span class="n">04</span><span><b>More data hasn't meant better decisions.</b> Most tools tell you what happened. Few tell you what to do next.</span></li>
+  </ul>
+  <p style="margin-top:16px;color:#555">Then one hindsight, three foresights, and ten questions to take into your budget review.</p>
+  <div class="foot"><span>Right, or Just Lucky?</span><span>Kate Burda &amp; Co.</span></div>
+</section>
+
+<!-- 3 INSIGHTS 1-2 -->
+<section class="page">
+  <div class="caps pink">Insights: what we find in budget reviews</div>
+  <h2 style="margin-bottom:26px">Four patterns, every budget season.</h2>
+  <div class="finding"><div class="num">01</div><div>
+    <h3>Last year plus a percentage isn't a plan.</h3>
+    <p>The most common growth assumption we see is last year's number, plus a percentage. Segment by segment, account by account.</p>
+    <p>In one business we worked with, the budget did exactly that for a key revenue segment. The answers to "why" were honest: <i>"This is how we've always done it."</i> <i>"We don't have data that gives us what we're looking for."</i> The pricing for that segment had already been negotiated. The budgeting system just didn't connect to it.</p>
+    <div class="stat"><div><div class="big p">$1.2 million</div><div class="lbl">overstated in one segment, before the year even started</div></div></div>
+    <div class="take"><b>The takeaway:</b> a growth percentage without a reason behind it isn't a forecast. It's a hope, and it's already in the budget.</div>
+  </div></div>
+  <div class="finding"><div class="num">02</div><div>
+    <h3>A story isn't a strategy.</h3>
+    <p>Ask a team for their segment strategy and you'll often get a history lesson: what happened last year, why, who left, what the market did. That's a story. A strategy is the construct of how the team expects to reach the goal, specific enough that you could check it.</p>
+    <div class="stat">
+      <div><div class="big p">5%</div><div class="lbl">of marketing initiatives focused on the most valuable customers</div></div>
+      <div><div class="big b">90%</div><div class="lbl">of tactics not aligned to the overall strategy</div></div>
+    </div>
+    <p class="src">Kate Burda &amp; Co. client data.</p>
+    <div class="take"><b>The takeaway:</b> that's not a talent problem. It's a planning problem. If the plan can't say how the number gets hit, it can't be held accountable when it isn't.</div>
+  </div></div>
+  <div class="foot"><span>Right, or Just Lucky?</span><span>3</span></div>
+</section>
+
+<!-- 4 INSIGHTS 3-4 -->
+<section class="page">
+  <div class="finding"><div class="num">03</div><div>
+    <h3>Activity isn't performance.</h3>
+    <p>SMART goals entered business planning in 1981, and teams still feel safe building plans on them. But a goal can be specific, measurable, achievable, relevant and time-bound, and still have nothing to do with revenue.</p>
+    <p>Tactics are only activity. If a team completes every tactic on the list and the financial performance doesn't change, the tactics didn't work. Completing them isn't performance. Revenue that moves because of a strategy is.</p>
+    <div class="take"><b>The takeaway:</b> reward impact, not activity. Otherwise you'll get plenty of activity.</div>
+  </div></div>
+  <div class="finding"><div class="num">04</div><div>
+    <h3>More data hasn't meant better decisions.</h3>
+    <p>Leadership teams have more dashboards, tools and reports than ever. Budget season usually adds another: a new platform, a new sales intelligence tool, a new AI promising to tell your team who to call.</p>
+    <p>Most of it tells you what already happened. We've watched teams run their best intelligence tools after the sale closed, to explain the result, not to decide the next move. Five departments bring five versions of last year to the planning table, and the plan gets negotiated instead of built.</p>
+    <div class="take"><b>The takeaway:</b> the question isn't whether you have enough data. It's whether the data you're budgeting on tells you what to do next.</div>
+  </div></div>
+  <div class="connected"><b>These four are connected.</b> Without data that points forward, teams roll last year forward. Without a strategy, they fill the plan with activity. And the plan gets approved, because it looks like every other plan.</div>
+  <div class="foot"><span>Right, or Just Lucky?</span><span>4</span></div>
+</section>
+
+<!-- 5 HINDSIGHT -->
+<section class="page dark">
+  <img class="coin-sm" src="coin-lucky.png" alt="">
+  <div class="caps pink">Hindsight</div>
+  <div class="quote">Right,<br>or <em>just lucky?</em></div>
+  <div class="story">An asset manager overseeing many hotels reported a <b>16:1 return on ad spend</b> and called it a win. The campaign was aimed at their least valuable customers, where the return needed to clear <b>22:1</b> just to break even.</div>
+  <div class="trio">
+    <div><div class="big">16:1</div><div class="lbl">reported, and called a win</div></div>
+    <div><div class="big" style="color:var(--berry)">22:1</div><div class="lbl">needed to break even on that segment</div></div>
+    <div><div class="big" style="color:var(--pink)">8:1</div><div class="lbl">would have cleared the bar with a more valuable customer</div></div>
+  </div>
+  <div class="story">Nothing in their systems was broken. Every number was correct. It was measured against the wrong customer, so a good result and a bad decision looked exactly the same.</div>
+  <div class="verdict" style="margin-top:26px"><em>A lower return would have been the better outcome.</em><br>That's the question worth asking about every line in next year's budget. Which of last year's results were right, and which were just lucky?</div>
+  <div class="foot"><span>Right, or Just Lucky?</span><span>5</span></div>
+</section>
+
+<!-- 6 FORESIGHTS -->
+<section class="page">
+  <div class="caps pink">Foresights: at budget time</div>
+  <h2>What the best do differently.</h2>
+  <div class="fore">
+    <div><div class="k">I.</div><h3>They plan around their most profitable customers.</h3>
+      <p>The best teams know their most profitable segments, accounts and customers, and they plan around them. Not around the categories they've always reported on. They also understand what those customers are trying to achieve, not just what they buy. The offer that wins is often about the customer's business, not your product.</p></div>
+    <div><div class="k">II.</div><h3>They link the goal, the strategy and the tactics.</h3>
+      <p>The critical link runs one direction: financial goal, then segment strategy, then the tactics to achieve it. Each answers to the one above it. An effective strategy reads more like a formula than a story. You can check it, coach to it, and at year end you'll know whether it worked, and why.</p></div>
+    <div><div class="k">III.</div><h3>They challenge the status quo, even when it's comfortable.</h3>
+      <p>In one plan we reviewed, a large share of the marketing budget went to the single most expensive channel available. The person running it was well respected, the buy was easy, and nobody wanted to disturb a good relationship. Every reason was about comfort. None was about revenue. The plan was approved anyway.</p></div>
+  </div>
+  <div class="formula">
+    <div class="caps">A strategy that reads like a formula</div>
+    <div class="f">We're growing revenue <b>14%</b>. Five accounts get us there. In the first, we grow <b>10%</b>, from $200K to $220K. In the second, we grow our share from <b>20% to 68%</b>. Here are the tactics behind each.</div>
+  </div>
+  <p style="margin-top:22px;color:#444">The best teams ask the uncomfortable question in the room, before the budget locks. Not in the post-mortem.</p>
+  <div class="foot"><span>Right, or Just Lucky?</span><span>6</span></div>
+</section>
+
+<!-- 7 TEN QUESTIONS -->
+<section class="page">
+  <div class="caps pink">Before you lock next year's budget</div>
+  <h2 style="margin-bottom:6px">10 questions worth asking in the room.</h2>
+  <div class="grp"><div class="caps">The top line</div>
+  <ul class="qs">
+    <li><span class="n">1</span><span>Where does next year's growth come from, segment by segment, and what's the strategy behind each number?</span></li>
+    <li><span class="n">2</span><span>Which of these numbers are last year plus a percentage, and which have a reason behind them?</span></li>
+    <li><span class="n">3</span><span>Are we planning around our most profitable customers, or around the categories we've always reported on?</span></li>
+    <li><span class="n">4</span><span>How are we re-mixing the business for next year, and do our teams have the skills to make that shift?<span class="sub">Shifting the mix means changing behavior, and most plans fall short there.</span></span></li>
+  </ul></div>
+  <div class="grp"><div class="caps">Sales</div>
+  <ul class="qs">
+    <li><span class="n">5</span><span>How deep are we inside our key accounts? How many relationships do we have beyond procurement?</span></li>
+    <li><span class="n">6</span><span>Where is the economy growing, and do we have a plan to be there?</span></li>
+  </ul></div>
+  <div class="grp"><div class="caps">Marketing</div>
+  <ul class="qs">
+    <li><span class="n">7</span><span>What is each marketing dollar meant to move, and for which customers?</span></li>
+    <li><span class="n">8</span><span>Is our best return aimed at our most valuable customers, or just our easiest ones?</span></li>
+  </ul></div>
+  <div class="grp"><div class="caps">The whole plan</div>
+  <ul class="qs">
+    <li><span class="n">9</span><span>Is the data we're budgeting on telling us what happened, or what to do next?</span></li>
+    <li><span class="n">10</span><span>If every tactic in this plan gets done and the number doesn't move, what will we have learned?</span></li>
+  </ul></div>
+  <div class="foot"><span>Right, or Just Lucky?</span><span>7</span></div>
+</section>
+
+<!-- 8 TAKEAWAY + ABOUT -->
+<section class="page">
+  <div class="caps pink">The takeaway</div>
+  <h2>Strategy isn't something.<br>It's everything.</h2>
+  <p class="lede">Most commercial teams are planning the way they have since the 1970s, and expecting new results. That's like yelling at a rotary phone and asking Siri for directions to the grocery store. It won't work.</p>
+  <p style="margin-top:12px">Ask for a new approach and the common refrain is, "We're going back to basics." Usually because nobody is sure where to go next. There are almost no efficiencies left to squeeze out of operations. The growth has to come from how your teams create demand, who they build it with, and whether the plan behind it holds up. Status quo isn't an option.</p>
+  <div class="clear">"You do not rise to the level of your goals. You fall to the level of your system."<span>James Clear, Atomic Habits</span></div>
+  <p>We take the noise, the disruption and the complexity, and bring you a clear, simple path for your team to get results.</p>
+  <div class="simple"><em>Bringing simplicity to your complexity.</em></div>
+  <div class="cta"><div class="t">One question before you lock next year's budget.</div><div class="b">20 minutes with Kate &nbsp;·&nbsp; kateburda.com</div></div>
+  <div class="about"><div class="caps pink" style="margin-bottom:8px">About Kate Burda &amp; Co.</div>
+    <p>Kate Burda &amp; Co. helps leaders turn strategy into top-line revenue. For 28 years, Kate has worked with leadership teams across hospitality, pharma and life sciences, technology and enterprise services. Every engagement starts with the Revenue Reveal: a senior-led look at what really drove last year, and where next year's growth comes from.</p></div>
+  <div class="foot"><span>Right, or Just Lucky?</span><span>kateburda.com</span></div>
+</section>
+
+</body></html>

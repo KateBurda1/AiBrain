@@ -24,20 +24,45 @@ Cadence source for all tracks: [[2026.08.26 - Internal - Zoho Intent Branching E
 1. Query Zoho Contacts where `ZI_Intent_Topic` contains the intent. Summarize titles by function and seniority, top companies and industries, and which other intent tags overlap. This answers "who is the buyer" without asking.
 2. Read [[what-we-sell]], [[how-we-sound]], [[my-voice]], and the intent's existing outreach file.
 
-## The 5 x 6 journey matrix
+## Start with the instigator, before any grid row (Kate, 2026.09.27)
 
-Columns are the 5 stages. Each stage maps to one of the 5 posts and one step of the email cadence.
+Before writing Thinking and feeling, answer: **why is this signal firing at all?** An intent topic name can mean several things, so make the assumption explicitly and confirm it with Kate.
+1. **Who is really searching.** If Zoho shows most of a company's C-suite tagged at once, that's a company-level research surge landing on senior names, not the CEO personally reading. The actual researcher is usually sales leadership, RevOps, or someone building a vendor shortlist.
+2. **List the likely instigators, strongest first,** grounded in the overlap tags, the calendar (budget season, fiscal year, renewals), and Kate's own case studies and articles in `my-files (knowledge)/`. Include "not a buyer at all" (competitors, data sellers) as an honest option.
+3. **Pick with Kate,** then name what the instigators have in common. That becomes the thesis.
+4. Leadership-change instigators get their own play later via ZoomInfo Scoops, not folded into the main series.
 
-| | 1. Point of inspiration | 2. Informed | 3. Explore | 4. Aware of product | 5. Validate |
-|---|---|---|---|---|---|
-| **Thinking and feeling** | | | | | |
-| **Focus (what they care about)** | | | | | |
-| **What we have** | | | | | |
-| **Impact (what we have, on their focus)** | | | | | |
-| **Value proposition** | | | | | |
-| **Differentiated message** | | | | | |
+## Depth standard for every stage (Kate, 2026.09.27: "I like the depth... it enriches the value prop, thus the messaging")
+
+Build all six rows of a stage at once, at this depth, then show Kate the whole column before moving on. Nothing goes to the file until she's seen it.
+- **What changed:** one or two lines on what's different from the last stage.
+- **Thinking and feeling:** the addressee's real questions in their own voice (three or so, not one), then a named emotional state ("uneasy, about to put a number in front of the board they can't back up"), then the committee thread: one line per chair (CFO, sales, marketing, CTO) showing their version of the same worry.
+- **Focus:** three or four bullets of what they care about right now, including the urgency or window (e.g. "before the budget locks"), plus one line on how the committee sees the same focus from their chair.
+- **What we have:** specific methodology pieces, Ignite features, and real precedents from the knowledge base, never generic.
+- **Impact, value proposition, message:** each built from the rows above it. Offer two or three message options with a recommendation, and show the footing.
+
+The depth in the top rows is the point. Thin thinking and feeling produces a generic value proposition, which produces a clever-but-empty message.
+
+## The journey matrix: 5 stages, not 6
+
+**Current rule (Kate, 2026.09.29, repeated 2026.09.30: "there are 5.. not six"):** five stages across: Point of inspiration, Informed, Explore, Aware of product, Validate. Rows down each stage: Thinking and feeling, Focus, What we have, Impact, Value proposition, Message. One stage per touch, five touches. The 6-stage table below is superseded history, kept only for reference.
+
+### Superseded: the 6 x 6 version (2026.09.27)
+
+**Corrected by Kate, 2026.09.27 — this replaces the earlier 5-stage version.** Columns are the 6 stages. Each stage maps to one of the pieces of content and one step of the email cadence.
+
+| | 1. Point of inspiration | 2. Aware of situation | 3. Informed | 4. Aware of product | 5. Validate | 6. The decision |
+|---|---|---|---|---|---|---|
+| **Thinking and feeling** | | | | | | |
+| **Focus (what they care about)** | | | | | | |
+| **What we have** | | | | | | |
+| **Impact (what we have, on their focus)** | | | | | | |
+| **Value proposition** | | | | | | |
+| **Differentiated message** | | | | | | |
 
 The value proposition comes out of thinking and feeling, focus, what we have, and impact. The differentiated message comes out of the value proposition.
+
+**Note on the two new columns (pending full definitions, confirm as we build each series):** Kate confirmed Aware of situation and Informed "really go together" — adjacent stages, both about the buyer coming to fuller understanding of the problem before any vendor search starts. Validate is "where they are looking at options" (vetting us against alternatives, later than Aware of product, not earlier — a due-diligence stage, not early-stage shopping). The decision is the final close stage (what the old 5-stage model called Validate: proof, board-readiness, reputation on the line). Existing series built under the old 5-stage model (Business Transformation) haven't been retrofitted to this yet.
 
 **Rules for the differentiated message:** clearly different from what every other consultant says, clever, and it leads them to think rather than telling them. It should read like a question they can't answer comfortably, or a mirror they recognize themselves in, not a claim about us.
 
@@ -100,4 +125,6 @@ Other hooks: "Do less, make it mean more," the silent saboteur, the War Room, Ou
 
 ## Voice guardrails
 
-The buyer is always in charge. Never imply we take the controls or replace their people (Kate picked "navigator" over "pilot", "co-pilot" and "crew" for this reason). No em dashes. Never "actually." Short sentences. Warm, clever, occasionally sarcastic. Nothing that reads as AI. Nothing goes out without Kate's approval.
+The buyer is always in charge. Never imply we take the controls or replace their people (Kate picked "navigator" over "pilot", "co-pilot" and "crew" for this reason). No em dashes. Never "actually." Short sentences. Warm, clever, thought-provoking, occasionally sarcastic, even cheeky (Kate, 2026.09.27). Nothing that reads as AI. Nothing goes out without Kate's approval.
+
+**Look:** mostly black, white and greys, with the KB brand colors held back for impact: PMS 214 raspberry and PMS 675 berry (KB pieces use KB colors only, Kate 2026.09.27). White (negative) logo on grey frames. See `my-business (context)/brand-standards.md`.

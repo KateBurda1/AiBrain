@@ -1,0 +1,237 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=block" rel="stylesheet">
+<style>
+:root {
+  --raspberry: #D51067;   /* KB PMS 214 */
+  --berry: #B52372;       /* KB PMS 675 */
+  --ink: #111;
+  --grey: #55575A;        /* KB PMS 425 */
+  --grey-line: #A0A1A2;   /* KB PMS 422 */
+  --grey-soft: #CAC8C8;   /* KB PMS 420 */
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; background: #fff; }
+.frame { position: absolute; inset: 0; opacity: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center; padding: 0 110px;
+  font-family: "Playfair Display", Georgia, serif; }
+.frame.top { justify-content: flex-start; padding-top: 250px; }
+.w { background: #fff; color: var(--ink); }
+.b { background: #000; color: #fff; }
+.g { background: var(--grey); color: #fff; }
+.line { font-size: 62px; line-height: 1.3; font-weight: 400; opacity: 0; }
+.big { font-size: 96px; }
+.reveal { text-transform: uppercase; font-size: 112px; line-height: 1.15; letter-spacing: 2px; font-weight: 500; }
+.foot { position: absolute; left: 0; right: 0; bottom: 110px; display: flex; flex-direction: column; align-items: center; gap: 38px; z-index: 5; }
+.rule { width: 70px; height: 3px; }
+.w .rule { background: var(--ink); } .b .rule, .g .rule { background: #fff; }
+.logo { width: 150px; }
+
+/* spreadsheet, drawn on its own layer over frames 2 and 3 */
+#sheet { position: absolute; left: 160px; top: 620px; width: 760px; height: 400px; z-index: 4; opacity: 0;
+  font-family: "Playfair Display", Georgia, serif; }
+.hl, .vl { position: absolute; background: var(--grey-line); }
+.hl { height: 2px; width: 760px; left: 0; transform-origin: left center; }
+.vl { width: 2px; height: 400px; top: 0; transform-origin: center top; }
+.cell { position: absolute; height: 80px; display: flex; align-items: center; font-size: 30px; color: var(--grey); opacity: 0; }
+.hdr { color: var(--ink); font-weight: 500; letter-spacing: 1px; }
+.bar { position: absolute; height: 18px; background: var(--grey-soft); border-radius: 3px; opacity: 0; }
+.formula { font-family: "Courier New", monospace; font-size: 22px; color: var(--ink); white-space: nowrap; }
+.formula.fill { color: var(--grey); }
+.hot { position: absolute; left: 500px; width: 260px; height: 80px; border: 3px solid var(--ink); opacity: 0; }
+
+/* "Verrrrry scientific." */
+.drawl { position: absolute; top: 560px; left: 0; right: 0; font-size: 120px; font-style: italic; opacity: 0; }
+.tiles { position: absolute; top: 400px; left: 0; right: 0; display: flex; justify-content: center; gap: 30px; }
+.el { position: relative; width: 230px; height: 230px; border: 3px solid #fff; opacity: 0; }
+.el .num { position: absolute; top: 14px; left: 18px; font-size: 30px; }
+.el .sym { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 112px; font-weight: 500; }
+.el .nm { position: absolute; bottom: 14px; left: 0; right: 0; font-size: 24px; letter-spacing: 1px; }
+.sci { position: absolute; top: 720px; left: 0; right: 0; font-size: 96px; font-style: italic; opacity: 0; }
+
+/* the coin */
+.stage { position: relative; perspective: 1400px; display: flex; justify-content: center; align-items: center; }
+.coin { position: relative; transform-style: preserve-3d; }
+.face, .rim { position: absolute; inset: 0; border-radius: 50%; }
+.face { backface-visibility: hidden;
+  background: radial-gradient(circle at 34% 28%, #fbfbfb 0%, #d9d9d9 28%, #a3a3a3 60%, #6a6a6a 86%, #4a4a4a 100%); }
+.face svg { width: 100%; height: 100%; display: block; }
+/* reeded edge: each disc's outer ring alternates light and dark, which reads as ridges edge-on */
+.rim { background: repeating-conic-gradient(#9a9a9a 0deg 1.6deg, #4c4c4c 1.6deg 3.2deg); }
+</style></head>
+<body>
+
+<section class="frame w" id="f1">
+  <div class="line big">Budget season.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame w top" id="f2">
+  <div class="line">Time to build<br>next year's plan.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame w top" id="f3">
+  <div class="line">Step one: last year's number.</div>
+  <div class="line">Step two: add a percentage.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<div id="sheet">
+  <div class="hot" id="hot" style="top:320px"></div>
+</div>
+
+<section class="frame g" id="f4">
+  <div class="drawl" id="drawl"></div>
+  <div class="tiles">
+    <div class="el"><span class="num">23</span><span class="sym">V</span><span class="nm">Vanadium</span></div>
+    <div class="el"><span class="num">68</span><span class="sym">Er</span><span class="nm">Erbium</span></div>
+    <div class="el"><span class="num">39</span><span class="sym">Y</span><span class="nm">Yttrium</span></div>
+  </div>
+  <div class="sci" id="sci">scientific.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo-reverse.png"></div>
+</section>
+
+<section class="frame b top" id="f5">
+  <div class="line">But that plan is built on<br>last year's results...</div>
+  <div class="stage" style="margin-top:120px;height:420px;width:100%"><div class="coin" data-size="320" data-toss="1"></div></div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b top" id="f6" style="padding-top:150px">
+  <div class="stage" style="height:360px;width:100%"><div class="coin" data-size="270"></div></div>
+  <div class="line reveal" style="margin-top:70px;color:var(--raspberry)">Right,</div>
+  <div class="line reveal" style="color:var(--berry);font-size:94px">or just lucky?</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame w" id="f7">
+  <div class="line">Do you know</div>
+  <div class="line">which is which?</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<script>
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const ease = (x) => x * x * (3 - 2 * x);
+const fade = (t, a, b) => ease(clamp((t - a) / (b - a)));
+
+// a coin face: raised rim, beaded ring, motto on the arc, the word, the year
+let uid = 0;
+const faceSVG = (word, motto) => {
+  const id = 'arc' + (uid++);
+  return `<svg viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="47.5" fill="none" stroke="#7c7c7c" stroke-width="3"/>
+    <circle cx="50" cy="50" r="45.6" fill="none" stroke="#efefef" stroke-width=".7"/>
+    <circle cx="50" cy="50" r="42.8" fill="none" stroke="#6f6f6f" stroke-width="1.7" stroke-linecap="round" stroke-dasharray="0.01 2.9"/>
+    <path id="${id}" d="M 16,52 A 34,34 0 0 1 84,52" fill="none"/>
+    <text font-family="Playfair Display, serif" font-size="7.2" letter-spacing="1.1" fill="#555" text-anchor="middle">
+      <textPath href="#${id}" startOffset="50%">${motto}</textPath></text>
+    <text x="50" y="56.6" font-family="Playfair Display, serif" font-weight="600" font-size="15.5" letter-spacing="1.6" fill="#f4f4f4" text-anchor="middle">${word}</text>
+    <text x="50" y="56" font-family="Playfair Display, serif" font-weight="600" font-size="15.5" letter-spacing="1.6" fill="#454545" text-anchor="middle">${word}</text>
+    <line x1="36" y1="63" x2="64" y2="63" stroke="#6f6f6f" stroke-width=".6"/>
+    <text x="50" y="74" font-family="Playfair Display, serif" font-size="7" letter-spacing="1.2" fill="#555" text-anchor="middle">2026</text>
+  </svg>`;
+};
+
+// build every coin: two faces plus a stack of reeded rim discs for thickness
+document.querySelectorAll('.coin').forEach((c) => {
+  const s = +c.dataset.size, th = Math.round(s * 0.08);
+  c.style.width = c.style.height = s + 'px';
+  for (let z = -th / 2; z <= th / 2; z += 1) {
+    const r = document.createElement('div'); r.className = 'rim';
+    r.style.transform = `translateZ(${z}px) scale(.985)`;
+    c.appendChild(r);
+  }
+  const front = document.createElement('div'); front.className = 'face';
+  front.innerHTML = faceSVG('RIGHT', 'IN DATA WE TRUST');
+  front.style.transform = `translateZ(${th / 2 + 0.5}px)`;
+  const back = document.createElement('div'); back.className = 'face';
+  back.innerHTML = faceSVG('LUCKY', 'IN GUT WE TRUST');
+  back.style.transform = `rotateX(180deg) translateZ(${th / 2 + 0.5}px)`;
+  c.appendChild(front); c.appendChild(back);
+});
+
+// spreadsheet: grid lines, headers, last year's column, then the formula
+const sheet = document.getElementById('sheet');
+const rows = ['', 'Accounts', 'Segments', 'Channels', 'Total'];
+const colX = [0, 240, 500, 760];
+for (let i = 0; i <= 5; i++) { const l = document.createElement('div'); l.className = 'hl'; l.style.top = (i * 80) + 'px'; l.dataset.i = i; sheet.appendChild(l); }
+colX.forEach((x, i) => { const l = document.createElement('div'); l.className = 'vl'; l.style.left = x + 'px'; l.dataset.i = i; sheet.appendChild(l); });
+const addCell = (r, c, html, cls, key) => {
+  const d = document.createElement('div'); d.className = 'cell ' + (cls || '');
+  d.style.top = (r * 80) + 'px'; d.style.left = (colX[c] + 24) + 'px'; d.style.width = (colX[c + 1] - colX[c] - 30) + 'px';
+  d.innerHTML = html; d.dataset.key = key; sheet.appendChild(d); return d;
+};
+addCell(0, 1, 'Last year', 'hdr', 'hdr'); addCell(0, 2, 'Next year', 'hdr', 'hdr');
+rows.slice(1).forEach((name, i) => addCell(i + 1, 0, name, '', 'lab'));
+const bars = [150, 120, 170, 190].map((w, i) => {
+  const b = document.createElement('div'); b.className = 'bar';
+  b.style.top = ((i + 1) * 80 + 31) + 'px'; b.style.left = '264px'; b.style.width = w + 'px';
+  sheet.appendChild(b); return b;
+});
+const FORMULA = '=LAST_YEAR*1.08';
+const totalF = addCell(4, 2, '', 'formula', 'total');
+const fills = [1, 2, 3].map((r) => addCell(r, 2, FORMULA, 'formula fill', 'fill'));
+
+// frame windows [start, end], 0.5s crossfade in and out
+const F = { f1: [0, 3.4], f2: [3.4, 7.4], f3: [7.4, 13.4], f4: [13.4, 17.4], f5: [17.4, 22.4], f6: [22.4, 27.4], f7: [27.4, 32.4] };
+window.TOTAL = 32.4;
+const SPIN = 300;   // degrees per second, slow enough to read in the GIF
+const TILT = -22;   // constant side tilt so the reeded edge shows while it spins
+
+window.render = function (t) {
+  for (const [id, [a, b]] of Object.entries(F)) {
+    const el = document.getElementById(id);
+    const o = Math.min(fade(t, a - 0.01, a + 0.5), 1 - fade(t, b - 0.5, b));
+    el.style.opacity = (id === 'f1' && t < 0.5) ? 1 : (id === 'f7' && t > b - 0.5) ? 1 : o;
+    el.querySelectorAll('.line').forEach((ln, i) => {
+      const s = a + 0.4 + i * 1.1, p = fade(t, s, s + 0.8);
+      ln.style.opacity = p; ln.style.transform = `translateY(${(1 - p) * 18}px)`;
+    });
+  }
+
+  // sheet layer lives across frames 2 and 3
+  const [sa] = F.f2, [, sb] = F.f3;
+  sheet.style.opacity = Math.min(fade(t, sa + 0.2, sa + 0.7), 1 - fade(t, sb - 0.5, sb));
+  sheet.querySelectorAll('.hl').forEach((l) => { const s = sa + 0.5 + l.dataset.i * 0.18; l.style.transform = `scaleX(${fade(t, s, s + 0.6)})`; });
+  sheet.querySelectorAll('.vl').forEach((l) => { const s = sa + 0.8 + l.dataset.i * 0.18; l.style.transform = `scaleY(${fade(t, s, s + 0.6)})`; });
+  sheet.querySelectorAll('.cell[data-key=hdr]').forEach((c) => c.style.opacity = fade(t, sa + 2.0, sa + 2.6));
+  sheet.querySelectorAll('.cell[data-key=lab]').forEach((c, i) => c.style.opacity = fade(t, sa + 2.3 + i * 0.12, sa + 2.9 + i * 0.12));
+  const f3a = F.f3[0];
+  bars.forEach((b, i) => { const s = f3a + 0.6 + i * 0.15; b.style.opacity = fade(t, s, s + 0.4); b.style.background = t > f3a + 0.6 ? '#8A8C8C' : ''; });
+  const ts = f3a + 2.2, n = Math.floor(clamp((t - ts) / 1.6) * FORMULA.length);
+  totalF.style.opacity = t > ts ? 1 : 0;
+  totalF.textContent = FORMULA.slice(0, n) + (t > ts && t < ts + 2.2 && Math.floor(t * 3) % 2 ? '|' : '');
+  document.getElementById('hot').style.opacity = fade(t, ts - 0.3, ts);
+  fills.forEach((c, i) => { const s = ts + 2.4 + i * 0.25; c.style.opacity = fade(t, s, s + 0.2); });
+
+  // "Verrrrrry" drags out, then snaps into V, Er, Y and "scientific."
+  const f4a = F.f4[0], drawl = document.getElementById('drawl');
+  const RS = 7, rStart = f4a + 0.5, rStep = 0.09;
+  const rCount = Math.max(0, Math.min(RS, Math.floor((t - rStart) / rStep) + 1));
+  const done = t > rStart + RS * rStep;
+  drawl.textContent = t < f4a + 0.3 ? '' : 'Ve' + 'r'.repeat(rCount) + (done ? 'y...' : '');
+  drawl.style.opacity = Math.min(fade(t, f4a + 0.25, f4a + 0.45), 1 - fade(t, f4a + 1.9, f4a + 2.15));
+  document.querySelectorAll('.el').forEach((e, i) => {
+    const s = f4a + 2.15 + i * 0.18, p = fade(t, s, s + 0.3);
+    e.style.opacity = p; e.style.transform = `scale(${0.85 + 0.15 * p})`;
+  });
+  const sci = document.getElementById('sci');
+  const sp = fade(t, f4a + 2.8, f4a + 3.2);
+  sci.style.opacity = sp; sci.style.transform = `translateY(${(1 - sp) * 18}px)`;
+
+  // coins: one continuous spin, so the crossfades line up
+  document.querySelectorAll('.coin').forEach((c) => {
+    let y = Math.sin(t * 1.6) * 10, ang = t * SPIN;
+    if (c.dataset.toss) {
+      const toss = F.f5[0] + 1.6, p = fade(t, toss - 1.2, toss + 0.6);
+      y += (1 - p) * 160;
+      ang = t < toss - 1.2 ? 75 : 75 + (t - (toss - 1.2)) * SPIN * p;
+    }
+    c.style.transform = `translateY(${y}px) rotateY(${TILT}deg) rotateX(${ang}deg)`;
+  });
+};
+render(0);
+</script>
+</body></html>

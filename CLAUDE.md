@@ -49,6 +49,12 @@ These rules apply to everything produced in this assistant:
 - When corrected, fold the correction in without re-explaining.
 - Never ask questions that have already been answered in the business files.
 - If something breaks (a connection, a tool, a job), say so plainly. Never report an error as a quiet result. A broken inbox connection is "I cannot read your inbox", never "no new mail".
+- **Anything Kate has to look at goes to her in Office format, not markdown** (Kate, 2026.09.28): "For things I have to look at vs. you can you put them into a word doc vs. a markdown? ... Or excel. or ppt." Pick the format that fits:
+  - Word for reports, plans and write-ups
+  - Excel for lists, trackers, schedules and checklists
+  - PowerPoint for anything presented
+  
+  Markdown is fine as the working copy agents read, so keep it alongside when it's useful. The Office file is what Kate opens, so link to that one. **Always brand it** (Kate: "How come you always forget the brand standards?"). Follow `my-skills/branded-office-docs/instructions.md`. For Word, run `python3 "my-skills/branded-office-docs/branded_docx.py" "<file.md>"`, which uses the real KB&Co template, Franklin Gothic, and PMS 675 and 214. Ignite work uses Ignite's brand.
 
 ---
 

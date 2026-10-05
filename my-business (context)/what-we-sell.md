@@ -79,6 +79,8 @@ Keep this distinction exactly. It is the spine of the pitch and it is what keeps
 
 **Do not use the "19 to 25% revenue increase" claim** from the 2023 brand video. It has no source anywhere in the files.
 
+**Kate's own data, confirmed usable 2026.09.27** (also in the 2023 brand video): only **5%** of marketing initiatives were focused on the most valuable customers, and **90%** of tactics weren't aligned to the overall strategy. The video's other two stats ("90% of companies without strategies will fail," "60% of organizations don't link strategy to financial goals") are borrowed and unsourced, so leave them out.
+
 **Kate can derive the 22:1 threshold and the basis for the $1.3M-$2M on the spot, because she did the work.** Neither derivation is written down. That answer currently lives only with her, so anyone else fronting this pitch could not answer it.
 
 **Buyer map:** the **commercial officer is the economic buyer**. President-level operators (Kerry Ranson at Raines) buy on efficiency AND effectiveness. **Asset managers influence but do not purchase** — they hear the same explanations from commercial teams on repeat with no way to test them, so their pitch is "a way to know whether what you are being told is true," not "a better tool." Property teams are the users.

@@ -1,0 +1,193 @@
+<!-- Kate Burda & Co. | Plan or Hope? | Touchpoint 2, Business Transformation | paste into a WordPress Custom HTML block -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+.kb-ph{--pink:#D51067;--ink:#111;--paper:#fff;--night:#000;--mute:#6b6b6b;--line:#e6e6e6;}
+.kb-ph *{box-sizing:border-box;margin:0;padding:0;}
+.kb-ph{background:var(--paper);color:var(--ink);font-family:"Source Sans 3",Helvetica,Arial,sans-serif;font-weight:300;font-size:18px;line-height:1.6;}
+.kb-ph a{color:inherit;}
+.kb-ph .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+.kb-ph .narrow{max-width:720px;margin:0 auto;}
+.kb-ph .caps{text-transform:uppercase;letter-spacing:3px;font-size:13px;font-weight:600;}
+.kb-ph .pink{color:var(--pink);}
+.kb-ph h1,.kb-ph h2,.kb-ph h3,.kb-ph h4{color:var(--ink);letter-spacing:0;text-transform:none;}
+.kb-ph .hero h1,.kb-ph .band h2{color:#fff;}
+.kb-ph .hero p{color:#fff;}
+.kb-ph a.btn{color:#fff;border-radius:0;}
+.kb-ph a.btn.ghost{color:var(--ink);}
+.kb-ph .yn button{border-radius:0;line-height:1.2;text-transform:none;letter-spacing:0;}
+.kb-ph .serif{font-family:"Playfair Display",Georgia,serif;}
+.kb-ph .rule{width:60px;height:2px;background:currentColor;margin:28px auto;}
+.kb-ph .hero{background:var(--night);color:#fff;}
+.kb-ph .top{display:flex;justify-content:space-between;align-items:center;padding-top:28px;}
+.kb-ph .top img{width:64px;}
+.kb-ph .top a{font-size:14px;text-decoration:none;opacity:.8;}
+.kb-ph .hero .grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding:56px 24px 88px;}
+.kb-ph .hero h1{font-family:"Playfair Display",serif;font-weight:400;font-size:72px;line-height:1.02;margin:16px 0 22px;}
+.kb-ph .hero h1 em{color:var(--pink);font-style:normal;}
+.kb-ph .hero .lede{font-size:21px;max-width:520px;opacity:.92;}
+.kb-ph .hero img.motion{width:100%;max-width:400px;display:block;margin:0 auto;}
+.kb-ph .section{padding:96px 0;}
+.kb-ph h2{font-family:"Playfair Display",serif;font-weight:400;font-size:42px;line-height:1.15;margin-bottom:22px;}
+.kb-ph .story p{font-size:21px;margin-bottom:18px;}
+.kb-ph .story .turn{font-family:"Playfair Display",serif;font-size:30px;line-height:1.3;margin:36px 0 8px;}
+.kb-ph .check{background:#f6f6f6;}
+.kb-ph .q{display:grid;grid-template-columns:40px 1fr auto;gap:18px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);}
+.kb-ph .q .n{font-family:"Playfair Display",serif;font-size:28px;color:var(--pink);}
+.kb-ph .q p{font-size:19px;}
+.kb-ph .yn{display:flex;gap:8px;}
+.kb-ph .yn button{font:inherit;font-size:15px;font-weight:600;padding:8px 18px;border:1px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer;}
+.kb-ph .yn button.on{background:var(--ink);color:#fff;}
+.kb-ph .result{margin-top:40px;padding:34px;background:#fff;border-left:4px solid var(--pink);}
+.kb-ph .result h3{font-family:"Playfair Display",serif;font-weight:400;font-size:30px;margin-bottom:8px;}
+.kb-ph .band{background:var(--night);color:#fff;}
+.kb-ph .band .stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:48px;border-top:1px solid #333;}
+.kb-ph .stat{padding:30px 26px 10px 0;}
+.kb-ph .stat+.stat{padding-left:26px;border-left:1px solid #333;}
+.kb-ph .stat .big{font-family:"Playfair Display",serif;font-size:60px;line-height:1;color:var(--pink);}
+.kb-ph .stat p{font-size:17px;margin-top:12px;opacity:.9;}
+.kb-ph .band .after{margin-top:40px;font-size:20px;opacity:.92;}
+.kb-ph .thinkers{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:40px;border-top:1px solid var(--line);}
+.kb-ph .thinker{padding:28px 28px 20px 0;border-bottom:1px solid var(--line);}
+.kb-ph .thinker:nth-child(even){padding-left:28px;border-left:1px solid var(--line);}
+.kb-ph .thinker h4{font-family:"Playfair Display",serif;font-weight:500;font-size:22px;margin-bottom:8px;}
+.kb-ph .thinker p{font-size:17px;color:#333;}
+.kb-ph .does{list-style:none;margin-top:28px;}
+.kb-ph .does li{padding:18px 0 18px 34px;border-bottom:1px solid var(--line);position:relative;font-size:19px;}
+.kb-ph .does li::before{content:"";position:absolute;left:0;top:30px;width:16px;height:2px;background:var(--pink);}
+.kb-ph .ctas{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+.kb-ph .cta{padding:40px 34px;border:1px solid var(--line);}
+.kb-ph .cta h3{font-family:"Playfair Display",serif;font-weight:400;font-size:28px;line-height:1.2;margin-bottom:10px;}
+.kb-ph .cta p{font-size:17px;color:#333;margin-bottom:22px;}
+.kb-ph .btn{display:inline-block;padding:15px 26px;background:var(--pink);color:#fff;text-decoration:none;font-weight:600;font-size:16px;letter-spacing:.5px;}
+.kb-ph .btn:hover{background:#b10d56;}
+.kb-ph .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink);}
+.kb-ph .kb-foot{padding:48px 0;text-align:center;font-size:14px;color:var(--mute);}
+@media (max-width:860px){.kb-ph .hero .grid2,.kb-ph .ctas,.kb-ph .thinkers{grid-template-columns:1fr;gap:36px;}
+.kb-ph .thinker:nth-child(even){padding-left:0;border-left:0;}
+.kb-ph .hero h1{font-size:50px;}.kb-ph h2{font-size:32px;}
+.kb-ph .band .stats{grid-template-columns:1fr;}.kb-ph .stat+.stat{padding-left:0;border-left:0;border-top:1px solid #333;}
+.kb-ph .section{padding:64px 0;}
+.kb-ph .q{grid-template-columns:32px 1fr;}.kb-ph .yn{grid-column:2;}}
+</style>
+
+<div class="kb-ph">
+
+<div class="hero">
+  <div class="wrap top"><img src="https://kateburda.com/wp-content/uploads/2019/01/logo.png" alt="Kate Burda &amp; Co."></div>
+  <div class="wrap grid2">
+    <div>
+      <div class="caps pink">A five-minute check for the leader who owns the number</div>
+      <h1>Plan, or <em>hope?</em></h1>
+      <p class="lede">Your systems have a plan. Your structure has a plan. Does your revenue? Six questions to find out.</p>
+    </div>
+    <img class="motion" src="https://kateburda.com/wp-content/uploads/2026/09/piece-2-informed.gif" alt="Your systems have a plan. Your structure has a plan. Your revenue has a hope.">
+  </div>
+</div>
+
+<section class="section story">
+  <div class="wrap narrow">
+    <p>The board signed off. There's a goal, strategies under it and actions under those. It looks like a plan.</p>
+    <p>Now look at what's in it. Budget. Headcount. Actions. Owners. Dates. Every line is something you control. Most of it is what worked before, and what you did before isn't built for tomorrow.</p>
+    <p>What decides revenue isn't on the list. Customers change what they buy and why. Competitors move. Segments blur.</p>
+    <p class="turn">In this climate, they rewrite your plan every week.</p>
+    <p>A plan that only works if conditions hold isn't a plan. <span class="pink">It's a hope.</span></p>
+  </div>
+</section>
+
+<section class="section check" id="check">
+  <div class="wrap narrow">
+    <div class="caps pink">The check</div>
+    <h2>Six questions. Answer yes or no.</h2>
+    <div class="qs">
+      <div class="q"><span class="n">1</span><p>Can you name the two or three bets your plan is making on customers and the market?</p><div class="yn"><button>Yes</button><button>No</button></div></div>
+      <div class="q"><span class="n">2</span><p>Are your strategies more than the revenue number broken into pieces?</p><div class="yn"><button>Yes</button><button>No</button></div></div>
+      <div class="q"><span class="n">3</span><p>Would your managers name the same strategies you would?</p><div class="yn"><button>Yes</button><button>No</button></div></div>
+      <div class="q"><span class="n">4</span><p>If a key assumption breaks next quarter, does your plan say what changes?</p><div class="yn"><button>Yes</button><button>No</button></div></div>
+      <div class="q"><span class="n">5</span><p>Is there a line in your plan for what the shift opens up, not just what it threatens?</p><div class="yn"><button>Yes</button><button>No</button></div></div>
+      <div class="q"><span class="n">6</span><p>Mid-quarter, could you tell whether it's working, before the number comes in?</p><div class="yn"><button>Yes</button><button>No</button></div></div>
+    </div>
+    <div class="result" id="result">
+      <h3>Mostly yes: you have a plan.</h3>
+      <p>Keep testing its bets. Mostly no: you have a hope. You're not alone, and it's fixable.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="wrap">
+    <div class="caps pink">What we saw inside one large organization</div>
+    <h2 style="max-width:820px">A proud, capable team. A plan with no room for anything outside the building.</h2>
+    <div class="stats">
+      <div class="stat"><div class="big">3 in 4</div><p>of the leadership team described planning as "essentially a budget battle."</p></div>
+      <div class="stat"><div class="big">60%</div><p>of executives said the same.</p></div>
+      <div class="stat"><div class="big">&lt; 1 in 5</div><p>mentioned the market, or a competitor who could disrupt them.</p></div>
+    </div>
+    <p class="after">This was a large hospitality organization, brilliant at execution. The pattern isn't unique to hospitality. We've seen it across pharma, medical devices, technology and enterprise services.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="caps pink">You don't have to take our word for it</div>
+    <h2>What the thinkers say</h2>
+    <div class="thinkers">
+      <div class="thinker"><h4>Roger Martin</h4><p>Planning feels comfortable because it covers what you control. Strategy is uncomfortable because it's a bet on customers, and you don't control them.</p></div>
+      <div class="thinker"><h4>Richard Rumelt</h4><p>Mistaking goals for strategy is one of the most common causes of bad strategy. Good strategy starts with a diagnosis of what changed.</p></div>
+      <div class="thinker"><h4>Henry Mintzberg</h4><p>Only 10% to 30% of intended strategy gets carried out. The rest emerges as the world moves.</p></div>
+      <div class="thinker"><h4>McKinsey</h4><p>Companies that moved resources the most returned 10.8% a year to shareholders, against 2.5% for those that moved them least.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap narrow">
+    <div class="caps pink">The difference</div>
+    <h2>What a plan does that a hope can't</h2>
+    <ul class="does">
+      <li>It names its bets on customers and the market, so you know what has to be true.</li>
+      <li>It watches for the signal that a bet is breaking, and changes course before the quarter closes.</li>
+      <li>It has room for what the shift opens up. In this climate, the opportunity moves as fast as the risk.</li>
+      <li>It starts with the science and strategy: the revenue goal, the strategies that move it, the actions that prove it. Then the customer engagement approach.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap ctas">
+    <div class="cta">
+      <h3>Want the full research?</h3>
+      <p>Built for the Climate: what 30+ senior leaders told us about why transformations miss the top line.</p>
+      <a class="btn" href="https://kateburda.com/built-for-the-climate/">Get the report</a>
+    </div>
+    <div class="cta">
+      <h3>Want to talk it through?</h3>
+      <p>20 minutes on your plan. No pitch.</p>
+      <a class="btn ghost" href="https://kateburdacompany.zohobookings.com/5011447000000039045">Book 20 minutes with Kate</a>
+    </div>
+  </div>
+</section>
+
+<div class="kb-foot">
+  <div class="rule" style="color:#111"></div>
+  Kate Burda &amp; Co. | Bringing simplicity to complexity | <a href="https://kateburda.com">kateburda.com</a>
+</div>
+
+</div>
+
+<script>
+(function(){
+  var root=document.querySelector('.kb-ph'); if(!root) return;
+  var qs=root.querySelectorAll('.q'), res=root.querySelector('#result');
+  function score(){
+    var y=0,n=0,a=0;
+    qs.forEach(function(q){var on=q.querySelector('button.on'); if(on){a++; on.textContent==='Yes'?y++:n++;}});
+    if(a===0) return;
+    var h=res.querySelector('h3'), p=res.querySelector('p');
+    if(a<qs.length){h.textContent=a+' of 6 answered.';p.textContent='Keep going. The picture gets clearer with each one.';return;}
+    if(y>=5){h.textContent='You have a plan.';p.textContent='Keep testing its bets. In this climate, the ones that held last quarter may not hold next quarter.';}
+    else if(y>=3){h.textContent='Part plan, part hope.';p.textContent='You have the bones of a plan. The '+n+' "no" answers are where revenue is being left to the weather.';}
+    else{h.textContent='You have a hope.';p.textContent='You are not alone, and it is fixable. It starts with naming the bets your plan is making.';}
+  }
+  qs.forEach(function(q){q.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){q.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');score();});});});
+})();
+</script>

@@ -26,21 +26,41 @@ Created 2026.09.13, from Kate's first working session with Megan.
 
 **Age:** 56.
 
-## Week of 2026.09.21: no Colorado Springs trip
+## Time zones: how to read every time in this file
 
-Kate's home this week, not in Colorado Springs, so the Wednesday walk with Wendy McHenry and opportunistic OTF aren't happening in their usual form. **Kate's framing, and the right one: these touches aren't gone, they're substituted** — same cardio slot, different location, since she has Peloton and Lifetime Fitness at home.
+**Rule, set 2026.09.27.** The Outlook connector returns wall-clock times in Kate's **mailbox** zone, which is Mountain, while Kate herself is normally in Central (Dallas). Mountain + 1 hour = Central. Every time written in this file from 2026.09.27 forward is **Central, with the zone named**, because that's Kate's home baseline. Times in the week-of-2026.09.21 section below are Mountain wall-clock, unconverted, which is how they were written at the time — read them as one hour earlier than Central.
 
-**Final version (as of 2026.09.20, after Kate's own edits to fit her 8am-6pm workday and the before-7am/after-6:30pm rule):**
+## Morning window, hard rule (Kate's words, 2026.09.27)
 
-- **Monday 9/21, 5:00-5:45am — Lifetime Fitness cardio** (45 min), standing in for OTF.
-- **Tuesday 9/22, 6:30-7:15pm — Strength, Upper Body.**
-- **Wednesday 9/23, 5:00-5:50am — Peloton** (50 min), standing in for the Wendy walk.
-- **Thursday 9/24, 6:30-7:15pm — Strength, Legs A** (moved from 5:30pm, which ended before the 6:30pm cutoff).
-- **Friday 9/25, 5:30-6:20am — new steady-state cardio** (50 min), part of the standing plan.
-- **Saturday 9/26, 8:00-9:00am cardio + 9:00-9:45am — Strength, Active (Vegas).** Kate's own edit: both sessions batched into one morning block for the travel day, not the usual AM-cardio/PM-strength split. Hotel-gym or bodyweight version, graded on effort not the usual loads. Confirmed via Outlook: the "Las Vegas" trip is already on her calendar, Fri 9/25 through Sun 9/27.
-- **Sunday 9/27, 11:00-11:50am — Peloton** (50 min, Kate's call over the outdoor bike), then **12:00-12:45pm — Strength, Legs B**, back to back by Kate's choice (re-read from the calendar 2026.09.20 evening after she moved both; the earlier duplicate 7:00am Peloton is gone). Megan's note: with a 10-minute gap, do Legs B first and ride after. The intra-session order meta-analysis (Eddens, van Someren & Howatson, Sports Medicine 2018) found strength-before-endurance preserves lower-body strength gains better than endurance-first; hypertrophy came out the same either way, so this is about getting full loads on the split squats and hip thrusts, not about the muscle goal itself.
+**Morning sessions have to be finished before 7:00am, and Kate wants 6:30-8:00am clear to get ready — she's rolling by 8:00.** So a morning session **ends by 6:30am local**, not 7:00. A 45-50 minute cardio session therefore starts at 5:30-5:45am. This replaces the looser "before 7:00am" phrasing used earlier in this file. Evening strength (after 6:30pm on weekdays) is unchanged.
+
+## Week of 2026.09.28: Colorado Springs Mon-Thu, drive to Michigan Fri-Sat, Michigan Sun
+
+**Read 2026.09.27 off the live calendar, then corrected by Kate the same evening on two points: she's in Michigan Sunday 10/4 and Monday 10/5 (not home), and she flies from Michigan to Colorado Springs Monday night 10/5. All times below are local to where she actually is that day, and the zone is named every time.**
+
+The constraint Kate named herself: **Friday 10/2 and Saturday 10/3 are drive days and training will be very difficult.** The calendar backs that up — "Start Driving" 6:00am-6:15pm CT Friday (with the Wylie, Ignite, and Hotel Evolution calls taken from the car) and 5:00am-7:00pm CT Saturday. Fourteen hours behind the wheel is not a day with a hidden gym session in it. **Those two days are not scheduled as training and are not counted as misses.** They get a drive-day floor instead (below).
+
+What the calendar does open up: she flies to Colorado Springs Monday **afternoon** 9/28, not late at night, so **Tuesday's 5:30am OTF with Wendy McHenry is genuinely available this week** — the usual late-Monday-arrival exception doesn't apply. And she's in Colorado Springs Wednesday, so **the Wednesday walk with Wendy is real, not a substitution.** With Friday and Saturday gone, OTF Tuesday stops being a bonus this week and becomes the 4th cardio touch. Worth saying out loud rather than leaving it "opportunistic."
+
+**The 4-and-4 target holds this week** (Kate confirmed 2026.09.27 that 4 cardio + 4 strength is still the target). None of the 8 land on a drive day:
+
+- **Monday 9/28, 5:30-6:15am CT — cardio at Lifetime Fitness**, at home before the afternoon flight. Stands in for the Friday steady-state slot the drive wipes out. (Separate flag, not a training matter: the Sales & Marketing meeting and the flight to Colorado both sit at 5:00-6:00pm CT Monday.)
+- **Tuesday 9/29, 5:30-6:15am MT — OTF with Wendy McHenry.** Then **6:30-7:15pm MT — Strength, Upper Body.** A double, and the only way to reach 4-and-4 given the drive days.
+- **Wednesday 9/30, 5:30-6:30am MT — walk with Wendy McHenry** (the fixed cardio touch, in its real form; confirm the actual time with Wendy). Then **6:30-7:15pm MT — Strength, Legs A.**
+- **Thursday 10/1, 7:30-8:15pm CT — Strength, Full Body/Pull.** The at-risk session of the week: she lands in Dallas ~11:30am and the AIR happy hour runs to 7:00pm CT. On the board, but this is the one to forgive if it goes.
+- **Friday 10/2 — drive day, no session.** Floor only: two deliberate 15-minute walks at fuel stops, logged by hand.
+- **Saturday 10/3 — drive day, no session.** Same floor.
+- **Sunday 10/4, in Michigan: 9:00-9:45am ET — Strength, Legs B**, then **10:00-10:45am ET — deliberate walk.** Strength first per the intra-session order note below. Hotel-gym version of Legs B if there's equipment, bodyweight version if not — graded on effort, not load, the same way the Vegas Saturday was. **The recurring 7:30-9:30am "Bike" event on Kate's calendar that day will not happen — the bike is in Dallas and she is not.** Don't treat it as a missed cardio session.
+
+Legs stay at 2x (Wed + Sun), which is the frequency that matters most for the leg goal. Upper body lands once instead of twice — acceptable for one travel week, and Tuesday's session already carries pull work (lat pulldown, cable row), so it isn't a pure push day.
+
+**Drive-day floor, research basis (per Kate's standing research-based instruction):** the point of the fuel-stop walks isn't training adaptation, it's interrupting 12-14 hours of uninterrupted sitting. The evidence on breaking up prolonged sitting with short activity bouts (Dempsey et al., Diabetologia 2016; Healy et al., European Heart Journal 2011) is about vascular and metabolic response, not fitness gains — so it's honest to log these and dishonest to count them toward the cardio target. Both are true at once.
 
 Four cardio, four strength — the actual 4-and-4 target, all 8 on the calendar, all outside the 8am-6pm work block. The standing plan itself (Wednesday walk, opportunistic OTF, weather-conditional Sunday bike/Peloton) resumes whenever Kate's actually back in Colorado Springs — this section is a one-week note, not a plan change.
+
+## Week of 2026.10.05: Michigan Mon, Colorado Springs Tue-Thu, Dallas Fri-Sun
+
+Set 2026.10.05. Kate is at the **Texas-OU game Saturday 10/10**, so there's no session that day. Full Body/Pull moves to **Friday 10/9, 6:30-7:15pm CT**. The rest stays as listed in `my-work (outputs)/internal/training-schedule/2026.10.04 - Internal - Training Sessions to Add.md`: Tue Upper Body 6:30pm MT; Wed walk with Wendy 6:00-6:45am MT (Kate confirmed 6:00 on 2026.10.05; the walk with Wendy is allowed to run past the 6:30 morning cutoff) plus Legs A 6:30pm MT; Thu OTF 5:30am MT; Fri steady-state cardio 5:30am CT; Sun Bike 7:30am CT (the existing recurring event) plus Legs B 11:00am CT. No session Monday: she's working in Michigan, then flying out late.
 
 ## Medical/orthopedic history (from health records, reviewed 2026.09.20)
 
@@ -121,9 +141,9 @@ The reasoning below (3 days: Thu/Sat/Sun) was the research-backed starting recom
 
 Megan doesn't need a separate check-in cadence. She already has one: the existing **Sunday Weekly Compass ritual** (`my-workflows (automations)/specs/2026.08.31 - Internal - Sunday Weekly Compass Structure.md`) has Megan bring a read on how training and health actually went, and what's realistic for the coming week, before Kate does her weekly grading. That's the standing routine, not a new one, unless Kate asks for something more frequent.
 
-**Automated 2026.09.20:** this ritual now runs on its own via a scheduled task (`megan-sunday-precompass`, Sundays 5:00 PM, before Wendy). It creates a calendar block for itself, pulls the past week's Strava data, checks it against the live plan and the goals above, and writes Kate's pre-Compass read. 5:00 PM is a placeholder anchor since the ritual itself is order-based (Megan/Janice before grading), not clock-time-based — move it if it collides with anything real.
+**Automated 2026.09.20, consolidated 2026.09.27:** this ritual runs on its own as one scheduled task, `megan-weekly-training-schedule`, Sundays 5:00 PM Central, before the Compass session. The separate `megan-sunday-precompass` task was retired 2026.09.27 at Kate's call and its files were deleted 2026.09.28. Its job is now Part A of the 5:00 PM run: pull the past week's Strava data, check it against the live plan and the goals above, and write Kate's pre-Compass read. 5:00 PM is a placeholder anchor, since the ritual is order-based (Megan and Janice before grading), not clock-based. Move it if it collides with anything real.
 
-A second task, `megan-weekly-training-schedule` (Sundays 8:00 PM, after Wendy), puts all 8 of the coming week's sessions on the calendar automatically — 4 strength (evening, weekdays after 6:30pm / weekends flexible) and 4 cardio (morning, weekdays before 7am / weekends flexible, outdoor bike rides always AM) — with exercises, reps, and load (Heavy/Medium/Light) in each event's notes, checked against Kate's real Outlook free/busy every time. It checks this file for any dated one-off note (travel, home-vs-Colorado-Springs) before defaulting to the standing plan, so this doesn't need to be done by hand in conversation every week.
+Part B of the same run puts all 8 of the coming week's sessions on the calendar automatically — 4 strength (evening, weekdays after 6:30pm / weekends flexible) and 4 cardio (morning, weekdays before 7am / weekends flexible, outdoor bike rides always AM) — with exercises, reps, and load (Heavy/Medium/Light) in each event's notes, checked against Kate's real Outlook free/busy every time. It checks this file for any dated one-off note (travel, home-vs-Colorado-Springs) before defaulting to the standing plan, so this doesn't need to be done by hand in conversation every week.
 
 **Correction, 2026.09.23:** the note that used to sit here claimed a 2026.09.21 run of `megan-weekly-training-schedule` found the Microsoft 365 connector missing its create-event tool. That run never happened — the task's actual history shows one run, 2026.09.20 evening, when it worked fine (outlook_create_event and outlook_update_event both succeeded repeatedly that session). No confirmed gap in the connector's write ability as of this correction. If a future run genuinely can't create an event, it should say so plainly and specifically rather than silently falling back to guessing.
 

@@ -43,7 +43,19 @@
 | White | — | 0-0-0-0 | 255-255-255 | `#FFFFFF` | `#FFFFFF` |
 | Black | Black | 0-0-0-100 | 0-0-0 | `#000000` | `#2E2925` (warm near-black as actually rendered in the black logo variant — use this, not pure black, when matching the real files) |
 
-**Secondary Palette** — for marketing materials, ads, and presentation documents.
+**Corrected 2026.09.27 against the style guide page itself:** the greys are the Secondary Palette and the pastels are Tertiary. An earlier version of this file had them swapped.
+
+**Secondary Palette: the greys.** Recommended for marketing materials, ads, and presentation documents.
+
+| PMS | CMYK | RGB | Hex |
+|---|---|---|---|
+| 420 | 21-17-17-0 | 202-200-200 | `#CAC8C8` |
+| 422 | 40-32-32-0 | 160-161-162 | `#A0A1A2` |
+| 423 | 48-39-39-4 | 138-140-140 | `#8A8C8C` |
+| 424 | 57-47-58-14 | 113-114-113 | `#717271` |
+| 426 | 73-66-62-67 | 38-39-41 | `#262729` |
+
+**Tertiary Palette: the pastels.** Neutral accents to the Secondary Palette, use sparingly.
 
 | PMS | CMYK | RGB | Hex |
 |---|---|---|---|
@@ -53,15 +65,7 @@
 | 651 | 33-19-6-0 | 169-188-214 | `#A9BCD6` |
 | 665 | 20-24-7-0 | 201-188-208 | `#C9BCD0` |
 
-**Tertiary Palette** — neutrals, accents only, use sparingly.
-
-| PMS | CMYK | RGB | Hex |
-|---|---|---|---|
-| 420 | 21-17-17-0 | 202-200-200 | `#CAC8C8` |
-| 422 | 40-32-32-0 | 160-161-162 | `#A0A1A2` |
-| 423 | 48-39-39-4 | 138-140-140 | `#8A8C8C` |
-| 424 | 57-47-58-14 | 113-114-113 | `#717271` |
-| 426 | 73-66-62-67 | 38-39-41 | `#262729` |
+**How Kate uses color (Kate, 2026.09.27):** mostly black, white and greys, with the branded colors held back for impact. The two impact colors she names are **raspberry** and **coral**. **Decided 2026.09.27: Kate Burda & Co pieces use KB colors only.** The impact pair is PMS 214 `#D51067` (raspberry) and PMS 675 `#B52372` (the deeper berry). Ignite's coral stays with Ignite-branded pieces. Greys come from the Primary Grey `#55575A` and the Secondary greys above, with the warm near-black `#2E2925`. Note: the KB style guide has no coral. Its two brand colors are PMS 214 `#D51067` and PMS 675 `#B52372` (the deeper berry). Coral only exists in Ignite's palette.
 
 ---
 

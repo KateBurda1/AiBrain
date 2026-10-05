@@ -32,6 +32,22 @@ Real past client work, referenced 2026.08.29 as the source of the 16:1 ROAS case
 
 ---
 
+**Correction, Kate 2026.09.27: RLJ was an asset manager of many hotels,** not a single hotel. For the Sales Intelligence series the 16:1 story is told as **"an asset manager overseeing many hotels."** Still never named. The older "a hotel in a major leisure market" descriptor stays valid where it's already in use.
+
+---
+
+## Chesapeake Hospitality
+
+Past engagement, a hotel **management group** (Kate, 2026.09.27). Source: `my-files (knowledge)/articles/Case Study- Sales Effectiveness.docx`, "Revenue Acceleration: Sales Effectiveness." Results include a $1.3M account closed at a distressed 250-room hotel two months after training, 5.5x additional room nights from one lead, and 4x revenue from one account. Also the source of the "tools used after the stay / post sale (Knowland Report)" pattern behind the Sales Intelligence thesis. **Naming status not confirmed.** Treat it like HRI (a management group, unnamed) until Kate says otherwise.
+
+---
+
+## Brand experience that can't go in writing
+
+Boehringer Ingelheim, Medtronic, Johnson & Johnson, Abbott and Indeed: never written up as case studies, and **no approval to use them in written material** (Kate, 2026.09.27). Kate can speak to them live, in her own words. Keep them out of reports, pages and emails. Note: the Business Transformation report and landing page still list some of these names, so settle one rule for both series.
+
+---
+
 ## HRI Lodging
 
 Past engagement. **Management offices in New Orleans; the hotels themselves are in other markets, Philadelphia among them.** Confirmed by Kate 2026.08.29.

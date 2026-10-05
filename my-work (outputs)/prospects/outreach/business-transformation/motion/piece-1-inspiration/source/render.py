@@ -18,13 +18,17 @@ with sync_playwright() as p:
 ff=imageio_ffmpeg.get_ffmpeg_exe()
 mp4=os.path.join(OUT,"piece-1-inspiration.mp4")
 subprocess.run([ff,"-y","-framerate",str(FPS),"-i",os.path.join(frames_dir,"%05d.png"),"-c:v","libx264","-pix_fmt","yuv420p","-crf","18","-movflags","+faststart",mp4],check=True,capture_output=True)
-# GIF: 12fps, 540 wide, merge identical frames
-imgs=[]; durs=[]
-for i in range(0,n,3):
-    im=Image.open(os.path.join(frames_dir,f"{i:05d}.png")).convert("RGB").resize((480,600),Image.LANCZOS)
-    if imgs and list(im.getdata())==list(imgs[-1].getdata()): durs[-1]+=125
-    else: imgs.append(im); durs.append(125)
-pal=[im.quantize(colors=64,method=Image.MEDIANCUT) for im in imgs]
+# GIF: 12fps, 480x600, ONE shared palette and no dithering (per-frame palettes flicker on the white/black fades)
+step=2; dur=int(1000/FPS*step)
+imgs=[Image.open(os.path.join(frames_dir,f"{i:05d}.png")).convert("RGB").resize((480,600),Image.LANCZOS) for i in range(0,n,step)]
+sample=Image.new("RGB",(480*8,600))
+for k,i in enumerate(range(0,len(imgs),max(1,len(imgs)//8))[:8]): sample.paste(imgs[i],(480*k,0))
+palimg=sample.quantize(colors=128,method=Image.MEDIANCUT)
+pal=[]; durs=[]
+for im in imgs:
+    q=im.quantize(palette=palimg,dither=Image.Dither.NONE)
+    if pal and q.tobytes()==pal[-1].tobytes(): durs[-1]+=dur
+    else: pal.append(q); durs.append(dur)
 gif=os.path.join(OUT,"piece-1-inspiration.gif")
 pal[0].save(gif,save_all=True,append_images=pal[1:],duration=durs,loop=0,optimize=True)
 # stills: cover + key frames

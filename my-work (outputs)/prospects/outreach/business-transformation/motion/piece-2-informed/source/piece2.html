@@ -1,0 +1,119 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=block" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; background: #fff; }
+.frame { position: absolute; inset: 0; opacity: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center; padding: 0 110px;
+  font-family: "Playfair Display", Georgia, serif; }
+.w { background: #fff; color: #111; }
+.b { background: #000; color: #fff; }
+.line { font-size: 62px; line-height: 1.3; font-weight: 400; opacity: 0; }
+.pink { color: #D51067; text-transform: uppercase; font-size: 66px; line-height: 1.25; letter-spacing: 1px; }
+.gap { height: 60px; }
+.foot { position: absolute; left: 0; right: 0; bottom: 110px; display: flex; flex-direction: column; align-items: center; gap: 38px; }
+.rule { width: 70px; height: 3px; }
+.w .rule { background: #111; } .b .rule { background: #fff; }
+.logo { width: 150px; }
+.weeks { margin-top: 70px; display: flex; flex-direction: column; gap: 22px; align-items: center; }
+.wk { position: relative; font-size: 40px; color: #bbb; opacity: 0; font-style: italic; }
+.wk .strike { position: absolute; left: -12px; top: 52%; height: 4px; width: 0; background: #D51067; }
+</style></head>
+<body>
+
+<section class="frame w" id="f1">
+  <div class="line">The goal: grow revenue 12%.</div>
+  <div class="line">Strategies. Actions.</div>
+  <div class="line">Owners. Dates.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame w" id="f2">
+  <div class="line">The board signed off.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f3">
+  <div class="line">Look again...</div>
+  <div class="line">every line is something<br>you control.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f4">
+  <div class="line">And most of it is</div>
+  <div class="line">what worked before.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f5">
+  <div class="line">But what you did before</div>
+  <div class="line">isn't built for tomorrow.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f6">
+  <div class="line">The customer isn't in the plan.</div>
+  <div class="line">Neither is the market.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f7">
+  <div class="line">And in this climate,</div>
+  <div class="line">they rewrite your plan<br>every week.</div>
+  <div class="weeks">
+    <div class="wk" data-i="0">The plan, week one<span class="strike"></span></div>
+    <div class="wk" data-i="1">The plan, week two<span class="strike"></span></div>
+    <div class="wk" data-i="2">The plan, week three<span class="strike"></span></div>
+    <div class="wk" data-i="3">The plan, week four<span class="strike"></span></div>
+  </div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f8">
+  <div class="line pink">That's not a plan.</div>
+  <div class="gap"></div>
+  <div class="line pink" style="font-size:88px">It's a hope.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame w" id="f9">
+  <div class="line">Your systems have a plan.</div>
+  <div class="line">Your structure has a plan.</div>
+  <div class="line">Your revenue has a <span style="color:#D51067">hope.</span></div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<script>
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const ease = (x) => x * x * (3 - 2 * x);
+const fade = (t, a, b) => ease(clamp((t - a) / (b - a)));
+const F = { f1: [0, 4.6], f2: [4.6, 7.6], f3: [7.6, 11.4], f4: [11.4, 14.6], f5: [14.6, 17.8],
+            f6: [17.8, 21.4], f7: [21.4, 27.2], f8: [27.2, 30.6], f9: [30.6, 36] };
+window.TOTAL = 36;
+window.render = function (t) {
+  for (const [id, [a, b]] of Object.entries(F)) {
+    const el = document.getElementById(id);
+    const o = Math.min(fade(t, a - 0.01, a + 0.5), 1 - fade(t, b - 0.5, b));
+    el.style.opacity = (id === 'f1' && t < 0.5) ? 1 : (id === 'f9' && t > b - 0.5) ? 1 : o;
+    el.querySelectorAll('.line').forEach((ln, i) => {
+      const s = a + 0.4 + i * 1.1;
+      const p = fade(t, s, s + 0.8);
+      ln.style.opacity = p;
+      ln.style.transform = `translateY(${(1 - p) * 18}px)`;
+    });
+  }
+  // the plan gets rewritten, faster each week: each version appears, then a pink strike runs through it
+  const [wa] = F.f7;
+  let s = wa + 2.2;
+  document.querySelectorAll('.wk').forEach((w) => {
+    const i = +w.dataset.i, gap = [0.95, 0.75, 0.55, 0.4][i];
+    const p = fade(t, s, s + 0.25), k = fade(t, s + gap * 0.55, s + gap * 0.9);
+    w.style.opacity = p;
+    w.querySelector('.strike').style.width = `calc(${k * 100}% + ${k * 24}px)`;
+    s += gap;
+  });
+};
+render(0);
+</script>
+</body></html>

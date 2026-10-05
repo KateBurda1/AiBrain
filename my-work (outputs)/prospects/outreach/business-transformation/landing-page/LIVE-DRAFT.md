@@ -6,6 +6,6 @@ Use this as REPORT_PDF_URL in the thank-you page and the Zoho confirmation email
 
 Thank-you page draft created 2026.09.24: page ID 903, child of 900, slug thank-you (will live at kateburda.com/built-for-the-climate/thank-you). Set to noindex.
 Edit: https://kateburda.com/wp-admin/post.php?post=903&action=edit | Preview: https://kateburda.com/?page_id=903&preview=true
-Booking button: Calendly "15 minute Ignition Sequence" (https://calendly.com/kate7792/15-minute-ignition-sequence), worded "Book time with Kate". No 20-minute event exists. Report page 7 still says "20 minutes with Kate": align once Kate picks the event.
-2026.09.24: booking button on page 903 updated to "Book 20 minutes with Kate", linking to https://calendly.com/kate7792/new-meeting (Kate's new 20-minute Calendly event). Now matches report page 7.
+**Superseded 2026.09.29: Calendly is replaced by Zoho Bookings, https://kateburdacompany.zohobookings.com/5011447000000039045 ("20 minutes with Kate & Co."). A site-wide scan on 9/29 found no Calendly links left on any page.** Old note: Booking button: Calendly "15 minute Ignition Sequence" (https://calendly.com/kate7792/15-minute-ignition-sequence), worded "Book time with Kate". No 20-minute event exists. Report page 7 still says "20 minutes with Kate": align once Kate picks the event.
+2026.09.24: booking button on page 903 updated to "Book 20 minutes with Kate", linking to https://kateburdacompany.zohobookings.com/5011447000000039045 (Kate's new 20-minute Calendly event). Now matches report page 7.
 2026.09.24: Zoho UTM tracking code received. To add to page 900 together with the form iframe embed, in one update.

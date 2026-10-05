@@ -44,7 +44,7 @@ Kate has built proprietary IP in sales approach and marketing methodology, devel
 
 ## Online presence
 
-- Website: kateburda.com
+- Website: kateburda.com. Refreshed 2026.09.29. Menu: Home, Origin (Kate's story and the team, including Jawaria), Path (the method, built on Where You Win), Insights (every blog post), Impact (the proof, titled "Standing Apart, by Design"), and Connect (the contact page with the Zoho form). "Connect" is the brand; the old Contact Us page is retired. Case studies are organized in three blocks: **Revenue, Sales and Account-Based Marketing**. New ones are being written (ABM 10/6, Revenue 10/7, Sales 10/12) and should share to LinkedIn. The 2016-era ones never go to LinkedIn. Site videos (Home brand video, Path video) live in `my-files (knowledge)/Brand/Kate & Co- Administrative/11. Video/`.
 - Phone: 972.567.7792
 - Email: kate@kateburda.com
 - LinkedIn: linkedin.com/in/kateburda
@@ -72,5 +72,6 @@ Flying Horse Resort & Club is a current active Thoughtware client, and **as of 2
 ## How Kate likes to work (added 2026.09.24)
 
 - **Questions one at a time, as a build.** When working something out together, ask a single question, wait for the answer, fold it in, then ask the next. Never a batch of questions in one message.
+- **Instructions one at a time, too (Kate, 2026.09.27: "always give me things one by one").** When walking Kate through something she has to do herself (Zoho, WordPress, any setup), give one step, wait until she says it's done, then give the next. No full checklists up front. **Refined same day:** up to 5 steps at once is fine, as long as they're all within one section (e.g. "build the Zoho Form"). Never spill into the next section until she's done with this one.
 - **Look up what the systems can answer before asking.** Example: the buyer for an intent track comes from the real titles in Zoho, not from asking Kate.
 - **Two computers, one AI Brain.** The laptop and the iMac share this folder through OneDrive (the Kate Burda & Company account is the real copy; a second copy in the turningpointglobal.net OneDrive should be left alone). Git runs on the laptop only. Don't edit the same file, or run Zoho browser builds, on both machines at the same time.

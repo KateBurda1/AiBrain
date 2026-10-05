@@ -1,0 +1,274 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>Thoughtware Before Software | Kate Burda &amp; Co.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=block" rel="stylesheet">
+<style>
+@page { size: 8.5in 11in; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --pink: #D51067; --berry: #B52372; --ink: #151515; --mute: #666; --line: #e3e3e3; --grey: #55575A; }
+body { font-family: "Source Sans 3", Helvetica, Arial, sans-serif; font-weight: 300; color: var(--ink); font-size: 12.5pt; line-height: 1.6; }
+.page { width: 8.5in; height: 11in; position: relative; overflow: hidden; page-break-after: always; padding: 0.9in 0.95in 0.9in; }
+h1, h2, h3, .serif { font-family: "Playfair Display", Georgia, serif; font-weight: 400; }
+.caps { text-transform: uppercase; letter-spacing: 2.5px; font-size: 8pt; font-weight: 600; }
+.pink { color: var(--pink); }
+.foot .fr { display: flex; align-items: center; gap: 10px; }
+.foot .flogo { height: 22px; }
+.foot { position: absolute; left: 0.95in; right: 0.95in; bottom: 0.45in; display: flex; justify-content: space-between; align-items: center; font-size: 8pt; color: #999; border-top: 1px solid var(--line); padding-top: 8px; }
+p + p { margin-top: 10px; }
+b { font-weight: 600; }
+h2 { font-size: 30pt; line-height: 1.12; margin: 8px 0 18px; }
+h2 em { color: var(--pink); }
+h3 { font-size: 15pt; line-height: 1.25; margin: 0 0 8px; }
+.lede { font-size: 15pt; line-height: 1.5; color: #333; }
+.dark { background: #000; color: #fff; }
+.dark .foot { border-color: #333; color: #777; }
+.dark .lede { color: #ddd; }
+
+/* cover */
+.cover { padding: 0; background: #000; color: #fff; }
+.cover .img { position: absolute; left: 0; right: 0; top: 0; height: 6.6in; background: url(cover.jpg) center 60% / cover no-repeat; }
+.cover .fade { position: absolute; left: 0; right: 0; top: 4.4in; height: 2.3in; background: linear-gradient(to bottom, rgba(0,0,0,0), #000); }
+.cover .in { position: relative; z-index: 1; height: 100%; padding: 0.9in 0.95in; display: flex; flex-direction: column; }
+.cover img.logo { width: 150px; }
+.cover h1 { font-size: 60pt; line-height: 1.02; margin: auto 0 22px; }
+.cover h1 em { color: var(--pink); font-style: italic; }
+.cover .sub { font-size: 15pt; max-width: 5.4in; line-height: 1.4; opacity: .92; }
+.cover .rule { width: 50px; height: 2px; background: #fff; margin: 34px 0 18px; }
+.cover .by { font-size: 9pt; opacity: .8; }
+
+.short { margin-top: 20px; border-top: 2px solid var(--ink); }
+.short li { list-style: none; display: grid; grid-template-columns: 38px 1fr; padding: 17px 0; border-bottom: 1px solid var(--line); }
+.short .n { font-family: "Playfair Display", serif; color: var(--pink); font-size: 15pt; line-height: 1.2; }
+.take { margin-top: 26px; padding: 16px 20px; background: #f5f5f5; border-left: 3px solid var(--pink); font-size: 13pt; }
+.dark .take { background: #151515; color: #eee; }
+
+.hero { height: 3.1in; margin: -0.9in -0.95in 0.4in; background-size: cover; background-position: center; }
+.quote { font-family: "Playfair Display", serif; font-size: 34pt; line-height: 1.12; margin: 0.1in 0 22px; }
+.quote em { color: var(--pink); font-style: italic; }
+.stat1 { display: grid; grid-template-columns: 1.6in 1fr; gap: 20px; border-top: 1px solid #333; padding-top: 20px; margin-top: 24px; align-items: start; }
+.stat1 .big { font-family: "Playfair Display", serif; font-size: 64pt; line-height: .9; color: var(--pink); }
+.src { font-size: 8.5pt; color: #888; margin-top: 6px; }
+
+.trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 20px; }
+.trio > div { border-top: 2px solid var(--pink); padding-top: 12px; }
+.trio .k { font-family: "Playfair Display", serif; color: var(--pink); font-size: 24pt; line-height: 1; }
+.trio .w { font-size: 11pt; color: var(--mute); margin: 6px 0 10px; }
+.trio .ex { font-size: 12pt; color: #222; }
+.persona { margin-top: 22px; font-size: 10.5pt; color: var(--mute); }
+
+.steps { margin-top: 14px; counter-reset: s; }
+.steps li { list-style: none; display: grid; grid-template-columns: 40px 1.7in 1fr; gap: 0 10px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 12pt; }
+.steps li:first-child { border-top: 2px solid var(--ink); }
+.steps .n { font-family: "Playfair Display", serif; color: var(--pink); font-size: 16pt; line-height: 1; }
+.steps .t { font-weight: 600; }
+.steps li.msg .t, .steps li.msg .n { color: var(--pink); }
+.sidepic { float: right; width: 3in; margin: 0 0 12px 22px; }
+
+.layers { width: 100%; border-collapse: collapse; margin-top: 22px; font-size: 12pt; }
+.layers td { padding: 13px 12px; border-bottom: 1px solid #333; vertical-align: top; }
+.layers td:first-child { font-family: "Playfair Display", serif; font-size: 14pt; width: 1.7in; }
+.layers td:last-child { width: 1.3in; text-align: right; color: #aaa; }
+.layers tr.top td:first-child, .layers tr.top td:last-child { color: var(--pink); }
+.cartoon { display: flex; gap: 26px; align-items: center; margin-top: 20px; }
+.cartoon img { width: 3.1in; background: #fff; padding: 8px; }
+.cartoon p { font-size: 12.5pt; color: #ccc; }
+.fool { font-family: "Playfair Display", serif; font-size: 24pt; line-height: 1.25; color: #fff; }
+
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 16px; }
+.two > div { border-top: 2px solid var(--ink); padding-top: 10px; font-size: 12pt; }
+.two h3 { font-size: 13pt; }
+.two ul { padding-left: 16px; }
+.case { margin-top: 26px; padding: 22px 24px; background: var(--grey); color: #fff; font-size: 12pt; }
+.case .caps { color: #fff; opacity: .8; margin-bottom: 6px; }
+.case h3 { color: #fff; }
+
+.nums { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin: 18px 0 8px; }
+.nums > div { border-top: 2px solid var(--ink); padding-top: 8px; }
+.nums .big { font-family: "Playfair Display", serif; font-size: 38pt; line-height: 1; color: var(--pink); }
+.nums .big.b { color: var(--berry); }
+.nums .lbl { font-size: 11pt; color: #333; margin-top: 6px; }
+.chain { display: flex; align-items: center; gap: 10px; margin: 30px 0 6px; font-family: "Playfair Display", serif; font-size: 16pt; }
+.chain span.a { color: var(--pink); }
+
+.qs { margin-top: 10px; border-top: 2px solid var(--ink); }
+.qs li { list-style: none; display: grid; grid-template-columns: 34px 1fr; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 11.5pt; }
+.qs .n { font-family: "Playfair Display", serif; color: var(--pink); font-size: 13pt; line-height: 1.2; }
+.score { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 16px; font-size: 11pt; }
+.score > div { padding: 10px 12px; background: #f5f5f5; }
+.close { margin-top: 18px; padding: 16px 20px; background: #000; color: #fff; display: flex; justify-content: space-between; align-items: center; }
+.close .serif { font-size: 15pt; }
+.close img { width: 110px; }
+.sources { margin-top: 12px; font-size: 7.5pt; color: #888; line-height: 1.4; }
+</style></head>
+<body>
+
+<!-- 1 COVER -->
+<section class="page cover">
+  <div class="img"></div><div class="fade"></div>
+  <div class="in">
+    <img class="logo" src="logo.png">
+    <h1>Thoughtware<br>before <em>software.</em></h1>
+    <div class="sub">Why account-based marketing is won at the point of inspiration, and what the teams who win it do first.</div>
+    <div class="rule"></div>
+    <div class="caps pink">Insights, hindsights and foresights</div>
+    <div class="by" style="margin-top:6px">Kate Burda &amp; Co. &nbsp;|&nbsp; kateburda.com</div>
+  </div>
+</section>
+
+<!-- 2 NAME + DERAILS -->
+<section class="page">
+  <div class="caps pink">01 &nbsp; The name</div>
+  <h2>We wish we could <em>change the name.</em></h2>
+  <p class="lede">Account-based marketing has "marketing" in the title. So everyone assumed it belonged to marketing, and marketing ran with it. Target lists. Intent data. Campaigns. Platforms. Somewhere in the programming, the customer got lost.</p>
+  <p>It was never meant to be a marketing project. At its best, ABM is a customer-led, account-owned growth strategy. The account lead is the tip of the spear. Marketing is the amplifier. The whole team wraps around where the customer is in their own journey. For most organizations, though, ABM has come to mean more technology aimed at fewer logos. That's where it goes wrong.</p>
+  <div class="caps pink" style="margin-top:30px">02 &nbsp; Where ABM derails</div>
+  <ul class="short">
+    <li><span class="n">1</span><span><b>It becomes higher-order campaign management.</b> One to many, one to few, one to one. The targeting gets sharper. The message is still about what we want to say.</span></li>
+    <li><span class="n">2</span><span><b>It stays product-led.</b> The launch calendar drives the content. The account lead inherits collateral and is asked to send it to customers they know deeply. The relationship absorbs the damage.</span></li>
+    <li><span class="n">3</span><span><b>It funds deployment over approach.</b> Which platform, which channels, how many touches. The how gets the budget. The why and the when get none.</span></li>
+    <li><span class="n">4</span><span><b>It has a blind spot at the point of inspiration,</b> the one moment where it matters most.</span></li>
+  </ul>
+  <div class="take">You can run a flawless one-to-one program and still be irrelevant to the customer.</div>
+  <div class="foot"><span>Thoughtware Before Software</span><span class="fr">2 <img class="flogo" src="logo.png"></span></div>
+</section>
+
+<!-- 3 POINT OF INSPIRATION (dark) -->
+<section class="page dark">
+  <div class="hero" style="background-image:url(bulb.jpg)"></div>
+  <div class="caps pink">03 &nbsp; The point of inspiration</div>
+  <div class="quote">The moment before the customer can name what they need. <em>And no one is there.</em></div>
+  <p class="lede">Something shifts. A rule changes. A competitor moves. A key account wobbles. The board asks a question nobody can answer. The customer knows they have to do something different, but not what yet.</p>
+  <p class="lede">Most suppliers show up later, when the customer is aware of products and comparing them. By then the problem is framed, the criteria are set and the customer has decided who understands them. Most teams arrive with a product answer to an emotional question.</p>
+  <div class="stat1">
+    <div class="big">17%</div>
+    <div><p style="color:#ddd">of B2B buyers' total buying time is spent meeting with potential suppliers, split across every supplier they're considering. Most of the thinking happens without you.</p><div class="src">Gartner, 2020</div></div>
+  </div>
+  <div class="foot"><span>Thoughtware Before Software</span><span class="fr">3 <img class="flogo" src="logo.png"></span></div>
+</section>
+
+<!-- 4 FEELING DECIDES -->
+<section class="page">
+  <div class="hero" style="background-image:url(shoes.jpg); height:2.6in"></div>
+  <div class="caps pink">04 &nbsp; Feeling decides</div>
+  <h2>When thinking is equal, <em>feeling decides.</em></h2>
+  <p class="lede">B2B isn't less emotional than B2C. It's more. The person across the table is staking their credibility, their team and sometimes their career. Most teams map what customers think. The decision is being made in the part they aren't mapping.</p>
+  <p style="margin-top:14px"><b>Empathy isn't flat. One person carries three pressures at once.</b> Take a head of cardiology at a hospital:</p>
+  <div class="trio">
+    <div><div class="k">Personal</div><div class="w">What they feel privately. Fear, frustration, self-doubt.</div><div class="ex">The helplessness of losing visibility the moment a patient leaves the building.</div></div>
+    <div><div class="k">Professional</div><div class="w">What's at stake for their career and reputation.</div><div class="ex">Exposure every time a readmission lands, measured on outcomes outside their control.</div></div>
+    <div><div class="k">Organizational</div><div class="w">What the institution absorbs. Cost, reputation, position.</div><div class="ex">A program that can't show it's reducing avoidable readmissions, and the cost of each one.</div></div>
+  </div>
+  <div class="take">A product brochure speaks to none of that. A team that understands all three is relevant long before a product is on the table.</div>
+  <div class="foot"><span>Thoughtware Before Software</span><span class="fr">4 <img class="flogo" src="logo.png"></span></div>
+</section>
+
+<!-- 5 THE THOUGHTWARE -->
+<section class="page">
+  <div class="caps pink">05 &nbsp; The thoughtware</div>
+  <h2>Understand before <em>you solve.</em></h2>
+  <img class="sidepic" src="complexity.jpg">
+  <p class="lede">Customer-led ABM runs on a sequence. It's simple to describe and hard to shortcut. The order is the point.</p>
+  <p>A message that sounds right isn't right until it traces back through the customer's journey. Teams that start at step seven write clever lines that land nowhere.</p>
+  <ul class="steps" style="clear:both">
+    <li><span class="n">1</span><span class="t">The journey stage</span><span>Point of inspiration, informed, explore, aware, validate. Where is this customer, and what changed?</span></li>
+    <li><span class="n">2</span><span class="t">Thinking and feeling</span><span>Their questions in their own words, and the emotion underneath, across all three pressures.</span></li>
+    <li><span class="n">3</span><span class="t">Focus</span><span>What they care about at this stage, and the window they're working against.</span></li>
+    <li><span class="n">4</span><span class="t">What we have</span><span>Everything in the closet: capabilities, insight, partners, proof. Not just products.</span></li>
+    <li><span class="n">5</span><span class="t">The sweet spot</span><span>Where what we have meets what they care about, right now.</span></li>
+    <li><span class="n">6</span><span class="t">Value proposition</span><span>Because they're focused on this, we bring that, which creates this impact.</span></li>
+    <li class="msg"><span class="n">7</span><span class="t">The differentiated message</span><span>Only now. And only if it foots back through every step above.</span></li>
+    <li><span class="n">8</span><span class="t">Channel and champion</span><span>Who on the team delivers it, and where.</span></li>
+  </ul>
+  <div class="foot"><span>Thoughtware Before Software</span><span class="fr">5 <img class="flogo" src="logo.png"></span></div>
+</section>
+
+<!-- 6 SOFTWARE IS THE LAST LAP (dark) -->
+<section class="page dark">
+  <div class="caps pink">06 &nbsp; Software is the last lap</div>
+  <h2>Software is the last lap, <em>not the first.</em></h2>
+  <p class="lede">More platforms claim to do ABM today than at any point in history. Most use software to solve problems their users don't understand yet. The problem isn't the technology. It's technology without the thinking underneath it.</p>
+  <table class="layers">
+    <tr class="top"><td>Thoughtware</td><td>Who the persona is. What they're feeling at the point of inspiration. The pressures they carry.</td><td>Can't be bought</td></tr>
+    <tr><td>Methodology</td><td>The customer journey, the point of inspiration, the cost of inaction, the value story.</td><td>Partly</td></tr>
+    <tr><td>Engagement planning</td><td>How you show up at each stage. What you say, and when.</td><td>Partly</td></tr>
+    <tr><td>Deployment</td><td>Account planning infrastructure, channels, automation, reach and scale.</td><td>This is where technology lives</td></tr>
+  </table>
+  <div class="cartoon">
+    <img src="battle.png">
+    <div>
+      <div class="fool">A fool with a tool is still a fool.</div>
+      <p style="margin-top:12px">The platforms sell deployment infrastructure. Useful, but only once the foundation is built. The organizations that win won't have the best technology. They'll have built the thinking the technology runs on.</p>
+      <p class="pink" style="margin-top:12px"><b>Thoughtware, then methodology, then deployment. In that order.</b></p>
+    </div>
+  </div>
+  <div class="foot"><span>Thoughtware Before Software</span><span class="fr">6 <img class="flogo" src="logo.png"></span></div>
+</section>
+
+<!-- 7 TEAM-ENABLED + CASE -->
+<section class="page">
+  <div class="hero" style="background-image:url(playbook.jpg); height:2.3in"></div>
+  <div class="caps pink">07 &nbsp; Customer-led, team-enabled</div>
+  <h2>One account. <em>One plan.</em></h2>
+  <p>When marketing and sales each work in their own corner, it isn't account-based anything. It's awareness marketing with a target list, and the customer feels it. In a customer-led, team-enabled model, the account plan and the ABM plan are the same document. It starts with the customer's journey and defines what each discipline brings.</p>
+  <div class="two">
+    <div><h3>Marketing brings</h3><ul><li>The persona and the emotional insight</li><li>Market intelligence and trends</li><li>The value proposition and messaging</li><li>Proof points and the channel plan</li></ul></div>
+    <div><h3>The account lead brings</h3><ul><li>The relationship and stakeholder map</li><li>The opportunity portfolio</li><li>Solution fit and co-creation</li><li>Execution and follow-through</li></ul></div>
+  </div>
+  <div class="case">
+    <div class="caps">08 &nbsp; In practice</div>
+    <h3>A global medical technology company</h3>
+    <p>Hospital account teams across Argentina, Colombia and Puerto Rico, Mexico, Chile and Brazil wanted to move from product-led selling to customer-led engagement with their most important accounts. We took them from a webinar to a multi-day, in-person workshop. Each team took one real account and built its journey on a poster, stage by stage: the persona and their three pressures, the point of inspiration, what was in the closet, the sweet spot, the value proposition and a message for every stage, with a named owner for every touch.</p>
+    <p><b>Sales and marketing built it together, in the same room, as one account plan.</b></p>
+  </div>
+  <div class="foot"><span>Thoughtware Before Software</span><span class="fr">7 <img class="flogo" src="logo.png"></span></div>
+</section>
+
+<!-- 8 WHY IT PAYS -->
+<section class="page">
+  <div class="caps pink">09 &nbsp; Why it pays</div>
+  <h2>Own the mindshare early. <em>Own the market share later.</em></h2>
+  <p class="lede">Owning the point of inspiration isn't a softer way to sell. It's a harder-edged way to grow. The research on firms that do ABM well bears it out.</p>
+  <div class="nums">
+    <div><div class="big">21–50%</div><div class="lbl">Deal-size uplift on ABM accounts reported by nearly a third of firms. About a third more saw 11% to 20%.</div><div class="src">Forrester, 2024</div></div>
+    <div><div class="big b">72%</div><div class="lbl">of ABM leaders say ABM delivers a higher ROI than any other type of marketing.</div><div class="src">Momentum ITSMA and the ABM Leadership Alliance</div></div>
+    <div><div class="big">17%</div><div class="lbl">of ABM programs are fully embedded in how the company goes to market. For most, it still sits beside the account plan, not inside it.</div><div class="src">Momentum ITSMA and the ABM Leadership Alliance</div></div>
+  </div>
+  <p style="margin-top:14px">The same study found 84% of ABM programs improving pipeline growth and 77% seeing revenue growth. That last 17% is the opportunity. <b>The gap between firms that run ABM and firms that win with it is the thoughtware.</b></p>
+  <div class="chain"><span>Mindshare</span><span class="a">→</span><span>Market share</span><span class="a">→</span><span>Share of wallet</span><span class="a">→</span><span>Lifetime value</span></div>
+  <ul class="short" style="margin-top:14px">
+    <li><span class="n">1</span><span><b>Mindshare becomes market share.</b> The supplier who helped the customer understand the shift is the one they call when they're ready to act.</span></li>
+    <li><span class="n">2</span><span><b>Market share becomes share of wallet.</b> A customer who feels understood brings you the next problem before it goes to tender.</span></li>
+    <li><span class="n">3</span><span><b>Share of wallet becomes lifetime value.</b> Relevance compounds. Every stage you show up well in makes the next one easier.</span></li>
+  </ul>
+  <div class="foot"><span>Thoughtware Before Software</span><span class="fr">8 <img class="flogo" src="logo.png"></span></div>
+</section>
+
+<!-- 9 TEN QUESTIONS -->
+<section class="page">
+  <div class="caps pink">10 &nbsp; Foresight</div>
+  <h2 style="font-size:23pt">Ten questions to ask about <em>your most important account.</em></h2>
+  <ul class="qs">
+    <li><span class="n">1</span><span>What shifted in this customer's world in the last six months that they haven't named out loud yet?</span></li>
+    <li><span class="n">2</span><span>Who was in the conversation when that shift started? Were you?</span></li>
+    <li><span class="n">3</span><span>Can you name your key persona's personal, professional and organizational pressures?</span></li>
+    <li><span class="n">4</span><span>Does your account plan mention what the customer is feeling, or only what they're buying?</span></li>
+    <li><span class="n">5</span><span>Are your account plan and your marketing plan the same document?</span></li>
+    <li><span class="n">6</span><span>Does everything you send this account trace back to where they are in their journey?</span></li>
+    <li><span class="n">7</span><span>Do you know what's in your organization's closet beyond your product?</span></li>
+    <li><span class="n">8</span><span>Who on your team owns each stage of this customer's journey?</span></li>
+    <li><span class="n">9</span><span>If you removed your ABM platform tomorrow, would your strategy still stand?</span></li>
+    <li><span class="n">10</span><span>Are you measuring clicks and impressions, or share of wallet and lifetime value?</span></li>
+  </ul>
+  <div class="score">
+    <div><b>Mostly yes:</b> you're running customer-led ABM. Keep going.</div>
+    <div><b>Mostly no:</b> you're running campaigns with a target list. You're not alone, and it's fixable.</div>
+  </div>
+  <div class="close">
+    <div><div class="serif">You don't have to go it alone.</div><div style="font-size:9.5pt;opacity:.85;margin-top:4px">A small action can create a point of inflection and brilliance. 20 minutes, no pitch: kateburda.com</div></div>
+    <img src="logo.png">
+  </div>
+  <div class="sources">Sources: Forrester, "Account-Based Marketing Results In Larger Average Deal Sizes Across Regions," Daryl Wright, December 9, 2024. Momentum ITSMA and the ABM Leadership Alliance, sixth annual ABM Benchmark Study, 279 ABM leaders and practitioners, December 2022. Gartner, "5 Ways the Future of B2B Buying Will Rewrite the Rules of Effective Selling," Brent Adamson and Nick Toman, August 2020.</div>
+  <div class="foot"><span>Thoughtware Before Software</span><span class="fr">9 <img class="flogo" src="logo.png"></span></div>
+</section>
+
+</body></html>
