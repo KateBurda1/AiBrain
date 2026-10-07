@@ -88,6 +88,16 @@ Scan for things that slipped:
     "[PLACEHOLDER]". On 9/28, Site Visit Targeting sent a placeholder to 150
     contacts because nobody checked.
   - Stay silent on days when none of this applies.
+  - **Watch: BT Touch 3 independent readback (Kate, 2026.10.06).** Booked
+    Mon 10/12, 2:15-2:45 PM Mountain ("Zoho: Independent readback, BT Touch
+    3"). Touch 3 fires Thu 10/15; hard deadline Tue 10/13. Surface it in the
+    brief on Mon 10/12 (the day) and again Tue 10/13 if the tracker still
+    says "independent readback pending". If it hasn't passed by end of day
+    Tue 10/13, flag it in **Top 3**. Tracker never says Done until a
+    session that did not edit the template reads it back from Zoho and diffs
+    it word for word against the Touchpoint 3 Plan, and confirms the GIF and
+    both "Built for the Climate" links. Drop this watch once the tracker
+    shows it verified.
 - **Booking catch (Kate, 2026.09.29, updated 2026.10.01).** Calendly is
   gone. Bookings come through Zoho Bookings. **Fixed and verified 10/1,
   3:30 PM:** a booking now creates a Meeting on the contact in Zoho CRM,

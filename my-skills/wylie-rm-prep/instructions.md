@@ -32,7 +32,7 @@ morning before, whatever day that turns out to be.
      python3 "my-workflows (automations)/live/wylie_weekly_revenue_report.py" \
        --str <STR file> --lighthouse <Lighthouse file> \
        --booking-pdf <Booking.com PDF> --synxis-csv <Synxis CSV> \
-       --out "my-work (outputs)/clients/wylie-inn/02 - Deliverables/<date> - Wylie Inn - Weekly Revenue Report.docx"
+       --out "my-clients (clients)/wylie-inn/02 - Deliverables/<date> - Wylie Inn - Weekly Revenue Report.docx"
      ```
    - Offer to run the script herself if Kate hands over the four files instead
      of running it herself.

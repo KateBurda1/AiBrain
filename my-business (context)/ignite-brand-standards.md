@@ -1,7 +1,7 @@
 # Ignite — Brand Standards
 
 **Last updated:** 2026.08.29
-**Applies to:** every agent producing Ignite material (Maxell, Maya, Steph, Shelby, and anyone building decks, one-pagers, web copy or images)
+**Applies to:** every agent producing Ignite material (Maxwell, Maya, Steph, Shelby, and anyone building decks, one-pagers, web copy or images)
 
 ---
 

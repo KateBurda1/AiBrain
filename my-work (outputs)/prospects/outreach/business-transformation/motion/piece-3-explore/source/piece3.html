@@ -1,0 +1,121 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=block" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; background: #fff; }
+.frame { position: absolute; inset: 0; opacity: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center; padding: 0 110px;
+  font-family: "Playfair Display", Georgia, serif; }
+.w { background: #fff; color: #111; }
+.b { background: #000; color: #fff; }
+.line { font-size: 62px; line-height: 1.3; font-weight: 400; opacity: 0; }
+.pink { color: #D51067; text-transform: uppercase; font-size: 70px; line-height: 1.25; letter-spacing: 1px; }
+.foot { position: absolute; left: 0; right: 0; bottom: 110px; display: flex; flex-direction: column; align-items: center; gap: 38px; }
+.rule { width: 70px; height: 3px; }
+.w .rule { background: #111; } .b .rule { background: #fff; }
+.logo { width: 150px; }
+.viz { position: relative; width: 860px; height: 230px; margin-top: 60px; }
+.viz svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.fog { position: absolute; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,255,255,.55), rgba(255,255,255,0)); opacity: 0; }
+</style></head>
+<body>
+
+<section class="frame w" id="f1">
+  <div class="line">Everyone's got<br>a flight plan.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f2">
+  <div class="line">The route. The steps.</div>
+  <div class="line">The order. The timeline.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f3">
+  <div class="line">Every firm you talk to</div>
+  <div class="line">hands you one.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f4">
+  <div class="line">A route tells you</div>
+  <div class="line">where to go.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f5">
+  <div class="line">It doesn't tell you</div>
+  <div class="line">what's ahead.</div>
+  <div class="viz">
+    <svg viewBox="0 0 860 230"><path id="route5" d="M0 170 C 150 170, 220 80, 380 100 S 600 150, 660 120" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-dasharray="1000" stroke-dashoffset="1000"/></svg>
+    <div class="fog" id="fogA" style="left:540px;top:20px;width:340px;height:200px"></div>
+    <div class="fog" id="fogB" style="left:600px;top:60px;width:300px;height:180px"></div>
+  </div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f6">
+  <div class="line">Weather. Turbulence.</div>
+  <div class="line">A clear lane you didn't<br>know was there.</div>
+  <div class="viz">
+    <svg viewBox="0 0 860 230"><path d="M0 170 C 150 170, 220 80, 380 100 S 600 150, 660 120" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+      <path id="lane6" d="M660 120 C 720 90, 790 60, 860 40" fill="none" stroke="#D51067" stroke-width="6" stroke-linecap="round" stroke-dasharray="260" stroke-dashoffset="260"/></svg>
+    <div class="fog" id="fogC" style="left:600px;top:40px;width:300px;height:190px"></div>
+  </div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f7">
+  <div class="line">You're the pilot.</div>
+  <div class="line">You make the call.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b" id="f8">
+  <div class="line pink">Do you have</div>
+  <div class="line pink">the right navigator?</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame w" id="f9">
+  <div class="line">Everyone's got a flight plan.</div>
+  <div class="line">Do you have the right <span style="color:#D51067">navigator?</span></div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<script>
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const ease = (x) => x * x * (3 - 2 * x);
+const fade = (t, a, b) => ease(clamp((t - a) / (b - a)));
+const F = { f1: [0, 3.8], f2: [3.8, 8.2], f3: [8.2, 11.8], f4: [11.8, 14.8], f5: [14.8, 20], f6: [20, 26.4],
+            f7: [26.4, 29.8], f8: [29.8, 33.2], f9: [33.2, 38.5] };
+window.TOTAL = 38.5;
+window.render = function (t) {
+  for (const [id, [a, b]] of Object.entries(F)) {
+    const el = document.getElementById(id);
+    const o = Math.min(fade(t, a - 0.01, a + 0.5), 1 - fade(t, b - 0.5, b));
+    el.style.opacity = (id === 'f1' && t < 0.5) ? 1 : (id === 'f9' && t > b - 0.5) ? 1 : o;
+    el.querySelectorAll('.line').forEach((ln, i) => {
+      const s = a + 0.4 + i * 1.1;
+      const p = fade(t, s, s + 0.8);
+      ln.style.opacity = p;
+      ln.style.transform = `translateY(${(1 - p) * 18}px)`;
+    });
+  }
+  // frame 5: the route draws across and runs into fog
+  const [a5] = F.f5;
+  const draw = fade(t, a5 + 1.6, a5 + 3.6);
+  document.getElementById('route5').style.strokeDashoffset = 1000 - draw * 1000 * 0.62;
+  const fogIn = fade(t, a5 + 2.6, a5 + 4.2);
+  document.getElementById('fogA').style.opacity = fogIn;
+  document.getElementById('fogB').style.opacity = fogIn;
+  // frame 6: the fog clears and a pink lane opens past it
+  const [a6] = F.f6;
+  const clear = fade(t, a6 + 2.4, a6 + 4.2);
+  document.getElementById('fogC').style.opacity = 1 - clear;
+  document.getElementById('lane6').style.strokeDashoffset = 260 - fade(t, a6 + 3.2, a6 + 4.8) * 260;
+};
+render(0);
+</script>
+</body></html>

@@ -5,7 +5,7 @@ description: Build a 5-part outreach and content series for one ZoomInfo intent 
 
 # Intent Series
 
-Owner: Kate. Team: Jack (who is on the list, cadence fit), Maxell (copy), Scout (angles), Shelby (visual build).
+Owner: Kate. Team: Jack (who is on the list, cadence fit), Maxwell (copy), Scout (angles), Shelby (visual build).
 Created 2026.09.24, first run on Business Transformation (Track 6).
 
 ## Where everything lives
@@ -104,7 +104,7 @@ For each stage:
 
 Other hooks: "Do less, make it mean more," the silent saboteur, the War Room, Outside-In Thinking, "bringing simplicity to your complexity."
 
-**Bring the team in.** Have Maxell pressure-test each stage's value proposition and message. Have Jack check the stage against the matching cadence step.
+**Bring the team in.** Have Maxwell pressure-test each stage's value proposition and message. Have Jack check the stage against the matching cadence step.
 
 ## Questions to ask, in order, one at a time
 

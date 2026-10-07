@@ -23,7 +23,7 @@ Most of the effort goes here. A goal that is well understood is easy to plan.
 3. **Sketch two or three ways to get there,** with the trade-off of each in one line. Pick the one most likely to work. If it is genuinely a taste call (brand, tone, a big bet), give the owner the options and let them pick - taste is theirs, not the assistant's.
 
 ### Phase 2: Build the plan
-4. **Break the chosen approach into jobs.** Map every job to a real skill in `my-skills/` or a real agent (Janice, Maya, Maxell, Steph, Scout, Finn, Jack, Shelby). Never invent a capability. If a job needs a skill that does not exist yet, say so - that is a /teach-me moment, not something to improvise.
+4. **Break the chosen approach into jobs.** Map every job to a real skill in `my-skills/` or a real agent (Janice, Maya, Maxwell, Steph, Scout, Finn, Jack, Shelby). Never invent a capability. If a job needs a skill that does not exist yet, say so - that is a /teach-me moment, not something to improvise.
 5. **Put the jobs in order** and note what each one produces, so it is clear later whether it worked.
 6. **Check your own plan before showing it.** Read it back looking for holes: missing steps, wrong order, jobs that do not actually move the goal. Fix what you find. A weak plan is not shown.
 7. **Show the plan and wait for a yes.** Keep it short: the goal, the jobs, who does each, what the owner will need to decide or send at the end. Small, safe jobs inside the workspace can just be done - but any plan with more than a couple of steps gets shown first.

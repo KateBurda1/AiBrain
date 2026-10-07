@@ -1,6 +1,6 @@
 # KB&Co Slide Library
 
-Set 2026.09.29, at Kate's direction: "I loaded into the AI Brain templates these are all the slides I have we can use them or shift them up for decks and proposals." Addressed to Jack, Maxell and Maya.
+Set 2026.09.29, at Kate's direction: "I loaded into the AI Brain templates these are all the slides I have we can use them or shift them up for decks and proposals." Addressed to Jack, Maxwell and Maya.
 
 **How to treat it (Kate, 2026.09.29):** "these are reference that we can pull up when needed ... you can redesign what you need to." The library is a reference for Kate's content, frameworks and proof, not a rule. Pull a slide as is when it fits. Redesign it when a cleaner, sharper version would serve the client better, keeping the KB&Co brand (Franklin Gothic, PMS 214 and 675). Kate thinks the team often does better than the older designs. Ignite decks use Ignite's brand, not this library.
 
@@ -22,7 +22,7 @@ The fully designed KB&Co PowerPoint templates also live in OneDrive: `my-files (
 python3 "my-skills/slide-library/build_deck.py" "<output.pptx>" 1-3 4 5 33 37-38 48
 ```
 
-This copies the master and keeps only the slides you name, in the order you name them. Layouts, images and brand stay intact. Then edit the words in the new file. Save client decks to `my-work (outputs)/clients/<client>/03 - Working Files/` (draft) or `02 - Deliverables/` (final), named `yyyy.mm.dd - Client Name - Deck Name.pptx`.
+This copies the master and keeps only the slides you name, in the order you name them. Layouts, images and brand stay intact. Then edit the words in the new file. Save client decks to `my-clients (clients)/<client>/03 - Working Files/` (draft) or `02 - Deliverables/` (final), named `yyyy.mm.dd - Client Name - Deck Name.pptx`.
 
 ## Standard deck spines
 
@@ -136,7 +136,7 @@ Kate's bio (43) goes in every deck. **Tristan Carty is key (Kate, 2026.09.29)** 
 ## Who uses it how
 
 - **Jack (sales):** capabilities decks for first conversations and proposals that close. Proof slides (40, 41, 48) and the Forrester data (10) do the heavy lifting.
-- **Maxell (marketing):** the frameworks (13, 16, 21, 71) become campaign and landing page angles, and the PNGs in `Individual Slides/` drop straight into emails.
+- **Maxwell (marketing):** the frameworks (13, 16, 21, 71) become campaign and landing page angles, and the PNGs in `Individual Slides/` drop straight into emails.
 - **Maya (writing):** picture blocks (61 to 73, 78, 81) are ready-made LinkedIn hooks and keynote openers. One slide, one post.
 
 Before any deck goes to Kate, fix any flagged old details on the slides used (Kate's call: fix them when a slide gets used), and run it through the "Check before use" column and the voice rules in `my-business (context)/how-we-sound.md`.

@@ -6,6 +6,16 @@ Dated, one-off flags that have to surface in the morning brief on their date, ev
 
 ## Open
 
+### 2026.10.07 — Make the website thank-you pages more than plain black
+
+**Set:** 2026.10.06, at Kate's request (case studies session with Maxwell): "I want our thank you not just to be black."
+
+**What:** The kateburda.com thank-you pages (Connect thank-you, page 929; Built for the Climate thank-you, page 903; Right, or Just Lucky? thank-you, page 916, draft) need a branded look instead of a plain black page: berry banner treatment like the other pages, the KB&Co palette, and a clear next step. Raise it at the end of the 10/06 case studies session, and again in the 10/07 brief if it hasn't been started.
+
+**Image chosen (Kate, 2026.10.06):** use `Kate & Co/Presentation Pictures/Thank you.jpeg` (pen finishing a handwritten "Thank You" on warm paper, 7360x4912, writing sits lower right). Build a banner-cut (2560x760, per the berry hero pattern) and apply to all thank-you pages.
+
+**Status:** Built 2026.10.06: banner media 1038 set as Header Background Image on pages 929, 903 (live) and 916 (draft). Awaiting Kate's OK to mark Done. Open nit: the small duplicate "Thank you" heading under the banner.
+
 ### 2026.10.13 — Upgrade Zoho Bookings to Basic before the trial ends
 
 **Set:** 2026.09.29, at Kate's request (Sales Intelligence TP2 session).
@@ -26,28 +36,25 @@ Dated, one-off flags that have to surface in the morning brief on their date, ev
 
 ---
 
-### Sales Intelligence switch-on day (target Thu 10/8, see Turn-On Tracker) — Post Sales Intelligence "Right, or lucky?" to LinkedIn
+### LinkedIn campaign posts: one every Tuesday, 8:00 to 8:30 AM Central (Kate + Maya, 2026.10.06)
 
-**Re-keyed 2026.09.29 (Kate):** this no longer has a fixed 10/5 date. It posts on the day Kate switches the Sales Intelligence cadence on, the same day Touch 1 sends and the report page publishes. Surface it only on that day.
+**Set:** 2026.10.06, at Kate's request. Replaces the old "post on switch-on day" entry.
 
-**Set:** 2026.09.28, Janice, at Kate's request (relayed from a separate work session).
+**The rule:** LinkedIn posts are no longer tied to the email touches. Kate: "I don't want to use all my bullets in the chamber in one week... We can post those anytime. I think we space them out." One campaign post a week, alternating Sales Intelligence and Business Transformation. The only rule is that a piece goes up after its matching email has already gone out, never before. Thursdays stay free for Kate's own-voice posts. Tuesday confirmed by Kate 2026.10.06.
 
-**What:** Post the Sales Intelligence motion piece to LinkedIn. Second topic in the same LinkedIn + landing page + download pattern built for Business Transformation's "Built for the Climate" post (2026.09.28).
+**Each date:** surface it in that morning's Top 3. Offer to set the post up in Chrome (caption, a "Download:" line with the report name, then the tracked link, with the video below and the cover PNG as thumbnail) and stop at the Post button. Kate clicks Post herself, or says "post it." Before setting it up, check the link's page is live.
 
-- **Video:** `my-work (outputs)/prospects/outreach/sales-intelligence/motion/piece-1-inspiration/piece-1-inspiration.mp4`
-- **Caption** (Part 7 of `my-work (outputs)/prospects/outreach/sales-intelligence/2026.09.27 - Outreach - Sales Intelligence - Zoho Update Package.md`):
+| Date | Post | Video | Caption source | Link |
+|---|---|---|---|---|
+| Tue 10/6 | SI Piece 1, "Right, or Just Lucky?" | `prospects/outreach/sales-intelligence/motion/piece-1-inspiration/piece-1-inspiration.mp4` | `prospects/outreach/sales-intelligence/2026.09.27 - Outreach - Sales Intelligence.md` (Piece 1 caption) | `kateburda.com/right-or-just-lucky/?utm_source=linkedin&utm_medium=social&utm_campaign=si-series&utm_content=piece-1` |
+| Tue 10/13 | BT Piece 1, "Built for the Climate" | `prospects/outreach/business-transformation/motion/piece-1-inspiration/piece-1-inspiration.mp4` | `content/social/2026.09.28 - Business Transformation - LinkedIn Post Draft.md` | the tracked link in that draft |
+| Tue 10/20 | SI Piece 2, "Worth Winning?" | `prospects/outreach/sales-intelligence/motion/piece-2-informed/piece-2-informed.mp4` | `prospects/outreach/sales-intelligence/2026.09.29 - Outreach - Sales Intelligence - Touchpoint 2 Plan.md` (LinkedIn post) | kateburda.com/worth-winning/ (utm_content=piece-2) |
+| Tue 10/27 | BT Piece 2, "Plan or Hope?" | `prospects/outreach/business-transformation/motion/piece-2-informed/` | `prospects/outreach/business-transformation/2026.09.28 - Outreach - Business Transformation - Touchpoint 2 Plan.md` (LinkedIn post) | kateburda.com/plan-or-hope/ (utm_content=piece-2) |
+| Tue 11/3 onward | Pieces 3 to 6, alternating SI and BT | as each is built | each Touchpoint Plan | each piece's page |
 
-  > Budget season.
-  > Last year's number, plus a percentage. A time-honored tradition.
-  > Here's the question nobody asks in the planning meeting: that number was built on last year's results. Which ones were right, and which were just lucky?
-  > If you can't tell, neither can the plan.
-  > What's yours built on?
+**10/6 status:** SI Piece 1 set up in Kate's Chrome (caption, "Download: Right, or Just Lucky? 10 questions to ask before you lock next year's budget", tracked link, video, coin cover), stopped at Post. Ask Kate whether she posted it; if not, it goes first next Tuesday and everything shifts a week.
 
-- **Link:** `kateburda.com/right-or-just-lucky` — tracked: `kateburda.com/right-or-just-lucky/?utm_source=linkedin&utm_medium=social&utm_campaign=si-series&utm_content=piece-1`
-
-**DEPENDENCY — check this first, before posting:** as of 2026.09.28, the landing page and its Zoho Form / download-tracking were still mid-build, not live. Someone (a separate Claude session) needs to finish and publish both before this goes out, or the link in the post leads nowhere. Confirm the page is live before drafting or sending the post.
-
-**Status:** Open.
+**Status:** Open. Mark each row done with the date as Kate confirms it's posted.
 
 ---
 

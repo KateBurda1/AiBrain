@@ -15,12 +15,14 @@ Tip: You can skip this and run /setup instead.
 | Main contact | Wendy McHenry (Managing Director), Glenn Wallace |
 | Also at Flying Horse | Sarah Leach — runs their own separate ZoomInfo account (confirmed 2026.09.01). Not a Kate Burda & Co team member. If a ZoomInfo workflow or org shows her as the owner, you're in Flying Horse's account, not Kate's — switch accounts before doing any Kate Burda & Co intent/workflow work. |
 | What we do for them | Commercial Effectiveness/Efficiency Study — Revenue Strategy Commercial Enablement |
-| Started working together | Feb 2024 |
+| Started working together | Feb 2025 (agreement signed Feb 15, 2025; kickoff Feb 28, 2025. Corrected 2026.10.06 from "Feb 2024" against the signed agreement.) |
 | Notes | Engagement structured as "The Reveal" ($12,000) + "Insight to Execution" ($8,000) = $20,000, discounted to $18,000 net. **Confirmed current/active client (2026.08.25).** |
 
 **Update 2026.08.29: Flying Horse is the first asset live on the Ignite platform.** Their data is loading now. Kate confirmed they **can be named in client-facing material and are willing to be named**, which means a prospect may ask them for a reference call. Note the limitation when using them as proof: Flying Horse is a single resort, so it shows the system runs and finds money, but it cannot demonstrate the cross-portfolio pattern engine that Noble, Raines and Crescent are being pitched on.
 
 **Update 2026.09.16: Flying Horse has delivered 11.79% revenue growth YoY to date.** This supersedes the earlier "no results yet" note — there is now a real, measured, nameable result tied to the GTM/customer-journey engagement and Ignite. The single-resort caveat above still applies: this proves the system drives revenue at one asset, not the cross-portfolio pattern engine.
+
+**Update 2026.10.06 (Kate's 2026 forecast, as of today):** rooms revenue on the books $5,281,905, already $266,384 (+5.3%) above all of 2025 with about three months left, and +10.5% vs the same time last year. Full-year forecast $5,599,913, +11.65% vs 2025 and $45,821 over budget (rate-driven; room nights under budget). This is rooms revenue only. The 11.79% above was likely an earlier version of this forecast; use the current numbers. Detail: `my-work (outputs)/content/website/case-studies/2026.10.06 - Flying Horse - Transformation Case Study Fact Base.md`, section 10.
 
 ---
 

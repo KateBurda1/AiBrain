@@ -47,7 +47,7 @@ Structure it as:
 - Is there a clear next step?
 
 ## Output format
-Display the quote in the conversation for review. If approved, save to the relevant client folder under `my-work (outputs)/clients/`, or `my-work (outputs)/content/other/` if there is no client folder yet.
+Display the quote in the conversation for review. If approved, save to the relevant client folder under `my-clients (clients)/`, or `my-work (outputs)/content/other/` if there is no client folder yet.
 
 ## Quality check
 - Scope is specific and unambiguous

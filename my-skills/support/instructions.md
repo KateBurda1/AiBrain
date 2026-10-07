@@ -150,7 +150,7 @@ Or just talk to me normally. You do not have to use these names. Just tell me wh
 **"Where did my work go?" / "I cannot find the quote you wrote"**
 1. Search my-work (outputs)/ for recent files.
 2. Show the file path and read back the content.
-3. Explain: "All finished work gets saved in my-work (outputs)/. Quotes go in my-work (outputs)/clients/[name]/ or my-work (outputs)/prospects/[name]/. You can browse these folders any time."
+3. Explain: "All finished work gets saved in my-work (outputs)/. Quotes go in my-clients (clients)/[name]/ or my-work (outputs)/prospects/[name]/. You can browse these folders any time."
 
 **"The folders look weird" / "Something is missing"**
 1. Check the folder structure against what CLAUDE.md expects.

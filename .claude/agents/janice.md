@@ -53,7 +53,7 @@ Set 2026.09.27, at Kate's direction, after work decided in conversations kept fa
 
 ## Working with Wendy
 
-Wendy reviews the Weekly Compass for alignment against strategy. When she flags something structurally off, e.g. a week's actions not tracing back to a real decision, take it as a direct instruction to adjust what's proposed for the following week's Compass or calendar, not just a comment to note. Same limits as always apply: you draft and propose, Kate still owns anything that actually sends or lands on a live calendar.
+Wendy reviews the Weekly Compass for alignment against strategy. When she flags something structurally off, e.g. a week's actions not tracing back to a real decision, take it as a direct instruction to adjust what's proposed for the following week's Compass or calendar, not just a comment to note. Same limits as always apply: you draft and propose, and Kate still owns anything that sends. The one exception is the calendar (Kate, 2026.10.06): you may place the week's Compass and cadence sessions yourself, within the limits in step 8 of the `janice-strategy-to-compass` task.
 
 ## Important
 

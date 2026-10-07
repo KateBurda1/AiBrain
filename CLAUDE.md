@@ -11,6 +11,7 @@ This is your AI assistant. It knows your business and gets smarter every time yo
 
 - **my-business (context)/** - Who you are, what you sell, how you sound, how you write.
 - **my-files (knowledge)/** - Drop your files here. Brochures, docs, anything.
+- **my-clients (clients)/** - All client work, one folder per client.
 - **my-connections (MCP)/** - The apps you have connected.
 - **my-skills/** - 19 ready-to-use skills plus any you teach it.
 - **my-work (outputs)/** - Where all finished work gets saved.
@@ -54,7 +55,7 @@ These rules apply to everything produced in this assistant:
   - Excel for lists, trackers, schedules and checklists
   - PowerPoint for anything presented
   
-  Markdown is fine as the working copy agents read, so keep it alongside when it's useful. The Office file is what Kate opens, so link to that one. **Always brand it** (Kate: "How come you always forget the brand standards?"). Follow `my-skills/branded-office-docs/instructions.md`. For Word, run `python3 "my-skills/branded-office-docs/branded_docx.py" "<file.md>"`, which uses the real KB&Co template, Franklin Gothic, and PMS 675 and 214. Ignite work uses Ignite's brand.
+  **No markdown files in the AI Brain** (Kate, 2026.10.06): "please don't use md files in the ai brain ... unless we are using it for developers." Draft any markdown in the session's scratch folder, build the Office file from it, and save only the Office file here. The exception is developer work: code, READMEs, and system files such as skill `instructions.md`, `CLAUDE.md`, `SAFETY.md` and `VERSION.md`. The Office file is what Kate opens, so link to that one. **Always brand it** (Kate: "How come you always forget the brand standards?"). Follow `my-skills/branded-office-docs/instructions.md`. For Word, run `python3 "my-skills/branded-office-docs/branded_docx.py" "<file.md>"`, which uses the real KB&Co template, Franklin Gothic, and PMS 675 and 214. Ignite work uses Ignite's brand.
 
 ---
 
@@ -77,7 +78,7 @@ Your assistant has a built-in team, together called the **Strategy Team**. Call 
 |---|---|---|
 | Janice | "ask Janice" | Your right hand: inbox, calendar, admin, the morning brief |
 | Maya | "ask Maya" | All of social: posts, LinkedIn, long-form, anything in your voice |
-| Maxell | "ask Maxell" | All of marketing: ad copy, emails, offers, funnels, image prompts |
+| Maxwell | "ask Maxwell" | All of marketing: ad copy, emails, offers, funnels, image prompts |
 | Steph | "ask Steph" | Community posts and audience content |
 | Scout | "ask Scout" | Research: trends, competitors, angles |
 | Finn | "ask Finn" | The financial guy: revenue, customers, churn, the money brief |
@@ -110,13 +111,14 @@ My AI Brain/
 ├── my-files (knowledge)/           <- drop your files here
 │   └── about-my-business/          <- business docs for setup
 │
+├── my-clients (clients)/           <- every client, one folder each
+│
 ├── my-connections (MCP)/           <- connected apps
 │   └── connected-apps.md
 │
 ├── my-skills/                      <- 18 built-in skills plus any you add
 │
 ├── my-work (outputs)/              <- finished work
-│   ├── clients/
 │   ├── prospects/
 │   ├── content/                    <- ads, social, emails, website, other
 │   └── internal/
@@ -132,7 +134,7 @@ My AI Brain/
 
 | Output type | Save to |
 |---|---|
-| Work for a client | `my-work (outputs)/clients/[client-name]/` |
+| Work for a client | `my-clients (clients)/[client-name]/` |
 | Work for a prospect | `my-work (outputs)/prospects/[prospect-name]/` |
 | Ad copy | `my-work (outputs)/content/ads/` |
 | Social media content | `my-work (outputs)/content/social/` |
