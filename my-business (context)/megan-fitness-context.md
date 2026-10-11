@@ -62,6 +62,19 @@ Four cardio, four strength — the actual 4-and-4 target, all 8 on the calendar,
 
 Set 2026.10.05. Kate is at the **Texas-OU game Saturday 10/10**, so there's no session that day. Full Body/Pull moves to **Friday 10/9, 6:30-7:15pm CT**. The rest stays as listed in `my-work (outputs)/internal/training-schedule/2026.10.04 - Internal - Training Sessions to Add.md`: Tue Upper Body 6:30pm MT; Wed walk with Wendy 6:00-6:45am MT (Kate confirmed 6:00 on 2026.10.05; the walk with Wendy is allowed to run past the 6:30 morning cutoff) plus Legs A 6:30pm MT; Thu OTF 5:30am MT; Fri steady-state cardio 5:30am CT; Sun Bike 7:30am CT (the existing recurring event) plus Legs B 11:00am CT. No session Monday: she's working in Michigan, then flying out late.
 
+## Week of 2026.10.12: Colorado Springs Mon-Thu, Dallas Fri-Sun (home all weekend)
+
+Set and **already booked** 2026.10.11, at Kate's request ("I am home all weekend. Finally."). Kate confirmed Colorado Springs for Monday night through Thursday. She flies out Monday 8:44am CT and home Thursday 3:00pm MT. All 7 events below were created and read back by ID; the 5:00 PM Sunday run should find them and skip, not re-plan.
+
+- Tue 10/13, 6:30-7:15pm MT: Strength, Upper Body
+- Wed 10/14, 6:00-6:45am MT: Cardio, walk with Wendy (Pre-Hotel MPEA/CHMW meeting at 7:30am MT). Plus 6:30-7:15pm MT: Strength, Legs A
+- Thu 10/15, 5:30-6:15am MT: Cardio, OTF with Wendy
+- Fri 10/16, 5:30-6:15am CT: Cardio, steady state
+- Sat 10/17, 9:00-9:45am CT: Strength, Full Body/Pull (Saturday is back, she's home)
+- Sun 10/18, 7:30-9:30am CT: Bike (existing recurring event). Plus 11:00-11:45am CT: Strength, Legs B
+
+No session Monday: travel morning, and the 8 fit elsewhere.
+
 ## Medical/orthopedic history (from health records, reviewed 2026.09.20)
 
 Kate has had **14 surgeries total** (per Kate, 2026.09.20) — the neck fusion and knee work below are part of that history, not the whole of it. Worth remembering as background: she's been through a lot of recovery, knows her own body's signals well, and isn't new to post-op judgment calls.

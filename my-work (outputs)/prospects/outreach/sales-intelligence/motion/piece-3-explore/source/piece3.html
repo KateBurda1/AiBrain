@@ -1,0 +1,168 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=block" rel="stylesheet">
+<style>
+:root {
+  --raspberry: #D51067;   /* KB PMS 214 */
+  --berry: #B52372;       /* KB PMS 675 */
+  --ink: #111;
+  --grey: #55575A;        /* KB PMS 425 */
+  --grey-mid: #8A8C8C;
+  --grey-line: #A0A1A2;   /* KB PMS 422 */
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; background: #fff; }
+.frame { position: absolute; inset: 0; opacity: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center; padding: 0 110px;
+  font-family: "Playfair Display", Georgia, serif; }
+.frame.top { justify-content: flex-start; padding-top: 250px; }
+.w { background: #fff; color: var(--ink); }
+.b { background: #000; color: #fff; }
+.line { font-size: 62px; line-height: 1.3; font-weight: 400; opacity: 0; }
+.reveal { text-transform: uppercase; font-size: 76px; line-height: 1.2; letter-spacing: 2px; font-weight: 500; }
+.foot { position: absolute; left: 0; right: 0; bottom: 110px; display: flex; flex-direction: column; align-items: center; gap: 38px; z-index: 5; }
+.rule { width: 70px; height: 3px; }
+.w .rule { background: var(--ink); } .b .rule { background: #fff; }
+.logo { width: 150px; }
+
+/* the gap between SIGNAL and RESULT, with the coin still in the air */
+.trk { position: absolute; left: 0; top: 880px; width: 1080px; height: 220px; z-index: 4; opacity: 0;
+  font-family: "Playfair Display", Georgia, serif; }
+.trk .ln { position: absolute; top: 80px; height: 0; border-top: 3px dashed var(--grey-mid); }
+.trk .lab { position: absolute; top: 118px; font-size: 22px; letter-spacing: 5px; text-transform: uppercase; color: var(--grey-mid); white-space: nowrap; }
+.trk .dotS { position: absolute; top: 69px; width: 24px; height: 24px; border-radius: 50%; background: var(--raspberry); margin-left: -12px; }
+.trk .dotR { position: absolute; top: 69px; width: 24px; height: 24px; border-radius: 50%; border: 3px solid var(--grey-mid); margin-left: -12px; }
+.trk .tick { position: absolute; top: 56px; width: 3px; height: 50px; background: var(--grey-mid); opacity: 0; }
+.trk .tl { position: absolute; top: 14px; font-size: 22px; letter-spacing: 3px; text-transform: uppercase; color: #fff; opacity: 0; transform: translateX(-50%); white-space: nowrap; }
+.coin { position: absolute; top: 40px; width: 80px; height: 80px; border-radius: 50%; margin-left: -40px;
+  background: radial-gradient(circle at 35% 30%, #ffffff 0%, #d9d9d9 55%, #9a9a9a 100%); border: 6px solid var(--raspberry); }
+.coin::after { content: ""; position: absolute; inset: 12px; border-radius: 50%; border: 2px solid rgba(213,16,103,.55); }
+#trkW .tl { color: var(--ink); }
+#trkW .lab, #trkW .ln { color: var(--grey); border-color: var(--grey); }
+#trkW .dotR { border-color: var(--grey); }
+#trkW .coin { background: radial-gradient(circle at 35% 30%, #ffffff 0%, #e6e6e6 55%, #b0b0b0 100%); }
+#reveal7 { position: absolute; top: 330px; left: 0; right: 0; }
+</style></head>
+<body>
+
+<section class="frame w top" id="f1">
+  <div class="line">Someone spotted it.</div>
+  <div class="line" style="margin-top:30px">A shift in the market.<br>Early.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b top" id="f2">
+  <div class="line">Maybe someone<br>heard it.</div>
+  <div class="line" style="margin-top:40px;color:#bbb">It depends who found it,<br>and who they know.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b top" id="f3">
+  <div class="line">Then it sat.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b top" id="f4">
+  <div class="line">Then the team had to<br>get around it.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b top" id="f5">
+  <div class="line">Then the work.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b top" id="f6">
+  <div class="line">Months later, you're looking for any shred of evidence it worked.</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame b top" id="f7">
+  <div id="reveal7">
+    <div class="line reveal" data-d="0.5" style="color:var(--raspberry)">You arrive when</div>
+    <div class="line reveal" data-d="1.4" style="color:var(--berry)">everyone else does.</div>
+  </div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<section class="frame w top" id="f8" style="padding-top:200px">
+  <div class="line">Sales intelligence<br>sees the signal.</div>
+  <div class="line" style="margin-top:30px">Whoever gets there<br>first wins.</div>
+  <div class="line" style="margin-top:50px;color:var(--raspberry)">How long does it<br>take yours?</div>
+  <div class="foot"><div class="rule"></div><img class="logo" src="logo.png"></div>
+</section>
+
+<!-- the track on the black frames: the gap, stretched -->
+<div class="trk" id="trk">
+  <div class="ln" style="left:130px;width:820px"></div>
+  <div class="dotS" style="left:130px"></div><div class="lab" style="left:130px;margin-left:-12px">Signal</div>
+  <div class="dotR" style="left:950px"></div><div class="lab" style="left:950px;transform:translateX(-100%);margin-left:12px">Result</div>
+  <div class="tick" id="k1" style="left:327px"></div><div class="tl" id="t1" style="left:328px">Heard?</div>
+  <div class="tick" id="k2" style="left:507px"></div><div class="tl" id="t2" style="left:508px">It sat</div>
+  <div class="tick" id="k3" style="left:688px"></div><div class="tl" id="t3" style="left:689px">The team</div>
+  <div class="tick" id="k4" style="left:852px"></div><div class="tl" id="t4" style="left:853px">The work</div>
+  <div class="coin" id="coinB"></div>
+</div>
+
+<!-- the track on the closing white frame: the gap closes -->
+<div class="trk" id="trkW" style="top:830px">
+  <div class="ln" id="lnW"></div>
+  <div class="dotS" id="dsW"></div><div class="lab" id="lsW">Signal</div>
+  <div class="dotR" id="drW"></div><div class="lab" id="lrW" style="transform:translateX(-100%);margin-left:12px">Result</div>
+  <div class="coin" id="coinW"></div>
+</div>
+
+<script>
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const ease = (x) => x * x * (3 - 2 * x);
+const fade = (t, a, b) => ease(clamp((t - a) / (b - a)));
+const lerp = (a, b, p) => a + (b - a) * p;
+
+const F = { f1: [0, 5.0], f2: [5.0, 9.6], f3: [9.6, 13.0], f4: [13.0, 17.0], f5: [17.0, 20.6],
+            f6: [20.6, 26.0], f7: [26.0, 31.0], f8: [31.0, 38.0] };
+window.TOTAL = 38.0;
+const LAST = 'f8';
+
+window.render = function (t) {
+  for (const [id, [a, b]] of Object.entries(F)) {
+    const el = document.getElementById(id);
+    const o = Math.min(fade(t, a - 0.01, a + 0.5), 1 - fade(t, b - 0.5, b));
+    el.style.opacity = (id === 'f1' && t < 0.5) ? 1 : (id === LAST && t > b - 0.5) ? 1 : o;
+    el.querySelectorAll('.line').forEach((ln, i) => {
+      const s = a + (ln.dataset.d ? +ln.dataset.d : 0.4 + i * 1.1), p = fade(t, s, s + 0.8);
+      ln.style.opacity = p; ln.style.transform = `translateY(${(1 - p) * 18}px)`;
+    });
+  }
+
+  // the track on black: SIGNAL on the left, RESULT on the right, the coin still in the air between them
+  const trk = document.getElementById('trk');
+  trk.style.opacity = Math.min(fade(t, 5.2, 5.9), 1 - fade(t, 30.4, 31.0));
+  const stalls = [[1, 6.6], [2, 10.4], [3, 14.0], [4, 18.0]];
+  stalls.forEach(([i, ts]) => {
+    const p = fade(t, ts, ts + 0.6);
+    document.getElementById('k' + i).style.opacity = p;
+    document.getElementById('t' + i).style.opacity = p;
+  });
+  const cp = clamp((t - 5.0) / 26.0);
+  const cx = 170 + cp * 410;
+  const coinB = document.getElementById('coinB');
+  coinB.style.left = cx + 'px';
+  coinB.style.transform = `scaleX(${Math.max(0.12, Math.abs(Math.cos(t * 7.5)))})`;
+
+  // the track on white: the gap closes
+  const trkW = document.getElementById('trkW');
+  trkW.style.opacity = fade(t, 31.8, 32.5);
+  const pw = ease(clamp((t - 33.4) / 2.6));
+  const L = lerp(130, 380, pw), R = lerp(950, 700, pw);
+  const ln = document.getElementById('lnW'); ln.style.left = L + 'px'; ln.style.width = (R - L) + 'px';
+  document.getElementById('dsW').style.left = L + 'px';
+  document.getElementById('lsW').style.left = L + 'px'; document.getElementById('lsW').style.marginLeft = '-12px';
+  document.getElementById('drW').style.left = R + 'px';
+  document.getElementById('lrW').style.left = R + 'px';
+  const coinW = document.getElementById('coinW');
+  coinW.style.left = ((L + R) / 2) + 'px';
+  coinW.style.transform = `scaleX(${Math.max(0.12, Math.abs(Math.cos(t * 7.5)))})`;
+};
+render(0);
+</script>
+</body></html>
